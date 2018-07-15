@@ -17,7 +17,7 @@ body {
   color: white;
 }
 
-#head{back
+#head{background-image:url("header-1.jpg");
 background-size:cover;
 font-size:150px;
 color:white;
