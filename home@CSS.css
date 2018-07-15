@@ -14,12 +14,12 @@
 }
 
 
-#head{/**background-color: blue;**/
+#head{
     background-image:url("header-1.jpg");
     background-size:cover;
     font-size:150px;
     color:white;
-    border:5px aqua solid;
+    border:5px blue solid;
 }
 
 
