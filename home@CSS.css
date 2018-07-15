@@ -13,24 +13,19 @@
     padding:5pt;
 }
 
-.img-circle{margin-top:5px;
- 
-    border-radius:50%;
-    width:20%;
-    height:20%;
-}
 
 #head{/**background-color: blue;**/
-background-size:cover;
-font-size:150px;
-color:white;
-border:5px white dashed;
+    background-image:url("https://laurentussey.files.wordpress.com/2014/03/color-tussey1.jpg");
+    background-size:cover;
+    font-size:150px;
+    color:white;
+    border:5px white dashed;
 }
 
 
 #nav {
-     background-color:white;
-     text-align:left;
+    background-color:white;
+    text-align:left;
 }
  
 #link{
