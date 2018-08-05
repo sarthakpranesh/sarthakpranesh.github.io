@@ -1,5 +1,5 @@
 body {
-    font-family: 'Handlee', cursive;
+    font-family: 'Calibri', cursive;
     font-size: 13pt;
     background-color:black;
     padding:5pt;
@@ -9,7 +9,7 @@ body {
 .section{border-radius:10px;
     margin: 10px 5px 5px 0px;
     text-align:center;
-    font-family: 'Handlee', cursive;
+    font-family: 'Calibri', cursive;
     padding:5pt;
 }
 
