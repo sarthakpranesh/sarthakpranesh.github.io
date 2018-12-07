@@ -15,7 +15,6 @@
 
 
 #head{
-    background-image:url("header-1.jpg");
     background-size:cover;
     font-size:150px;
     color:white;
@@ -55,11 +54,11 @@
 #p2{padding:5px 0px 0px 5px;
     text-align:left;
     font-size:40pt;
-    color:red;
+    color:black;
 }
 
 #p3{text-align:center;
-    color:red;
+    color:black;
     padding:0px 0px 0px 10px;
     font-size: 40pt;
 }
@@ -67,7 +66,7 @@
 #p4{
     text-align:right;
     padding:-10px 5px 0px 0px;
-    color:red;
+    color:black;
     font-size: 40pt;
 }
 
@@ -78,7 +77,7 @@
 }
 
 #list{
-    color:red;
+    color:black;
     font-size: 24px;
 }
 
