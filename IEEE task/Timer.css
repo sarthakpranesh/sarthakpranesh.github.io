@@ -1,0 +1,44 @@
+.in{
+	background-color: black;
+	margin: -50px 5px 0px 5px;
+	border-radius: 20px;
+	height:150px;
+}
+
+.task{
+	font-size: 80px;
+	text-align: center;
+	color: white;
+}
+
+.cir{
+	width: 200px;
+	height:200px;
+	background-color: white;
+	border-radius: 80pt;
+	border-width: 2px;
+	border-color:aqua;
+	border-style: dashed;
+	position: absolute;
+}
+
+
+#c1{
+	margin:150px 0px 0px 300px;
+}
+#c2{
+	margin:150px 0px 0px 550px;
+}
+
+#c3{
+	margin:150px 0px 0px 800px;
+}
+
+#c4{
+	margin:150px 0px 0px 1050px;
+}
+
+.val{
+	font-size: 40px;
+	margin:0px 0px 0px 0px;
+}
