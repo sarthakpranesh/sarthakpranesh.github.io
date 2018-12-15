@@ -17,37 +17,32 @@
 }
 
 .cir{
+	font-family: 'Handlee', cursive;
 	background-color: white;
-	border-radius: 80px;
+	border-radius: 20px;
 	border-width: 2px;
 	border-color:aqua;
-	border-style: dashed;
-	position: relative;
+	border-style: solid;
+	padding: -20px 0px -20px 0px;
+	height: 150px;
 }
 
 
-#c1{width: 150pt;
-	height: 150pt;
-	margin:150px 0px 0px 300px;
+#c1{
+	margin: 0px 300px 5px 300px;
 }
 #c2{
-	width: 150pt;
-	height: 150pt;
-	margin:-200px 0px 0px 550px;
+	margin: 0px 300px 5px 300px;
 }
 
 #c3{
-	width: 150pt;
-	height: 150pt;
-	margin:-200px 0px 0px 800px;
+	margin: 0px 300px 5px 300px;
 }
 
 #c4{
-	width: 150pt;
-	height: 150pt;
-	margin:-200px 0px 0px 1050px;
+	margin: 0px 300px 5px 300px;
 }
 
 .val{
-	font-size: 40pt;
+	font-size: 20pt;
 }
