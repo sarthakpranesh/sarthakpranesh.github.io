@@ -2,46 +2,50 @@
     font-family: 'Calibri', cursive;
     font-size: 13pt;
     padding:5pt;
-    margin: 0;
+  
 }
 .in{
 	background-color: black;
 	margin: 5px 5px 5px 5px;
-    text-align:center;
 	border-radius: 20px;
 }
 
 .task{
-	font-size: 80px;
+	font-size: 80pt;
 	text-align: center;
 	color: white;
 }
 
 .cir{
-	width: 200px;
-	height:200px;
 	background-color: white;
-	border-radius: 80pt;
+	border-radius: 80px;
 	border-width: 2px;
 	border-color:aqua;
 	border-style: dashed;
-	position: absolute;
+	position: relative;
 }
 
 
-#c1{
+#c1{width: 150pt;
+	height: 150pt;
 	margin:150px 0px 0px 300px;
 }
 #c2{
-	margin:150px 0px 0px 550px;
+	width: 150pt;
+	height: 150pt;
+	margin:-200px 0px 0px 550px;
 }
 
 #c3{
-	margin:150px 0px 0px 800px;
+	width: 150pt;
+	height: 150pt;
+	margin:-200px 0px 0px 800px;
 }
 
 #c4{
-	margin:150px 0px 0px 1050px;
+	width: 150pt;
+	height: 150pt;
+	margin:-200px 0px 0px 1050px;
 }
 
 .val{
