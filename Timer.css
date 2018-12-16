@@ -46,3 +46,23 @@
 .val{
 	font-size: 20pt;
 }
+
+.button{
+	background-color: black;
+	margin: 10px 240px 10px 1000px;
+	padding: 10px 20px 10px 20px;
+	border-radius: 20px;
+}
+
+.buttext{
+	font-size: 20px;
+	color: red;
+	font-family: Calibri cursive;
+}
+
+.cir:nth-child(even){
+	background-color: yellow;
+}
+.cir:nth-child(odd){
+	background-color: red;
+}

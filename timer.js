@@ -1,7 +1,9 @@
+var x;
+function timerfuc(){
 var countDownDate = new Date("Dec 17, 2018 15:37:25").getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
+ x = setInterval(function() {
 
   // Get todays date and time
   var now = new Date().getTime();
@@ -28,7 +30,28 @@ var x = setInterval(function() {
     clearInterval(x);
     alert("EXPIRED");
   }
+
 }, 1000);
+}
+
+//object on click-- checking if the object has been clicked
+b1.onclick = timerfuc();
+
+
+//defining a reset time function
+function resettime(){
+  document.getElementById("day").innerHTML = "0";
+  document.getElementById("hour").innerHTML = "0";
+  document.getElementById("min").innerHTML = "0";
+  document.getElementById("sec").innerHTML = "0";
+  clearInterval(x);
+  alert("Timer cleared");
+}
+
+
+//reseting the timer
+b2.onclick = resettime();
+
 
 //The change of bgcolor of the html on an interwal of 10s
 var i = 0;
