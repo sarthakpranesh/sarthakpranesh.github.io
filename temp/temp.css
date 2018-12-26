@@ -2,71 +2,9 @@ body{
 	background: #cc6600;
 }
 
-#header{
-	background-color: black;
-}
 
-#nav-button{
-	background-color: black;
-	border: 2px solid white;
-	border-radius: 10px;
-	margin-left: 2%;
-	padding: 2px 2px 2px 2px;
+
+#about-ieee{
 	color: white;
-}
-
-#link{
-	text-overflow:temp;
-}
-
-#main{
-
-	padding: 5px 5px 5px 5px;
-	background-color: black;
-	border-radius: 10px;
-	margin: 5px 5px 5px 5px;
-}
-
-#section{
-	padding: 5px 5px 5px 5px;
-	margin-top: 10px;
-	border-radius: 10px;
-	border: 2px solid brown;
-}
-
-#title{
-	text-align: left;
-	font-size: 25px;
-	color: white;
-	border: 2px solid white;
-	border-radius: 10px;
-}
-
-#p1{
-	color: white;
-	text-align: left;
-}
-
-#p2{
-	color: white;
-	text-align: center;
-}
-
-#p3{
-	color: white;
-	text-align: right;
-}
-
-#para{
-	color: white;
-	font-style: cursive;
-}
-
-#follow{
-	background-color: white;
-	font-size: 15px;
-	border-radius: 10px;
-	border: 2px solid black;
-	text-align: center;
-	margin: 5px 5px 5px 5px;
+	font-family: sans-serif;
 }
