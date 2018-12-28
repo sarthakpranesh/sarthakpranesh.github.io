@@ -11,38 +11,39 @@
 
     </head>
 
-    <body>
+    <body style="background-color:rgb(0, 0, 0)">
+        <div class="row">
         <div class="container-fluid bg-success">
-            <h2 class="display-4">
+            <h2 class="display-4" style="padding:1% 5% 1% 5%">
                 +Add
             </h2>
         </div>
+        </div>
 
         <!-- the goint around menu -->
-        <div class="container-fluid">
         <div class="row">
             <div class="col-4 bg-dark">
-                    <a class="btn btn-rounded btn-block disabled" href="#">
+                    <a class="btn btn-rounded btn-block btn-lg disabled" href="#">
                         Add
                     </a>
             </div>
 
             <div class="col-4 bg-dark">
-                    <a class="btn btn-rounded btn-block" href="contact.html">
+                    <a class="btn btn-rounded btn-lg btn-block" href="contact.html">
                             Contacts
                         </a>
             </div>
 
             <div class="col-4 bg-dark">
-                    <a class="btn btn-rounded btn-block" href="#">
+                    <a class="btn btn-rounded btn-lg btn-block" href="#">
                             Remove
                         </a>
             </div>
         </div>
-        </div>
 
         <!--adding contacts-->
-        <div class="container-fluid bg-primary" style="padding: 5% 10% 5% 10%;height: device-height;">
+    <div class="row">
+        <div class="container-fluid bg-primary" style="padding: 5% 10% 5% 10%;">
             <form method="get">
                 <h3 style="color:antiquewhite">Name</h3>
                 <input class="container rounded" type="text" placeholder="Your name" id="name" required>
@@ -67,5 +68,6 @@
                 <br>
             </form>
         </div>
+    </div>
     </body>
 </html>
