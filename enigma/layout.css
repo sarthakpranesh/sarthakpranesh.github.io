@@ -1,0 +1,74 @@
+.bg{
+  background-color: #843ba1;
+}
+
+#main-title{
+  color: white;
+  text-align: center;
+  margin-top: 15%;
+}
+
+#Enigma{
+  font-family: "ZCOOL KuaiLe";
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+
+  font-size: 150px;
+}
+
+#sub-title{
+  color: white;
+  text-align: center;
+}
+
+#about{
+  font-family: "ZCOOL KuaiLe";
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+
+  font-size: 40px;
+}
+
+#button-sec{
+  text-align: center;
+  color: purple;
+}
+
+#btn-row{
+  margin-top: 2%;
+}
+
+#button{
+  background-color: white;
+  transition-duration: 2s;   
+}
+
+#p-btn{
+  font-family: "Titillium Web";
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  padding: -1% 1% -1% 1%;
+}
+
+#btn1{
+  color: #843ba1;
+}
+
+#btn1:hover{
+  background-color: #843ba1;
+  color: white;
+}
