@@ -83,16 +83,26 @@
 }
 
 #pop-head{
-  font-family: Georgia, 'Times New Roman';
+  font-family: "ZCOOL KuaiLe";
   font-size: 200%;
   font-weight: bolder;
   text-align: left;
 }
 
 #pop-body{
-  font-family: sans-serif;
-  font-weight: 700;
-  font-size: 100%;
+  font-family: "Titillium Web";
+  font-weight: normal;
+  font-size: normal;
+}
+
+#login{
+  font-family: "Titillium Web";
+  background-color: #843ba1;
+  color: #ffffff;
+  transition: 0.5s;
+}
+#login:hover{
+  background-color: black;
 }
 
 #footer-row{

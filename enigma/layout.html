@@ -44,12 +44,12 @@
             <div class="row" id="btn-row">
                 <div class="col-sm-5"></div>
                 <div class="col-sm-2">
-                    <button type="button" class="btn btn-info btn-primary btn-block" id="btn1" data-toggle="modal" data-target="#myModal">
+                    <button type="button" class="btn btn-info btn-primary btn-block" id="btn1" data-toggle="modal" data-target="#pop-about">
                         About ENIGMA
                     </button>
                     
                       <!-- The Modal -->
-                        <div class="modal fade" id="myModal">
+                        <div class="modal fade" id="pop-about">
                             <div class="modal-dialog model-sm">
                                 <div class="modal-content">
                           
@@ -61,7 +61,7 @@
                             
                                 <!-- Modal body -->
                                 <div class="modal-body" id="pop-body">
-<pre>The most popular and largest CHAPTER 
+<pre id="pop-body">The most popular and largest CHAPTER 
 of  <kbd>VIT University, Vellore</kbd>
 brings you the most awaited and creative
 competion of the year,<kbd>"The CRYPTIC HUNT"</kbd>
@@ -75,7 +75,7 @@ time to break them all takes it all.............
                             
                                 <!-- Modal footer -->
                                 <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    <!--popup footer-->
                                 </div>
                             </div>
                         </div>
@@ -87,7 +87,44 @@ time to break them all takes it all.............
             <div class="row" id="btn-row">
                 <div class="col-sm-5"></div>
                 <div class="col-sm-2">
-                    <a href="login.html" class="btn btn-info btn-block" id="btn1" role="button">Let's GO!</a>
+                        <button type="button" class="btn btn-info btn-primary btn-block" id="btn1" data-toggle="modal" data-target="#pop-get">
+                                Let's GO!!!
+                        </button>
+                            
+                        <!-- The Modal -->
+                        <div class="modal fade" id="pop-get">
+                            <div class="modal-dialog model-sm">
+                                <div class="modal-content">
+                                  
+                                    <!-- Modal Header -->
+                                    <div class="modal-header" id="pop-head">
+                                    
+                                    <button type="button" class="close" data-dismiss="modal">×</button>
+                                </div>
+                                    
+                                    <!-- Modal body -->
+                                <div class="modal-body" id="pop-body">
+                                        <form>
+                                            <input class = "form-control" type = 'text' placeholder="Referance Code" required>
+                                            <br/>
+                                            <input class = "form-control" type = 'password' placeholder="Your Password" required>
+                                            <br/>
+                                            <div class="row">
+                                                <div class="col"></div>
+                                                <div class="col" id="btn-holder">
+                                                    <button class="btn btn-block" id="login">Log in</button>
+                                                </div>
+                                                <div class="col"></div>
+                                            </div>
+                                        </form>
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <!--popup footer-->
+                                </div>
+                            </div>
+                        </div>
                 </div>
                 <div class="col-sm-5"></div>
             </div>
