@@ -59,7 +59,7 @@
 
 #btn1{
   background-color: white;
-  transition-duration: 0.5s;
+  transition-duration: 0.25s;
   transform-style: ease-in-out;
   color: #843ba1;
   vertical-align: center;
