@@ -33,7 +33,7 @@
     font-size:16px;
     margin-bottom:30px;
     object-fit: contain;
-    border-radius: 5.5px;
+    
     background-color: white;
     outline: none;
     background:transparent;
@@ -44,10 +44,10 @@
     height: 34px;
     font-family: TitilliumWeb;
     position: absolute;
-    color: #e1e1e1;
     padding: 10px 10px;
     font-size:16px;
-    font-weight: normal;
+    color:rgb(0,0,0);
+    font-weight: 16px;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
@@ -66,10 +66,26 @@
 }
 #button{
     background-color:purple;
+    border-radius: 10px;
+    object-fit: contain;
+    padding: 10px 20px 10px 20px;
+}
+#button:hover{
+    color:white;
+    background-color:black;
+    border-radius: 10px;
+    object-fit: contain;
+    padding: 10px 20px 10px 20px;
 }
 #back{
     font-size: 200%;
     margin-top: 5%;
     margin-left: 90%;
     color:white;
+}
+#text
+{
+  
+    text-align: center;
+    color:black;
 }
