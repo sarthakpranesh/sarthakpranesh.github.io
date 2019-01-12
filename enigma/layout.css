@@ -82,6 +82,19 @@
   color: white;
 }
 
+#pop-head{
+  font-family: Georgia, 'Times New Roman';
+  font-size: 200%;
+  font-weight: bolder;
+  text-align: left;
+}
+
+#pop-body{
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 100%;
+}
+
 #footer-row{
   vertical-align: center;
   align-items: center;
