@@ -1,15 +1,15 @@
 .bg{
+  background-image: url("img/BG.jpg");
+  background-position: center;
+  background-size: cover;
   background-color: #843ba1;
 }
 
-#logo{
-  background-image:url("img/logo.png");
-}
 
 #main-title{
   color: white;
   text-align: center;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 #Enigma{
@@ -21,7 +21,7 @@
   letter-spacing: normal;
   color: #ffffff;
 
-  font-size: 150px;
+  font-size: 500%;
 }
 
 #sub-title{
@@ -39,7 +39,7 @@
   text-align: center;
   color: #ffffff;
 
-  font-size: 40px;
+  font-size: 100%;
 }
 
 #button-sec{
@@ -51,28 +51,39 @@
   margin-top: 2%;
 }
 
-#button{
-  background-color: white;
-  transition-duration: 2s;   
-}
 
 #p-btn{
   font-family: "Titillium Web";
-  font-size: 30px;
+  font-size: 120%;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  padding: -1% 1% -1% 1%;
+  margin: 0% 0% 0% 0%;
 }
 
 #btn1{
+  background-color: white;
+  transition-duration: 0.5s;
+  transform-style: ease-in-out;
   color: #843ba1;
+  vertical-align: center;
+  align-items: center;
 }
 
 #btn1:hover{
   background-color: #843ba1;
   color: white;
+}
+
+#logo{
+  align-items: center;
+  vertical-align: bottom;
+}
+
+#IEEE{
+  width: 10%;
+  height: 10%;
 }
