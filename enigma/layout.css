@@ -1,5 +1,5 @@
 .bg{
-  background-image: url("BG.jpg");
+  background-image: url("body-img.jpg");
   background-position: center;
   background-size: cover;
   background-color: #843ba1;
@@ -9,8 +9,10 @@
 #main-title{
   color: white;
   align-items: center;
+  align-self: center;
+  align-content: center;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 #Enigma{
