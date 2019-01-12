@@ -83,10 +83,17 @@
 
 #logo{
   align-items: center;
-  vertical-align: bottom;
+  align-content: center;
+  vertical-align: center;
+}
+
+#footer-row{
+  margin: 10% 0% 10% 0%;
+
 }
 
 #IEEE{
-  width: 10%;
-  height: 10%;
+  background-image: url("img/logo.png");
+  background-position: center;
+  background-size: cover;
 }
