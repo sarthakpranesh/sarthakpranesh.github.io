@@ -81,19 +81,15 @@
   color: white;
 }
 
-#logo{
-  align-items: center;
-  align-content: center;
-  vertical-align: center;
-}
-
-#footer-row{
-  margin: 10% 0% 10% 0%;
-
+#footer{
+  height: 10%
 }
 
 #IEEE{
-  background-image: url("img/logo.png");
-  background-position: center;
-  background-size: cover;
+  align-items: center;
+}
+
+#IEEE-logo{
+  width: 10%
+  height: 10%;
 }
