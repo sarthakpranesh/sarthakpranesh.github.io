@@ -1,7 +1,7 @@
 .bg{
   background-image: url("body-img.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: fill;
   background-color: #843ba1;
 }
 
