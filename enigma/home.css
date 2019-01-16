@@ -109,7 +109,7 @@
 
 
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1000px) and (max-height: 1000px){
 	.bg {
 		background-image: url(body-img.jpg);
 		background-size: fill;
