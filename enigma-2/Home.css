@@ -36,7 +36,7 @@
 .enigma-man-box {
     width: 90%;
     height: auto;
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
 
 #enigma-man {
@@ -48,8 +48,24 @@
     width: 100%;
 }
 
+#login-btn {
+
+}
+
+#login {
+    margin-top: 5vh;
+    width: 15%;
+}
+
+.ieee-logo-box {
+    width: 100%;
+    height: auto;
+    margin-top: 0vh;
+}
+
 #ieee-logo {
-    margin-top: 15vh;
+
+    margin-top: 10vh;
     width: 30%;
 }
 
