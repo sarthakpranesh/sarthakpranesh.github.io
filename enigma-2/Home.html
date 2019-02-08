@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="Home.css">
+    <!--
     <link rel="stylesheet" href="snap.css">
+    -->
 
     <!-- imported scripts and bootstrap components -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,7 +20,7 @@
 <body class="bg">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark justify-content-end">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark justify-content-end">
         <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,26 +44,25 @@
     </nav>
     <!-- end of Navbar -->
 
-    <div class="one">
-        <div class="container-fluid">
+    <div id="one">
+        <div class="container">
             <div class="row">
-                <div class="col-2-md" id="side-col">
-                </div>
-
-                <div class="col-8-md" id="enigma-container">
-                    <img src="img/Man2.png" class="img-responsive" id="misman">
+                <div class="col-md-2 side-col"></div>
+                <div class="col-md-8">
+                    <div class="mx-auto enigma-man-box">
+                        <img src="img/Man2.png"
+                             id="enigma-man">
                         <img src="img/layer-0.png"
                              srcset="img/layer-0@2x.png 2x,
-                                img/layer-0@3x.png 3x"
-                             class="img-fluid" id="enigma-logo" alt="Enigma Logo">
-                    <img src="img/ieee-new-white.png"
-                         srcset="img/ieee-new-white@2x.png 2x,
+                            img/layer-0@3x.png 3x"
+                             id="enigma-logo">
+                        <img src="img/ieee-new-white.png"
+                             srcset="img/ieee-new-white@2x.png 2x,
                             img/ieee-new-white@3x.png 3x"
-                            class="img-responsive" id="ieee-logo">
+                             id="ieee-logo">
+                    </div>
                 </div>
-
-                <div class="col-2-md">
-                </div>
+                <div class="col-md-2 side-col"></div>
             </div>
         </div>
     </div>
