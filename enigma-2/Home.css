@@ -81,11 +81,14 @@
 }
 
 #login-btn {
-
+    margin-top: 2vh;
+    padding: 1vh 1vh 1vh 1vh;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 #login {
-    margin-top: 5vh;
+    margin-top: 0vh;
     width: 100%;
 }
 
@@ -258,6 +261,7 @@
     }
 
     #login-btn {
+        margin-top: 0vh;
         padding: 2vh 2vh 2vh 2vh;
         border: 4px solid black;
         border-radius: 10px;
@@ -278,7 +282,7 @@
     .ieee-logo-box {
         width: 100%;
         height: auto;
-        margin-top: -2vh;
+        margin-top: -4vh;
     }
 
     #ieee-logo {
