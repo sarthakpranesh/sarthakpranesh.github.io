@@ -111,6 +111,7 @@
     height: auto;
     margin-top: 1vh;
     border: 4px solid white;
+    border-radius: 20px;
     padding: 16px;
 }
 
@@ -144,6 +145,7 @@
     width: 90%;
     height: auto;
     border: 4px white solid;
+    border-radius: 20px;
     padding: 16px;
     margin-top: 1vh;
 }
@@ -187,7 +189,7 @@
     }
 
     #three {
-        height: 40vh;
+        height: 60vh;
     }
     
     .parallax {
@@ -315,15 +317,24 @@
     }
 
     .contact-box {
-        display: none;
+        width: 40%;
+        height: auto;
+        padding-top: 10vh;
+    }
+
+    #contact-logo {
+        width: 20%;
+        padding: 6px;
+        border-bottom: 4px white solid;
     }
 
     .contact-d {
         width: 90%;
         height: auto;
-        border: none;
+        border: 4px solid white;
+        border-radius: 20px;
         padding: 16px;
-        margin-top: 10vh;
+        margin-top: 2vh;
     }
 
     #facebook-logo {
