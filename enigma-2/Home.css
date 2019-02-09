@@ -31,6 +31,34 @@
     scroll-snap-align:start;
 }
 
+
+
+#nav-top {
+    background-color: white;
+    z-index: -1;
+}
+
+#nav-top-ul {
+
+}
+
+#nav-top-li {
+
+}
+
+#nav-top-li a {
+    color: white;
+    transition-duration: 0s;
+    transition-timing-function: linear;
+}
+
+#nav-top-li a:hover {
+    border-bottom: 4px solid white;
+}
+
+
+
+
 .side-col {
     display: none;
 }
@@ -38,7 +66,7 @@
 .enigma-man-box {
     width: 90%;
     height: auto;
-    margin-top: 15vh;
+    margin-top: 20vh;
 }
 
 #enigma-man {
@@ -58,7 +86,7 @@
 
 #login {
     margin-top: 5vh;
-    width: 15%;
+    width: 100%;
 }
 
 .ieee-logo-box {
@@ -165,7 +193,6 @@
     
     .parallax {
         transition-duration: 2s;
-        transform-style: fade-in;
     }
     .parallax:hover {
         transform: scale(1.5);
@@ -175,6 +202,34 @@
     .parallax::after {
 
     }
+
+
+    
+   #nav-top {
+       background: transparent;
+   }
+
+   #nav-top-ul {
+       padding: 2vh 5vh 2vh 0vh;
+   }
+
+   #nav-top-li {
+
+   }
+
+   #nav-top-li a {
+       padding: 1vh 1vh 1vh 1vh;
+       margin-left: 5vh;
+       color: white;
+       transition-duration: 0s;
+       transition-timing-function: linear;
+   }
+
+    #nav-top-li a:hover {
+        border-bottom: 4px solid white;
+    }
+
+
 
     .side-col {
         display: block;
@@ -192,20 +247,31 @@
 
     #enigma-man {
         width: 100%;
+        z-index: -1;
     }
 
     #enigma-logo {
         margin-top: -30vh;
         width: 100%;
+        z-index: -1;
     }
 
     #login-btn {
+        padding: 2vh 2vh 2vh 2vh;
+        border: 1px solid black;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
 
+    #login-btn:hover {
+        background-color: black;
+        border: 1px solid white;
     }
 
     #login {
+        width: 100%;
         margin-top: 0vh;
-        width: 15%;
+        background-size: cover;
     }
 
     .ieee-logo-box {
@@ -216,7 +282,7 @@
 
     #ieee-logo {
 
-        margin-top: 10vh;
+        margin-top: 15vh;
         width: 40%;
     }
 
