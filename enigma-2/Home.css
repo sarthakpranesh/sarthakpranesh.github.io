@@ -128,10 +128,21 @@
     word-break: break-word;
 }
 
-.contact-box {
+.mark-icon-box {
     width: 90%;
     height: auto;
     padding-top: 20vh;
+}
+
+#mark-icon {
+    width: 40%;
+    padding: 6px;
+}
+
+.contact-box {
+    width: 90%;
+    height: auto;
+    padding-top: 2vh;
 }
 
 #contact-logo {
@@ -145,7 +156,7 @@
     height: auto;
     border: 4px white solid;
     border-radius: 20px;
-    padding: 16px;
+    padding: 5vh;
     margin-top: 1vh;
 }
 
@@ -159,7 +170,6 @@
     border-radius: 2px;
     font-family: sans-serif, cursive;
     font-size: 26px;
-    margin: auto;
     text-decoration: none;
 }
 
@@ -181,14 +191,6 @@
         perspective: 2px;
 
         z-index: -2;
-    }
-
-    #two {
-        height: 80vh;
-    }
-
-    #three {
-        height: 60vh;
     }
     
     .parallax {
@@ -314,10 +316,21 @@
         word-break: break-word;
     }
 
-    .contact-box {
-        width: 40%;
+    .mark-icon-box {
+        width: 60%;
         height: auto;
         padding-top: 10vh;
+    }
+
+    #mark-icon {
+        width: 40%;
+        padding: 6px;
+    }
+
+    .contact-box {
+        width: 50%;
+        height: auto;
+        padding-top: 2vh;
     }
 
     #contact-logo {
@@ -331,7 +344,7 @@
         height: auto;
         border: 4px solid white;
         border-radius: 20px;
-        padding: 16px;
+        padding: 5vh;
         margin-top: 2vh;
     }
 
