@@ -150,7 +150,7 @@
 
 #facebook-logo {
     object-fit: contain;
-    width: 50%;
+    width: 10%;
 }
 
 #contact-link {
@@ -323,12 +323,12 @@
         height: auto;
         border: none;
         padding: 16px;
-        margin-top: 20vh;
+        margin-top: 10vh;
     }
 
     #facebook-logo {
         object-fit: contain;
-        width: 50%;
+        width: 8%;
     }
 
     #contact-link {
