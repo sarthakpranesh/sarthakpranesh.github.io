@@ -34,7 +34,6 @@
 
 
 #nav-top {
-    background-color: white;
     z-index: 1;
 }
 
@@ -185,7 +184,7 @@
     }
 
     #two {
-        height: 60vh;
+        height: 80vh;
     }
 
     #three {
@@ -296,9 +295,8 @@
     .about-text-box {
         width: 80%;
         height: auto;
-        margin-top: 30vh;
         border: none;
-        padding: 16px;
+        padding-top: 30vh;
     }
 
     #about-text {
