@@ -46,18 +46,6 @@
 
 }
 
-#nav-top-li a {
-    color: white;
-    transition-duration: 0s;
-    transition-timing-function: linear;
-}
-
-#nav-top-li a:hover {
-    border-bottom: 4px solid white;
-}
-
-
-
 
 .side-col {
     display: none;
@@ -192,6 +180,14 @@
         perspective: 2px;
 
         z-index: -2;
+    }
+
+    #two {
+        height: 60vh;
+    }
+
+    #three {
+        height: 40vh;
     }
     
     .parallax {
