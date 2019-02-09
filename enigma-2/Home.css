@@ -124,7 +124,7 @@
 }
 
 #about-text {
-    font-family: TitilliumWeb;
+    font-family: 'Titillium Web', sans-serif;
     font-size: 26px;
     font-weight: normal;
     font-style: normal;
@@ -211,7 +211,7 @@
    }
 
    #nav-top-ul {
-       padding: 2vh 5vh 2vh 0vh;
+       padding-right: 5vh;
    }
 
    #nav-top-li {
@@ -259,14 +259,14 @@
 
     #login-btn {
         padding: 2vh 2vh 2vh 2vh;
-        border: 1px solid black;
+        border: 4px solid black;
         border-radius: 10px;
         transition: 0.5s;
     }
 
     #login-btn:hover {
         background-color: black;
-        border: 1px solid white;
+        border: 4px solid white;
     }
 
     #login {
@@ -288,34 +288,26 @@
     }
 
     .about-enigma-box {
-        width: 90%;
-        height: auto;
-        padding-top: 20vh;
-    }
-
-    #about-logo {
-        width: 40%;
-        padding: 6px;
-        border-bottom: 4px white solid;
-        margin: auto;
+        display: none;
     }
 
     .about-text-box {
-        width: 90%;
+        width: 80%;
         height: auto;
-        margin-top: 1vh;
-        border: 4px solid white;
+        margin-top: 30vh;
+        border: none;
         padding: 16px;
     }
 
     #about-text {
-        font-family: TitilliumWeb;
-        font-size: 26px;
-        font-weight: normal;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 36px;
+        font-weight: bold;
         font-style: normal;
         font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
+        line-height: 50px;
+        letter-spacing: 4px;
+        word-spacing: 10px;
         text-align: center;
         color: #ffffff;
         object-fit: contain;
@@ -323,23 +315,15 @@
     }
 
     .contact-box {
-        width: 90%;
-        height: auto;
-        padding-top: 20vh;
-    }
-
-    #contact-logo {
-        width: 40%;
-        padding: 6px;
-        border-bottom: 4px white solid;
+        display: none;
     }
 
     .contact-d {
         width: 90%;
         height: auto;
-        border: 4px white solid;
+        border: none;
         padding: 16px;
-        margin-top: 1vh;
+        margin-top: 20vh;
     }
 
     #facebook-logo {
@@ -351,7 +335,9 @@
         text-align: center;
         border-radius: 2px;
         font-family: sans-serif, cursive;
-        font-size: 26px;
+        font-size: 36px;
+        letter-spacing: 4px;
+        word-spacing: 10px;
         margin: auto;
         text-decoration: none;
     }

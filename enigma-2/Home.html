@@ -15,6 +15,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
+    <!-- scrolling is getting removed on adding this font
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+    -->
     <title>Enigma</title>
 </head>
 <body class="bg">
@@ -24,19 +27,19 @@
         <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="collapse_target">
+        <div class="collapse navbar-collapse justify-content-end" id="collapse_target">
             <a class="navbar-nav"><!--for displaying any text in the navbar --></a>
-            <ul class="nav navbar-right navbar-nav">
-                <li class="nav-item">
+            <ul class="nav navbar-right navbar-nav" id="nav-top-ul">
+                <li class="nav-item" id="nav-top-li">
                     <a class="nav-link" href="#">HOME</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" id="nav-top-li">
                     <a class="nav-link" href="#">ABOUT</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" id="nav-top-li">
                     <a class="nav-link" href="#">LOG IN</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" id="nav-top-li">
                     <a class="nav-link" href="#">CONTACT US</a>
                 </li>
             </ul>
@@ -87,6 +90,8 @@
 
     <!-- Yuvi work here -->
 <div id="two">
+
+    <!-- about for mobile -->
     <div class="container">
         <div class="mx-auto about-enigma-box">
             <img src="img/about.png"
@@ -106,6 +111,7 @@
             </p>
         </div>
     </div>
+    <!-- about for mobile -->
 </div>
 
 <div id="three">
