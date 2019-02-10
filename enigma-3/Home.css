@@ -1,0 +1,366 @@
+.bg {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+
+    background-image: linear-gradient(172deg, #110c22 33%, #681450);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+}
+
+#one
+{
+    text-align: center;
+    height:100vh;
+    scroll-snap-align:start;
+}
+
+#two
+{
+    text-align: center;
+    height:100vh;
+    scroll-snap-align:start;
+}
+
+#three
+{
+    text-align: center;
+    height:100vh;
+    scroll-snap-align:start;
+}
+
+
+
+#nav-top {
+    z-index: 1;
+}
+
+#nav-top-ul {
+
+}
+
+#nav-top-li {
+
+}
+
+
+.side-col {
+    display: none;
+}
+
+.enigma-man-box {
+    width: 90%;
+    height: auto;
+    margin-top: 20vh;
+}
+
+#enigma-man {
+    z-index: 1;
+    width: 100%;
+}
+
+#enigma-logo {
+    z-index: 2;
+    margin-top: -15vh;
+    width: 100%;
+}
+
+#login-btn {
+    margin-top: 2vh;
+    padding: 1vh 1vh 1vh 1vh;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#login {
+    margin-top: 0vh;
+    width: 100%;
+}
+
+.ieee-logo-box {
+    width: 100%;
+    height: auto;
+    margin-top: 0vh;
+}
+
+#ieee-logo {
+
+    margin-top: 10vh;
+    width: 30%;
+}
+
+.about-enigma-box {
+    width: 90%;
+    height: auto;
+    padding-top: 20vh;
+}
+
+#about-logo {
+    width: 40%;
+    padding: 6px;
+    border-bottom: 4px white solid;
+    margin: auto;
+}
+
+.about-text-box {
+    opacity: 100%;
+    width: 90%;
+    height: auto;
+    margin-top: 1vh;
+    border: 4px solid white;
+    border-radius: 20px;
+    padding: 16px;
+}
+
+#about-text {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 26px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    object-fit: contain;
+    word-break: break-word;
+}
+
+.mark-icon-box {
+    width: 90%;
+    height: auto;
+    padding-top: 20vh;
+}
+
+#mark-icon {
+    width: 40%;
+    padding: 6px;
+}
+
+.contact-box {
+    width: 90%;
+    height: auto;
+    padding-top: 2vh;
+}
+
+#contact-logo {
+    width: 40%;
+    padding: 6px;
+    border-bottom: 4px white solid;
+}
+
+.contact-d {
+    width: 90%;
+    height: auto;
+    border: 4px white solid;
+    border-radius: 20px;
+    padding: 5vh;
+    margin-top: 1vh;
+}
+
+#facebook-logo {
+    object-fit: contain;
+    width: 10%;
+}
+
+#contact-link {
+    text-align: center;
+    border-radius: 2px;
+    font-family: sans-serif, cursive;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+
+
+@media only screen and (min-width: 760px) and (max-height: 1024px) {
+
+    .bg {
+        scroll-snap-type: none;
+        overflow-y: scroll;
+
+        background-image: linear-gradient(172deg, #110c22 33%, #681450);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        overflow-x: hidden;
+        perspective: 2px;
+
+        z-index: -2;
+    }
+    
+    .parallax {
+        transition-duration: 2s;
+    }
+    .parallax:hover {
+        transform: scale(1.5);
+        z-index: 1;
+    }
+
+    .parallax::after {
+
+    }
+
+
+    
+   #nav-top {
+       background: transparent;
+       z-index: 1;
+   }
+
+   #nav-top-ul {
+       padding-right: 5vh;
+   }
+
+   #nav-top-li {
+
+   }
+
+   #nav-top-li a {
+       padding: 1vh 1vh 1vh 1vh;
+       margin-left: 5vh;
+       color: white;
+       transition-duration: 0s;
+       transition-timing-function: linear;
+   }
+
+    #nav-top-li a:hover {
+        border-bottom: 4px solid white;
+    }
+
+
+
+    .side-col {
+        display: block;
+    }
+
+    .enigma-man-box {
+        width: 70%;
+        height: auto;
+        margin-top: 5vh;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #enigma-man {
+        width: 100%;
+        z-index: -1;
+    }
+
+    #enigma-logo {
+        margin-top: -30vh;
+        width: 100%;
+        z-index: -1;
+    }
+
+    #login-btn {
+        margin-top: 0vh;
+        padding: 2vh 2vh 2vh 2vh;
+        border: 4px solid black;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    #login-btn:hover {
+        background-color: black;
+        border: 4px solid white;
+    }
+
+    #login {
+        width: 100%;
+        margin-top: 0vh;
+        background-size: cover;
+    }
+
+    .ieee-logo-box {
+        width: 100%;
+        height: auto;
+        margin-top: -4vh;
+    }
+
+    #ieee-logo {
+
+        margin-top: 10vh;
+        width: 40%;
+    }
+
+    .about-enigma-box {
+        display: none;
+    }
+
+    .about-text-box {
+        width: 80%;
+        height: auto;
+        border: none;
+        padding-top: 30vh;
+    }
+
+    #about-text {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 36px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 50px;
+        letter-spacing: 4px;
+        word-spacing: 10px;
+        text-align: center;
+        color: #ffffff;
+        object-fit: contain;
+        word-break: break-word;
+    }
+
+    .mark-icon-box {
+        width: 60%;
+        height: auto;
+        padding-top: 10vh;
+    }
+
+    #mark-icon {
+        width: 40%;
+        padding: 6px;
+    }
+
+    .contact-box {
+        width: 50%;
+        height: auto;
+        padding-top: 2vh;
+    }
+
+    #contact-logo {
+        width: 20%;
+        padding: 6px;
+        border-bottom: 4px white solid;
+    }
+
+    .contact-d {
+        width: 90%;
+        height: auto;
+        border: 4px solid white;
+        border-radius: 20px;
+        padding: 5vh;
+        margin-top: 2vh;
+    }
+
+    #facebook-logo {
+        object-fit: contain;
+        width: 8%;
+    }
+
+    #contact-link {
+        text-align: center;
+        border-radius: 2px;
+        font-family: sans-serif, cursive;
+        font-size: 36px;
+        letter-spacing: 4px;
+        word-spacing: 10px;
+        margin: auto;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,43 @@
+body
+{
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+
+}
+
+#one
+{
+	background-image: linear-gradient(172deg, #110c22 33%, #681450);
+	text-align: center;
+	height:100vh;
+	scroll-snap-align:start;
+
+}
+
+#two
+{	
+	background-image: linear-gradient(172deg, #681450 33%, #110c22);
+	background-color: white;
+	text-align: left;
+	top: 0vh;
+	height:100vh;
+	scroll-snap-align:start;
+}
+
+#three
+{	
+	background-image: linear-gradient(172deg, #110c22 33%, #681450);;
+	text-align: center;
+	height:100vh;
+	scroll-snap-align:start;
+}
+
+#four
+{	
+	margin: 0vh 1vh 0vh 1vh;
+	background-color: rgb(253,188,74);
+	color: #fff;
+	text-align: center;
+	height:100vh;
+	scroll-snap-align:start;
+}

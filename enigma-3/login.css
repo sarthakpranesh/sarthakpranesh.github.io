@@ -1,0 +1,218 @@
+.bg {
+
+    background-image: linear-gradient(172deg, #110c22 33%, #681450);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+
+#nav-top {
+    z-index: 1;
+}
+
+#nav-top-ul {
+
+}
+
+#nav-top-li {
+
+}
+
+.box
+{
+    position:absolute;
+    top:55%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:50vh;
+    height: auto;
+    padding:40px;
+    color:rgb(0,0,0);
+    background-color:transparent;
+    border-radius:15px;
+   
+}
+.box H2
+{
+    margin: 0 0 30px;
+    padding: 0;
+    color:white;
+    text-align:center;
+}
+.box .inputbox
+{
+    position:relative;
+}
+.box .inputbox input
+{
+    
+    width:100%;
+    padding: 10px 0;
+    font-size:16px;
+    color:white;
+    margin-bottom:30px;
+    border:none;
+    border-bottom:2px solid white;
+    outline: none;
+    background:transparent;
+}
+.box .inputbox label
+{
+    position: absolute;
+    color:white;
+    padding: 10px 0;
+    font-size:16px;
+    color:white;
+    top:0;
+    left:0;
+
+}
+#reg
+{
+	font-family: Rockwell;
+	font-weight: 10;
+	color:white;
+	text-align: center;
+
+}
+#btn
+{
+	margin-top: 1px;
+	margin-left: 35%;
+	justify-content: center;
+}
+#now
+{
+	color: red;
+}
+#email
+{
+	z-index: -1;
+}
+#pas
+{
+	z-index: -1;	
+}
+@media only screen and (min-width: 780px) and (max-height: 1000px)
+{
+    .bg {
+
+    background-image: linear-gradient(172deg, #110c22 33%, #681450);
+        background-size: cover;
+        background-attachment: fixed;
+    height: 100vh;
+        width: 100%;
+
+}
+
+    #nav-top {
+        background: transparent;
+        z-index: 1;
+    }
+
+    #nav-top-ul {
+        padding-right: 5vh;
+    }
+
+    #nav-top-li {
+
+    }
+
+    #nav-top-li a {
+        padding: 1vh 1vh 1vh 1vh;
+        margin-left: 5vh;
+        color: white;
+        transition-duration: 0s;
+        transition-timing-function: linear;
+    }
+
+    #nav-top-li a:hover {
+        border-bottom: 4px solid white;
+    }
+
+.box
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:400px;
+    padding:40px;
+    color:rgb(0,0,0);
+    background-color:transparent;
+    border-radius:15px;
+    
+
+}
+.box H2
+{
+    margin: 0 0 30px;
+    padding: 0;
+    color:white;
+    text-align:center;
+}
+.box .inputbox
+{
+    position:relative;
+}
+.box .inputbox input
+{
+    
+    width:100%;
+    padding: 10px 0;
+    font-size:16px;
+    color:white;
+    margin-bottom:30px;
+    border:none;
+    border-bottom:2px solid white;
+    outline: none;
+    background:transparent;
+}
+.box .inputbox label
+{
+    position: absolute;
+    color:white;
+    padding: 10px 0;
+    font-size:16px;
+    color:white;
+    top:0;
+    left:0;
+ 
+}
+#reg
+{
+	font-family: Rockwell;
+	font-weight: 10;
+	color:white;
+}
+#btn
+{
+	margin-top: 1px;
+}
+#now
+{
+	color: red;
+}
+#email
+{
+	z-index: -1;
+}
+#pas
+{
+	z-index: -1;	
+}
+#btn
+{
+	font-family: Verdana, sans-serif;
+
+}
+#btn:hover
+{
+	box-shadow:0px 0px 6px 8px rgba(251,158,244,0.3);
+	font-family: Verdana, sans-serif;
+	color:yellow;
+	
+}
+}
