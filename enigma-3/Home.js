@@ -8,7 +8,7 @@ function man() {
             if (pos == 510) {
                 clearInterval(id);
             } else {
-                pos++;
+                pos=pos+2;
                 ele.style.width = pos + "px";
             }
         }
