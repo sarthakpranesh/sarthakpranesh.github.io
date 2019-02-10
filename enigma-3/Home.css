@@ -224,9 +224,9 @@
    }
 
     #enigma-on-nav-box{
-        padding: 1vh 1vh 1vh;
-        margin-right: 15%;
-        width: 50%;
+        padding: 2%;
+        margin-right: 50%;
+        width: 40vh;
     }
 
     #enigma-on-nav {
@@ -236,7 +236,7 @@
     }
 
    #nav-top-ul {
-       padding-right: 5vh;
+
    }
 
    #nav-top-li {
@@ -244,7 +244,6 @@
    }
 
    #nav-top-li a {
-       padding: 1vh 1vh 1vh 1vh;
        margin-left: 5vh;
        color: white;
        transition-duration: 0s;
