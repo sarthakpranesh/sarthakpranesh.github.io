@@ -38,6 +38,17 @@
     z-index: 1;
 }
 
+#enigma-on-nav-box{
+    padding-top: 7vh;
+    float: right;
+    width: 40%;
+}
+
+#enigma-on-nav {
+    width: 80%;
+    height: auto;
+}
+
 #nav-top-ul {
 
 }
@@ -211,7 +222,20 @@
    #nav-top {
        background: transparent;
        z-index: 1;
+       height: 8vh;
    }
+
+    #enigma-on-nav-box{
+        padding: 1vh 1vh 1vh;
+        margin-right: 20%;
+        width: 40%;
+    }
+
+    #enigma-on-nav {
+        display: none;
+        width: 20%;
+        height: 5vh;
+    }
 
    #nav-top-ul {
        padding-right: 5vh;

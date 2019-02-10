@@ -14,7 +14,3 @@ function man() {
         }
     }
 }
-
-function fade() {
-
-}
