@@ -115,7 +115,7 @@
 #sign-up-h {
     color: white;
     font-family: 'Titillium Web', sans-serif;
-    font-size: large;
+    font-size: 16px;
 }
 
 #pop-body {
@@ -309,7 +309,7 @@
     #sign-up-h {
         color: white;
         font-family: 'Titillium Web', sans-serif;
-        font-size: larger;
+        font-size: 32px;
     }
 
     #pop-body {
