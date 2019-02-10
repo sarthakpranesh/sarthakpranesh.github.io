@@ -112,6 +112,12 @@
     padding: 1vh;
 }
 
+#sign-up-h {
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: large;
+}
+
 #pop-body {
     padding: 1vh;
 }
@@ -154,6 +160,11 @@
     background-color: white;
 }
 
+#ieee-logo {
+    width: 40%;
+    height: auto;
+    background-size: cover;
+}
 
 
 
@@ -294,6 +305,13 @@
         padding: 1vh;
     }
 
+
+    #sign-up-h {
+        color: white;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: larger;
+    }
+
     #pop-body {
         padding: 1vh;
     }
@@ -334,6 +352,12 @@
 
     #form-btn:hover {
         background: white;
+    }
+
+    #ieee-logo {
+        width: 40%;
+        height: auto;
+        background-size: cover;
     }
 
 }
