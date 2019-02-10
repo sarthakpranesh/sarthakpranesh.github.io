@@ -1,5 +1,5 @@
 .bg {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: none;
     overflow-y: hidden;
 
     background-image: linear-gradient(172deg, #110c22 33%, #681450);
@@ -7,7 +7,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
+
+    overflow-x: hidden;
+    perspective: 2px;
+
+    z-index: -2;
 }
 
 #one
@@ -49,6 +53,7 @@
 }
 
 #login-box-h2 {
+    margin-top: 2vh;
     color: white;
     font-family: 'Titillium Web', sans-serif;
     font-weight: bold;
@@ -115,7 +120,7 @@
 #sign-up-h {
     color: white;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 #pop-body {
