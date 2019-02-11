@@ -103,13 +103,13 @@
 }
 
 .about-enigma-box {
-    width: 100%;
+    width: 20vh;
     height: auto;
     padding-top: 15vh;
 }
 
 #about-logo {
-    width: 40%;
+    width: 20vh;
     padding: 6px;
     border-bottom: 4px white solid;
     margin: auto;
@@ -122,18 +122,18 @@
     margin-top: 1vh;
     border: 4px solid white;
     border-radius: 20px;
-    padding: 10px;
+    padding: 5px;
 }
 
 #about-text {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
+    font-size: 3vh;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 30px;
-    letter-spacing: 1px;
-    word-spacing: 5px;
+    line-height: 4vh;
+    letter-spacing: 0.5vh;
+    word-spacing: 1vh;
     text-align: center;
     color: #ffffff;
     object-fit: contain;
@@ -141,13 +141,13 @@
 }
 
 .mark-icon-box {
-    width: 90%;
+    width: 20vh;
     height: auto;
     padding-top: 20vh;
 }
 
 #mark-icon {
-    width: 40%;
+    width: 20vh;
     padding: 6px;
 }
 
@@ -179,9 +179,8 @@
 
 #contact-link {
     text-align: center;
-    border-radius: 2px;
     font-family: sans-serif, cursive;
-    font-size: 26px;
+    font-size: 3vh;
     text-decoration: none;
 }
 
@@ -219,8 +218,8 @@
 
 
 
-    /* the navbar is getting compromised in width=980px
-    * also the logo on the top has positioning issues 
+    /* the navbar is getting compromised in width=962px height= 585px
+    * also the logo on the top has positioning issues
     */
     
    #nav-top {
