@@ -108,6 +108,10 @@
     padding-top: 15vh;
 }
 
+#what-logo {
+    display: none;
+}
+
 #about-logo {
     width: 20vh;
     padding: 6px;
@@ -127,11 +131,11 @@
 
 #about-text {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 3vh;
+    font-size: 2vh;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 4vh;
+    line-height: 3vh;
     letter-spacing: 0.5vh;
     word-spacing: 1vh;
     text-align: center;
@@ -322,15 +326,21 @@
         padding-top: 25vh;
     }
 
+    #what-logo {
+        display: block;
+        margin-top: 10vh;
+        width: 20vh;
+    }
+
     #about-text {
         font-family: 'Titillium Web', sans-serif;
-        font-size: 4vh;
+        font-size: 3vh;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
-        line-height: 6vh;
+        line-height: 4vh;
         letter-spacing: 1vh;
-        word-spacing: 2vh;
+        word-spacing: 1vh;
         text-align: center;
         color: #ffffff;
         object-fit: contain;
