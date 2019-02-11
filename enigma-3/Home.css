@@ -32,21 +32,8 @@
     scroll-snap-align:start;
 }
 
-
-
-#nav-top {
-    z-index: 1;
-}
-
-#enigma-on-nav-box{
-    padding-top: 7vh;
-    float: right;
-    width: 40%;
-}
-
-#enigma-on-nav {
-    width: 80%;
-    height: auto;
+#nav-top{
+    z-index: 2;
 }
 
 #nav-top-ul {
@@ -225,28 +212,15 @@
     /* the navbar is getting compromised in width=962px height= 585px
     * also the logo on the top has positioning issues
     */
-    
-   #nav-top {
-       height: 8vh;
-   }
 
-    #enigma-on-nav-box{
-        padding: 2%;
-        margin-right: 35vh;
-    }
-
-    #enigma-on-nav {
-        display: none;
-        width: 20vh;
-        height: 5vh;
-    }
 
    #nav-top-ul {
-        margin-right: 5vh;
+        margin: 10px 20px;
+       padding: 5px 10px;
    }
 
    #nav-top-li {
-
+        margin-right: 30px;
    }
 
    #nav-top-li a {
@@ -320,10 +294,10 @@
     }
 
     .about-text-box {
-        width: 120vh;
+        width: 700px;
         height: auto;
         border: none;
-        padding-top: 25vh;
+        padding-top: 300px;
     }
 
     #what-logo {
