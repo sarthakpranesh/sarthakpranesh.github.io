@@ -63,20 +63,20 @@
 }
 
 .enigma-man-box {
-    width: 90%;
+    width: 40vh;
     height: auto;
     margin-top: 20vh;
 }
 
 #enigma-man {
     z-index: 1;
-    width: 100%;
+    width: 40vh;
 }
 
 #enigma-logo {
     z-index: 2;
     margin-top: -15vh;
-    width: 100%;
+    width: 40vh;
 }
 
 #login-btn {
