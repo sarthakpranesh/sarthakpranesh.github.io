@@ -5,11 +5,11 @@ function man() {
         var id = setInterval(frame, 1);
 
         function frame() {
-            if (pos == 510) {
+            if (pos == 60) {
                 clearInterval(id);
             } else {
-                pos=pos+2;
-                ele.style.width = pos + "px";
+                pos=pos+0.5;
+                ele.style.width = pos + "vh";
             }
         }
     }
