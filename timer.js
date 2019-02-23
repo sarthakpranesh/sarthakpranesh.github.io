@@ -1,6 +1,6 @@
 var x;
 function timerfuc(){
-var countDownDate = new Date("Dec 17, 2018 15:37:25").getTime();
+var countDownDate = new Date("feb 17, 2018 15:37:25").getTime();
 
 // Update the count down every 1 second
  x = setInterval(function() {
