@@ -6,20 +6,54 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
 </head>
-<body style="
-width: 600px;
-height: auto;
-max-width: 600px;
-">
+<style>
+    body{
+        width: 600px;
+        height: auto;
+        max-width: 600px;
+    }
+    .top-head {
+        background-color: rgb(50, 50, 50);
+        width: 100%;
+        text-align: center;
+        color: white;
+        padding-top:5px;
+        padding-bottom: 2px;
+    }
+    .div-p {
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 250px;
+        height: auto;
+        border: 1px solid white;
+        text-align: center;
+        font-size: 18px;
+        word-break: break-all;
+    }
 
-    <div style="
-    background-color: rgb(50, 50, 50);
-    width: 100%;
-    text-align: center;
-    color: white;
-    padding-top:5px;
-    padding-bottom: 2px;
-    ">
+    @media only screen and (max-width: 600px){
+        body{
+            width: 90%;
+            height: auto;
+            max-width: 600px;
+        }
+
+        .div-p {
+            padding: 5px;
+            width: 250px;
+            height: auto;
+            border: 1px solid white;
+            text-align: center;
+            font-size: 14px;
+            word-break: break-all;
+            line-height: 17px;
+        }
+    }
+</style>
+<body>
+
+    <div class="top-head">
         <h3 style="
         padding: 0px;
         margin: auto; 
@@ -33,7 +67,7 @@ max-width: 600px;
     height: auto;
     ">
         <img src="./The-Week-That-Was-in-Asia-Photo-Gallery.jpg" style="
-        width: 600px;
+        width: 100%;
         height: auto;
         ">
         <div style="
@@ -83,34 +117,14 @@ max-width: 600px;
         display: flex;
         flex-direction: row;
         ">
-            <div style="
-            margin: auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 250px;
-            height: auto;
-            border: 1px solid white;
-            ">
-                <p style="
-                text-align: center;
-                font-size: 18px;
-                ">
+            <div class="div-p">
+                <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                 </p>
             </div>
-            <div style="
-            margin: auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 250px;
-            height: auto;
-            border: 1px solid white;
-            ">
-                <p style="
-                text-align: center;
-                font-size: 18px;
-                ">
+            <div class="div-p">
+                <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                 </p>
@@ -119,7 +133,7 @@ max-width: 600px;
     </div>
 
     <div style="
-    width: 600px;
+    width: 100%;
     height: auto;
     background-color: white;
     color: black;
