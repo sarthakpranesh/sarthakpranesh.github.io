@@ -4,21 +4,6 @@ html {
     scrollbar-width: none;
 }
 
-#noMobile {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-    background-color: black;
-	
-	position: fixed;
-	z-index: 100;
-	top: 0;
-	left: 0;
-	right: 0;
-    bottom: 0;	
-    display: none;
-}
-
 body {
     font-family: 'Alatsi', sans-serif;
     font-weight: 100;
@@ -326,4 +311,34 @@ body {
     font-weight: 200;
     text-align: center;
     justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #img-hover{
+        width: 120px;
+        height: 120px;
+        margin-bottom: 40px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    .main-container h1{
+        font-weight: 600;
+        color: white;
+        font-size: 35px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .goDown {
+        z-index: 2;
+        padding: 10px;
+        height: 40px;
+        background-color: #00629B;
+        border: 1px white solid;
+        border-radius: 50%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
