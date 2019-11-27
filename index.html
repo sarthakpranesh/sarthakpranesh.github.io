@@ -12,7 +12,7 @@
         <!-- link cdn and js library-->.
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" type="text/css" href="/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/materialize.css">
         <script src="/js/three.js"></script>    
         <script src="/js/vanta.birds.min.js"></script>
         <link rel="stylesheet" type="text/css" href="/css/styles.css">
@@ -25,13 +25,15 @@
             <h1>Sarthak Pranesh</h1>
             <img src="/images/goDown.png" class="goDown" id="down">
         </div>
-        <div class="sub-container">
+        <div class="sub-container" id="sub1">
             <h1 class="sub-title"  id="whatIDo">What I Do</h1>
             <div class="whatIDo-grid">
-                <span class="what1">Web Development</span>
-                <span class="what2">Electronics</span>
-                <spam class="what3">Machine Learning</spam>
+                <span class="what1 what-hover" id="wb">Web Development</span>
+                <span class="what2 what-hover" id="e">Electronics</span>
+                <spam class="what3 what-hover" id="ml">Machine Learning</spam>
             </div>
+        </div>
+        <div class="sub-container" id="sub2">
             <h1 class="sub-title">I Love to Use...</h1>
             <div class="love-grid">
                 <img class="love1" src="/images/javascript.svg">
@@ -40,6 +42,101 @@
                 <img class="love4" src="/images/firebase.svg">
                 <img class="love5" src="/images/react.png">
                 <img class="love6" src="/images/django.svg">
+            </div>
+        </div>
+        <div class="sub-container" id="sub3">
+            <h1 class="sub-title">Languages My Codes Speak</h1>
+            <div class="lang-grid">
+                <img class="lang1" src="/images/javascript.svg">
+                <img class="lang2" src="/images/python-5.svg">
+                <img class="lang3" src="/images/css-3.svg">
+                <img class="lang4" src="/images/html5.svg">
+                <img class="lang5" src="/images/C-lang.svg">
+                <img class="lang6" src="/images/c++.svg">
+            </div>
+        </div>
+        <div class="sub-container" id="sub4">
+            <h1 class="sub-title">Only Some Of My Work</h1>
+            <div class="work-grid">
+                <div class="work1">
+                    <div class="card small">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/monsoon.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Just Another Weather App</span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title">MonsoonVibe<i class="right">x</i></span>
+                            <p>
+                                This is one of my very first projects, a simple, easy to use Weather App.
+                                Nothing to fancy but aimed towards Environmental concerns including Global
+                                Warming and Deforestation.
+                                Lets Plant A Tree
+                                <br/>
+                                <a href="https://monsoonvibe.herokuapp.com/" target="_blank">Here's the link</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work2">
+                    <div class="card small">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/work2.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Some NLP Project</span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title">Text-Generator<i class="right">x</i></span>
+                            <p>
+                                Dyslexia is a specific learning disability in reading, writing and math.
+                                Kids with dyslexia have trouble spelling things right. Dyslexia is a 
+                                lifelong condition that makes it hard for people learn. It’s very common, 
+                                although it’s not clear what percentage of kids have it.
+                                <br/>
+                                Some experts say the number is between 5 and 10 percent. Others say as 
+                                many as 17 percent of people show signs of reading challenges. The reason
+                                for the wide range is that experts may define dyslexia in different ways.
+                                Kids don’t outgrow dyslexia. But there are supports, teaching approaches, 
+                                and strategies to help them manage their challenges and thrive in school 
+                                and beyond.
+                                <br/>
+                                This project is targeted to help kids suffering from dyslexia frame proper
+                                grammatical sentence by looking at the help text provided at the top. The
+                                project uses a NLP model build with love using keras and trained on a huge
+                                dataset so that it gets as close as the actual sentence that the kid wants
+                                to write helping them know the correct grammes before hand so they can
+                                frame proper sentences and learn. 
+                                <br/>
+                                <a href="https://nlp-project-frontend.now.sh" target="_blank">Here's the link</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work3">
+                    <div class="card small">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/work3.png">    
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">I Write Too...</span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title">Medium<i class="right">x</i></span>
+                            <p>
+                                I absolutely love to write small articles about
+                                almost very thing possible.
+                                <br/>
+                                Someone's got a keep himself busy right.
+                                <br/>
+                                What are you waiting for, go look what I am up to
+                                <br/> 
+                                <a href="https://medium.com/@sarthakpranesh08" target="_blank">Here's the link</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
@@ -57,13 +154,22 @@
     <script>
         const down = document.getElementById("down")
         document.getElementById("img-hover").addEventListener("mouseover", ()=>{
-            M.toast({html: "Though I don't like round things.", classes: 'rounded'});
+            M.toast({html: "Though I don't like round things."});
         })
         down.addEventListener("mouseover", ()=>{
-            M.toast({html: "Lets see how I am...", classes: 'rounded'});
+            M.toast({html: "Lets see how I am..."});
+        })
+        document.getElementById("wb").addEventListener("mouseover", ()=>{
+            M.toast({html: "Always Has Been My Passion"})
+        })
+        document.getElementById("e").addEventListener("mouseover", ()=>{
+            M.toast({html: "Lets Build A Humanoid, Shall We"})
+        })
+        document.getElementById("ml").addEventListener("mouseover", ()=>{
+            M.toast({html: "Something That Still Makes Me Wonder"})
         })
         down.addEventListener("click", ()=>{
-            window.location.hash = "#whatIDo"
+            window.location.hash = "#sub1"
         })
     </script>
 </html>

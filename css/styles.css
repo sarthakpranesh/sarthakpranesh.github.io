@@ -8,8 +8,6 @@ body {
 .main-container {
     height: 100vh;
     width: 100vw;
-    /* Remember to change the bg color to black after development */
-    background-color: brown;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -62,7 +60,6 @@ body {
     height: 100vh;
     width: 100vw;
     position: absolute;
-    top: 100vh;
     padding: 0px;
     margin: auto;
     display: flex;
@@ -70,41 +67,61 @@ body {
     z-index: 1;
 }
 
+#sub1{
+    top: 100vh;
+}
+
 .sub-title{
     color: white;
     margin: auto;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    border-bottom: 10px #00629B solid;
-    font-size: 50px;
-    line-height: 25px;
+    /* margin-top: 120px; */
+    margin-bottom: 40px;
+    border-bottom: 30px #00629B solid;
+    font-size: 80px;
+    line-height: 30px;
 }
 
 .what1 {
     grid-area: w;
     color: #ed5565;
+    font-size: 40px;
 }
 
 .what2 {
     grid-area: ml;
     color: #1ab394;
+    font-size: 40px;
 }
 
 .what3 {
     grid-area: e;
     color: #f8ac59;
+    font-size: 40px;
 }
 
 .whatIDo-grid{
+    margin: auto;
+    margin-top: 40px;
     display: grid;
     grid-template-areas: 
     'w ml e';
     grid-gap: 20px;
-    padding: 10px;
     font-size: 30px;
     font-weight: 200;
     text-align: center;
     justify-content: center;
+}
+
+.what-hover {
+    transition-duration: 1s;
+}
+
+.what-hover:hover {
+    font-size: 50px;
+}
+
+#sub2 {
+    top: 200vh;
 }
 
 .love1 {
@@ -138,14 +155,125 @@ body {
 }
 
 .love-grid {
+    margin: auto;
+    margin-top: 40px;
     display: grid;
     grid-template-areas: 
     'js mongo nodejs'
     'react django fire';
     grid-gap: 80px 100px;
-    padding: 10px;
     font-size: 30px;
     font-weight: 200;
     text-align: center;
     justify-content: center;
+}
+
+
+#sub3 {
+    top: 300vh;
+}
+
+.lang1 {
+    grid-area: jsLang;
+    width: 150px;
+}
+
+.lang2 {
+    grid-area: python;
+    width: 150px;
+}
+
+.lang3 {
+    grid-area: css;
+    width: 150px;
+}
+
+.lang4 {
+    grid-area: html;
+    width: 150px;
+}
+
+.lang5 {
+    grid-area: c;
+    width: 180px;
+}
+
+.lang6 {
+    grid-area: cpp;
+    width: 150px;
+}
+
+.lang-grid {
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-areas: 
+    'jsLang python cpp'
+    'c html css';
+    grid-gap: 80px 100px;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#sub4 {
+    top: 400vh;
+}
+
+.work1 {
+    grid-area: wOne;
+    width: 350px;
+}
+
+.work2 {
+    grid-area: wTwo;
+    width: 350px;
+}
+
+.work3 {
+    grid-area: wThree;
+    width: 350px;
+}
+
+.work-grid {
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-areas: 
+    "wOne wTwo wThree";
+    grid-gap: 80px 50px;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: black;
+    margin: 0px !important;
+    height: auto;
+}
+
+.card-content {
+    padding: 10px !important;
+    height: auto;
+}
+
+.card-title {
+    color: white !important;
+    text-align: start;
+    font-size: 36px !important;
+    justify-content: start;
+}
+
+.card-reveal {
+    background-color: #00629B !important;
+    padding: 5px;
+}
+
+.card-reveal p {
+    margin: 0px !important;
+    font-size: 18px;
 }
