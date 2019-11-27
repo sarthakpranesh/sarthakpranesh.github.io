@@ -3,24 +3,30 @@ body {
     font-weight: 100;
     background-color: black;
     color: white;
+
+    scroll-snap-type: y proximity;
+    scroll-snap-points-y: repeat(100vh);
+    overflow-y: scroll;
 }
 
-.main-container {
+.container {
+    scroll-snap-align: start;
     height: 100vh;
     width: 100vw;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    position: relative;
     padding: 0px;
-    margin: 0px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     z-index: 1;
 }
 
-.main-container canvas{
+.canvas{
     height: 100vh;
-    width: 100vw;
+    width: 100vw;   
+    position: fixed;
+    top: 0px;
+    z-index: -1;
 }
 
 #img-hover{
@@ -56,20 +62,7 @@ body {
     margin-bottom: 20px;
 }
 
-.sub-container {
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    padding: 0px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
-}
 
-#sub1{
-    top: 100vh;
-}
 
 .sub-title{
     color: white;
@@ -120,10 +113,6 @@ body {
     font-size: 50px;
 }
 
-#sub2 {
-    top: 200vh;
-}
-
 .love1 {
     grid-area: js;
     width: 150px;
@@ -166,11 +155,6 @@ body {
     font-weight: 200;
     text-align: center;
     justify-content: center;
-}
-
-
-#sub3 {
-    top: 300vh;
 }
 
 .lang1 {
@@ -217,11 +201,6 @@ body {
     justify-content: center;
 }
 
-
-#sub4 {
-    top: 400vh;
-}
-
 .work1 {
     grid-area: wOne;
     width: 350px;
@@ -242,7 +221,7 @@ body {
     margin-top: 40px;
     display: grid;
     grid-template-areas: 
-    "wOne wTwo wThree";
+    "wTwo wOne wThree";
     grid-gap: 80px 50px;
     font-size: 30px;
     font-weight: 200;
@@ -276,4 +255,42 @@ body {
 .card-reveal p {
     margin: 0px !important;
     font-size: 18px;
+}
+
+.con1 {
+    grid-area: link;
+}
+
+.con2 {
+    grid-area: med;
+}
+
+.con3 {
+    grid-area: insta;
+}
+
+.con4 {
+    grid-area: face;
+}
+
+.con-image {
+    width: 100px;
+    transition-duration: 1s;
+}
+
+.con-image:hover {
+    width: 110px;
+}
+
+.connect-grid {
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-areas: 
+    "link med insta face";
+    grid-gap: 80px 50px;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+    justify-content: center;
 }
