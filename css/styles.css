@@ -504,12 +504,6 @@ body {
     .connect-grid {
         margin: auto;
         margin-top: 20px;
-        display: grid;
-        grid-template-areas: 
-        "link"
-        "med"
-        "insta"
-        "face";
         grid-gap: 10px 20px;
     }
 }
