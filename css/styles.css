@@ -496,13 +496,10 @@ body {
     }
     
     .con-image {
-        width: 80px;
-        transition-duration: 1s;
+        width: 50px;
+        transition-duration: none;
     }
-    
-    .con-image:hover {
-        width: 80px;
-    }
+
     
     .connect-grid {
         margin: auto;
@@ -513,6 +510,6 @@ body {
         "med"
         "insta"
         "face";
-        grid-gap: 20px 20px;
+        grid-gap: 10px 20px;
     }
 }
