@@ -159,24 +159,31 @@
     </script>
     <script src="/js/materialize.js"></script>
     <script>
-        const down = document.getElementById("down")
-        document.getElementById("img-hover").addEventListener("mouseover", ()=>{
-            M.toast({html: "Though I don't like round things."});
-        })
-        down.addEventListener("mouseover", ()=>{
-            M.toast({html: "Lets see how I am..."});
-        })
-        document.getElementById("wb").addEventListener("mouseover", ()=>{
-            M.toast({html: "Always Has Been My Passion"})
-        })
-        document.getElementById("e").addEventListener("mouseover", ()=>{
-            M.toast({html: "Lets Build A Humanoid, Shall We"})
-        })
-        document.getElementById("ml").addEventListener("mouseover", ()=>{
-            M.toast({html: "Something That Still Makes Me Wonder"})
-        })
-        down.addEventListener("click", ()=>{
-            window.location.hash = "#whatIDo"
-        })
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+            alert("Best View On Laptops")
+            down.addEventListener("click", ()=>{
+                window.location.hash = "#whatIDo"
+            })
+        } else {
+            const down = document.getElementById("down")
+            document.getElementById("img-hover").addEventListener("mouseover", ()=>{
+                M.toast({html: "Though I don't like round things."});
+            })
+            down.addEventListener("mouseover", ()=>{
+                M.toast({html: "Lets see how I am..."});
+            })
+            document.getElementById("wb").addEventListener("mouseover", ()=>{
+                M.toast({html: "Always Has Been My Passion"})
+            })
+            document.getElementById("e").addEventListener("mouseover", ()=>{
+                M.toast({html: "Lets Build A Humanoid, Shall We"})
+            })
+            document.getElementById("ml").addEventListener("mouseover", ()=>{
+                M.toast({html: "Something That Still Makes Me Wonder"})
+            })
+            down.addEventListener("click", ()=>{
+                window.location.hash = "#whatIDo"
+            })
+        }
     </script>
 </html>
