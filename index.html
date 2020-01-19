@@ -25,10 +25,10 @@
         </div>
 
         <div class="container main-container" id="mainBirds">
-            <img src="/images/me.JPG" id="img-hover">
             <h1>Sarthak Pranesh</h1>
-            <img src="/images/goDown.png" class="goDown" id="down">
         </div>
+        <img src="/images/down.svg" class="goDown" id="down">
+
         <div class="container" id="whatIDo">
             <h1 class="sub-title">What I Do</h1>
             <div class="whatIDo-grid">
@@ -37,6 +37,7 @@
                 <spam class="what3 what-hover" id="ml">Machine Learning</spam>
             </div>
         </div>
+
         <div class="container">
             <h1 class="sub-title">I Love to Use...</h1>
             <div class="love-grid">
@@ -53,6 +54,7 @@
                 <img class="love11" src="/images/c++.svg">
             </div>
         </div>
+
         <div class="container">
             <h1 class="sub-title">My Work</h1> 
             <div class="work-grid">
@@ -137,6 +139,7 @@
                 </div>
             </div>
         </div>
+
         <div class="container">
             <h1 class="sub-title">Let's Talk</h1>
             <div class="connect-grid">
@@ -166,9 +169,6 @@
             })
         } else {
             const down = document.getElementById("down")
-            document.getElementById("img-hover").addEventListener("mouseover", ()=>{
-                M.toast({html: "Though I don't like round things."});
-            })
             down.addEventListener("mouseover", ()=>{
                 M.toast({html: "Lets see how I am..."});
             })
