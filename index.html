@@ -67,7 +67,7 @@
                             every year by IEEE VIT Vellore. 
                             Participants have to solve a series of 
                             mind boggling questions to win cash prizes!
-                            The 6th edition of Enigma shaw me work in the backend
+                            The 6th edition of Enigma saw me work in the backend
                             team for the development of micro service architecture
                             for hosting the event.
                             The architecture consisted of 3 micro services maintaining
@@ -147,28 +147,21 @@
     </script>
     <script src="/js/materialize.js"></script>
     <script>
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-            alert("Best View On Laptops")
-            down.addEventListener("click", ()=>{
-                window.location.hash = "#whatIDo"
-            })
-        } else {
-            const down = document.getElementById("down")
-            down.addEventListener("mouseover", ()=>{
-                M.toast({html: "Lets see how I am..."});
-            })
-            document.getElementById("wb").addEventListener("mouseover", ()=>{
-                M.toast({html: "Always Has Been My Passion"})
-            })
-            document.getElementById("e").addEventListener("mouseover", ()=>{
-                M.toast({html: "Lets Build A Humanoid, Shall We"})
-            })
-            document.getElementById("ml").addEventListener("mouseover", ()=>{
-                M.toast({html: "Something That Still Makes Me Wonder"})
-            })
-            down.addEventListener("click", ()=>{
-                window.location.hash = "#whatIDo"
-            })
-        }
+        const down = document.getElementById("down")
+        down.addEventListener("mouseover", ()=>{
+            M.toast({html: "Lets see how I am..."});
+        })
+        document.getElementById("wb").addEventListener("mouseover", ()=>{
+            M.toast({html: "Always Has Been My Passion"})
+        })
+        document.getElementById("e").addEventListener("mouseover", ()=>{
+            M.toast({html: "Lets Build A Humanoid, Shall We"})
+        })
+        document.getElementById("ml").addEventListener("mouseover", ()=>{
+            M.toast({html: "Something That Still Makes Me Wonder"})
+        })
+        down.addEventListener("click", ()=>{
+            window.location.hash = "#whatIDo"
+        })
     </script>
 </html>
