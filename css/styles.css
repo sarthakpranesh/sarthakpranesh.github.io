@@ -1,7 +1,8 @@
 html {
-    overflow: scroll;
     overflow-x: hidden;
-    scrollbar-width: none;
+
+    scrollbar-color: #00629b transparent;
+    scrollbar-track-color: transparent;
 }
 
 body {
@@ -16,6 +17,9 @@ body {
 
     display: flex;
     flex-direction: column;
+
+    overflow-x: hidden;
+    scrollbar-width: none;
 }
 
 .container {
@@ -64,6 +68,7 @@ body {
     align-self: center;
     margin-bottom: 60px;
     animation: downer 1s infinite;
+    transition-timing-function: ease-in-out;
 }
 
 @keyframes downer {
@@ -100,12 +105,18 @@ body {
     font-size: 40px;
 }
 
+.what4 {
+    grid-area: a;
+    color: #5cccec;
+    font-size: 40px;
+}
+
 .whatIDo-grid{
     margin: auto;
     margin-top: 40px;
     display: grid;
     grid-template-areas: 
-    'w ml e';
+    'w ml e a';
     grid-gap: 20px;
     font-size: 30px;
     font-weight: 200;
@@ -117,8 +128,8 @@ body {
     transition-duration: 1s;
 }
 
-.what-hover:hover {
-    font-size: 50px;
+.love-align {
+    margin: auto;
 }
 
 .love1 {
@@ -176,75 +187,25 @@ body {
     width: 100px;
 }
 
+.love12 {
+    grid-area: go;
+    width: 100px;
+}
+
 .love-grid {
     margin: auto;
     margin-top: 40px;
     display: grid;
     grid-template-areas: 
     'js mongo nodejs fire'
-    'react django python css'
+    'react django python go'
     'cpp c html css';
     grid-gap: 40px 80px;
     font-size: 30px;
     font-weight: 200;
     text-align: center;
     justify-content: center;
-}
-
-.work1 {
-    grid-area: wOne;
-    width: 350px;
-}
-
-.work2 {
-    grid-area: wTwo;
-    width: 350px;
-}
-
-.work3 {
-    grid-area: wThree;
-    width: 350px;
-}
-
-.work-grid {
-    margin: auto;
-    margin-top: 40px;
-    display: grid;
-    grid-template-areas: 
-    "wTwo wOne wThree";
-    grid-gap: 80px 50px;
-    font-size: 30px;
-    font-weight: 200;
-    text-align: center;
-    justify-content: center;
-}
-
-.card {
-    background-color: black;
-    margin: 0px !important;
-    height: auto;
-}
-
-.card-content {
-    padding: 10px !important;
-    height: auto;
-}
-
-.card-title {
-    color: white !important;
-    text-align: start;
-    font-size: 36px !important;
-    justify-content: start;
-}
-
-.card-reveal {
-    background-color: #00629B !important;
-    padding: 5px;
-}
-
-.card-reveal p {
-    margin: 0px !important;
-    font-size: 18px;
+    align-items: center;
 }
 
 /* making custom card */
@@ -254,13 +215,23 @@ body {
     position: relative;
     max-width: 90vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: repeat(6, calc(30% - 40px));
+    grid-template-rows: minmax(150px, 1fr);
     grid-gap: 0 40px;
+
+    overflow-x: scroll;
+}
+
+.my-work .box > * {
+    grid-column: 2 / -2;
+  }
+  
+.my-work .box > .full {
+    grid-column: 1 / -1;
 }
 
 .my-work .box {
-    margin: 0;
+    margin: 10px;
     padding: 0;
     position: relative;
     min-height: 400px;
@@ -283,7 +254,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-size: 12rem;
-    color: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.1);
     transition: 0.5s;
     z-index: 10;
 }
@@ -366,10 +337,6 @@ body {
     transition-duration: 1s;
 }
 
-.con-image:hover {
-    width: 110px;
-}
-
 .connect-grid {
     margin: auto;
     margin-top: 40px;
@@ -426,16 +393,21 @@ body {
         font-size: 30px;
     }
 
+    .what4 {
+        font-size: 30px;
+    }
+
     .whatIDo-grid{
         grid-template-areas: 
         'w'
         'e'
-        'ml';
+        'ml'
+        'a';
     }
 
     .love1 {
         grid-area: js;
-        width: 60px;
+        width: 40px;
     }
     
     .love2 {
@@ -445,12 +417,12 @@ body {
     
     .love3 {
         grid-area: nodejs;
-        width: 60px;
+        width: 40px;
     }
     
     .love4 {
         grid-area: fire;
-        width: 60px;
+        width: 40px;
     }
     
     .love5 {
@@ -460,32 +432,37 @@ body {
     
     .love6 {
         grid-area: django;
-        width: 80px;
+        width: 60px;
     }
     
     .love7 {
         grid-area: python;
-        width: 60px;
+        width: 40px;
     }
     
     .love8 {
         grid-area: css;
-        width: 60px;
+        width: 40px;
     }
     
     .love9 {
         grid-area: html;
-        width: 60px;
+        width: 40px;
     }
     
     .love10{
         grid-area: c;
-        width: 60px;
+        width: 40px;
     }
     
     .love11 {
         grid-area: cpp;
-        width: 60px;
+        width: 40px;
+    }
+
+    .love12 {
+        grid-area: go;
+        width: 40px;
     }
     
     .love-grid {
@@ -493,65 +470,15 @@ body {
         grid-gap: 10px 20px;
     }
 
-    .work1 {
-        grid-area: wOne;
-        width: 200px;
-    }
-    
-    .work2 {
-        grid-area: wTwo;
-        width: 200px;
-    }
-    
-    .work3 {
-        grid-area: wThree;
-        width: 200px;
-    }
-    
-    .work-grid {
-        margin: auto;
-        margin-top: 20px;
-        display: grid;
-        grid-template-areas: 
-        "wTwo"
-        "wOne"
-        "wThree";
-        grid-gap: 10px 20px;
-    }
-
-    .card {
-        background-color: black;
-        margin: 0px !important;
-        height: auto;
-    }
-    
-    .card-content {
-        padding: 2px !important;
-        height: auto;
-    }
-    
-    .card-title {
-        color: white !important;
-        text-align: start;
-        font-size: 16px !important;
-        justify-content: start;
-    }
-    
-    .card-reveal {
-        background-color: #00629B !important;
-        padding: 5px;
-    }
-    
-    .card-reveal p {
-        margin: 0px !important;
-        font-size: 18px;
-    }
-
     /* making custom card */
     .my-work {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         width: 94vw;
         grid-gap: 40px;
+    }
+
+    .my-work .box {
+        margin: auto;
     }
 
     .boxContent h2 {

@@ -13,16 +13,12 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="/css/materialize.css">
-        <script src="/js/three.js"></script>    
-        <script src="/js/vanta.birds.min.js"></script>
+        <script src="/js/three.js"></script>
         <link rel="stylesheet" type="text/css" href="/css/styles.css">
     </head>
 
     <!-- Body section -->
-    <body>  
-
-        <div class="canvas">
-        </div>
+    <body>
 
         <div class="container main-container" id="mainBirds">
             <h1>Sarthak Pranesh</h1>
@@ -35,23 +31,25 @@
                 <span class="what1 what-hover" id="wb">Web Development</span>
                 <span class="what2 what-hover" id="e">Electronics</span>
                 <spam class="what3 what-hover" id="ml">Machine Learning</spam>
+                <span class="what4 what-hover" id="a">App Dev</span>
             </div>
         </div>
 
         <div class="container">
             <h1 class="sub-title">I Love to Use...</h1>
             <div class="love-grid">
-                <img class="love1" src="/images/javascript.svg">
-                <img class="love2" src="/images/mongodb.svg">
-                <img class="love3" src="/images/nodejs.svg">
-                <img class="love4" src="/images/firebase.svg">
-                <img class="love5" src="/images/react.png">
-                <img class="love6" src="/images/django.svg">
-                <img class="love7" src="/images/python-5.svg">
-                <img class="love8" src="/images/css-3.svg">
-                <img class="love9" src="/images/html5.svg">
-                <img class="love10" src="/images/C-lang.svg">
-                <img class="love11" src="/images/c++.svg">
+                <img class="love1 love-align" src="/images/javascript.svg">
+                <img class="love2 love-align" src="/images/mongodb.svg">
+                <img class="love3 love-align" src="/images/nodejs.svg">
+                <img class="love4 love-align" src="/images/firebase.svg">
+                <img class="love5 love-align" src="/images/react.png">
+                <img class="love6 love-align" src="/images/django.svg">
+                <img class="love7 love-align" src="/images/python-5.svg">
+                <img class="love8 love-align" src="/images/css-3.svg">
+                <img class="love9 love-align" src="/images/html5.svg">
+                <img class="love10 love-align" src="/images/C-lang.svg">
+                <img class="love11 love-align" src="/images/c++.svg">
+                <img class="love12 love-align" src="/images/go.png">
             </div>
         </div>
 
@@ -80,6 +78,40 @@
                 <div class="box">
                     <div class="boxContent">
                         <h2>02</h2>
+                        <h3>Flappy Bird</h3>
+                        <p>
+                            A simple, clean and classic Flappy Bird app
+                            made with React-Native cross platform framework.
+                            It utilizes the popular react-native-game-engine
+                            and also uses the well known js library call Matter JS.
+                            <br/>
+                            Go check it out ;)
+                        </p>
+                        <a href="https://github.com/sarthakpranesh/flappyBird" target="_blank">Open Project</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxContent">
+                        <h2>03</h2>
+                        <h3>Covid19</h3>
+                        <p>
+                            The year of 2020 marked a devastating breakout
+                            of a killer virus called Corona. The Covid-19 
+                            variant of this virus recked havoc in the globe
+                            forcing countries to go under full lockdown.
+                            <br/>
+                            This app lets people see the latest trends related 
+                            to this virus outbreak and also provides necessary 
+                            contact information of the emergency helpline numbers.
+                            <br/>
+                            The project needs your valuable support
+                        </p>
+                        <a href="https://github.com/sarthakpranesh/Covid19-ReactNative" target="_blank">Open Project</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxContent">
+                        <h2>04</h2>
                         <h3>MonsoonVibe</h3>
                         <p>
                             This is one of my very first projects, a simple, easy to use Weather App.
@@ -94,7 +126,7 @@
                 </div>
                 <div class="box">
                     <div class="boxContent">
-                        <h2>03</h2>
+                        <h2>05</h2>
                         <h3>Text-Generator</h3>
                         <p>
                             This project is targeted to help kids suffering from dyslexia frame proper
@@ -109,7 +141,7 @@
                 </div>
                 <div class="box">
                     <div class="boxContent">
-                        <h2>04</h2>
+                        <h2>06</h2>
                         <h3>My Medium Blog</h3>
                         <p>
                             I believe that we should all give the knowledge we get 
@@ -135,16 +167,6 @@
             </div>
         </div>
     </body>
-    <script>
-        VANTA.BIRDS({
-            el: ".canvas",
-            backgroundColor: 0x0,
-            color1: 0x0,
-            wingSpan: 40.00,
-            separation: 40.00,
-            quantity: 4.00
-        })
-    </script>
     <script src="/js/materialize.js"></script>
     <script>
         const down = document.getElementById("down")
@@ -160,8 +182,26 @@
         document.getElementById("ml").addEventListener("mouseover", ()=>{
             M.toast({html: "Something That Still Makes Me Wonder"})
         })
+        document.getElementById("a").addEventListener("mouseover", ()=>{
+            M.toast({html: "React-Native all the way"})
+        })
         down.addEventListener("click", ()=>{
             window.location.hash = "#whatIDo"
+        })
+
+        const winSize = window.innerHeight;
+        var opa = 1;
+        window.addEventListener("scroll", ()=>{
+            if (window.scrollY>=winSize/3 && opa > 0) {
+                down.style.opacity = opa;
+                opa -= 0.05
+            }
+        })
+        window.addEventListener("scroll", ()=>{
+            if (window.scrollY<=winSize/3 && opa < 1) {
+                down.style.opacity = opa;
+                opa += 0.05
+            }
         })
     </script>
 </html>
