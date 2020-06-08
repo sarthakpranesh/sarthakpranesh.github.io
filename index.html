@@ -199,9 +199,9 @@
         const rotateRight = document.getElementById("rotateRight");
         window.addEventListener("scroll", () => {
             console.log("scrolling baby")
-            rotateLeft.style.transform = `rotate(-${(window.scrollY / winSize) * 90}deg)`;
+            rotateLeft.style.transform = `rotate(-${(window.scrollY / winSize) * 90}deg) translateX(-${(window.scrollY / winSize) * 90}%)`;
 
-            rotateRight.style.transform = `rotate(${(window.scrollY / winSize) * 90}deg)`;
+            rotateRight.style.transform = `rotate(${(window.scrollY / winSize) * 90}deg) translateX(${(window.scrollY / winSize) * 90}%)`;
         });
     </script>
 </html>

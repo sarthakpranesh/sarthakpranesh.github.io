@@ -62,7 +62,7 @@ body {
 }
 
 #rotateLeft {
-    transform: rotate(0deg);
+    transform: rotate(0deg) translateX(0px);
     transform-origin: 0%;
     margin-right: 20px;
 }
@@ -375,6 +375,15 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+
+    #rotateLeft {
+        margin-right: 5px;
+    }
+    
+    #rotateRight{
+        margin-left: 5px;
+    }
+
     #img-hover{
         width: 120px;
         height: 120px;
