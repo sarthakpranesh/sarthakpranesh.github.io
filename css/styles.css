@@ -3,6 +3,8 @@ html {
 
     scrollbar-color: #00629b transparent;
     scrollbar-track-color: transparent;
+    scroll-behavior: smooth;
+    cursor: default;
 }
 
 body {
@@ -52,6 +54,23 @@ body {
     margin: auto;
     justify-self: center;
     align-self: center;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#rotateLeft {
+    transform: rotate(0deg);
+    transform-origin: 0%;
+    margin-right: 20px;
+}
+
+#rotateRight{
+    transform: rotate(0deg);
+    transform-origin: 100%;
+    margin-left: 20px;
 }
 
 .goDown {
@@ -68,7 +87,12 @@ body {
     align-self: center;
     margin-bottom: 60px;
     animation: downer 1s infinite;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+}
+
+.goDown:hover {
+    background-color: #00629B;
+    cursor: pointer;
 }
 
 @keyframes downer {

@@ -27,7 +27,7 @@
     <body>
 
         <div class="container main-container" id="mainBirds">
-            <h1>Sarthak Pranesh</h1>
+            <h1><div id="rotateLeft">Sarthak</div> <div id="rotateRight">Pranesh</div></h1>
         </div>
         <img src="/images/down.svg" class="goDown" id="down">
 
@@ -176,21 +176,6 @@
     <script src="/js/materialize.js"></script>
     <script>
         const down = document.getElementById("down")
-        down.addEventListener("mouseover", ()=>{
-            M.toast({html: "Lets see how I am..."});
-        })
-        document.getElementById("wb").addEventListener("mouseover", ()=>{
-            M.toast({html: "Always Has Been My Passion"})
-        })
-        document.getElementById("e").addEventListener("mouseover", ()=>{
-            M.toast({html: "Lets Build A Humanoid, Shall We"})
-        })
-        document.getElementById("ml").addEventListener("mouseover", ()=>{
-            M.toast({html: "Something That Still Makes Me Wonder"})
-        })
-        document.getElementById("a").addEventListener("mouseover", ()=>{
-            M.toast({html: "React-Native all the way"})
-        })
         down.addEventListener("click", ()=>{
             window.location.hash = "#whatIDo"
         })
@@ -200,14 +185,23 @@
         window.addEventListener("scroll", ()=>{
             if (window.scrollY>=winSize/3 && opa > 0) {
                 down.style.opacity = opa;
-                opa -= 0.05
+                opa -= 0.1
             }
         })
         window.addEventListener("scroll", ()=>{
             if (window.scrollY<=winSize/3 && opa < 1) {
                 down.style.opacity = opa;
-                opa += 0.05
+                opa += 0.1
             }
         })
+
+        const rotateLeft = document.getElementById("rotateLeft");
+        const rotateRight = document.getElementById("rotateRight");
+        window.addEventListener("scroll", () => {
+            console.log("scrolling baby")
+            rotateLeft.style.transform = `rotate(-${(window.scrollY / winSize) * 90}deg)`;
+
+            rotateRight.style.transform = `rotate(${(window.scrollY / winSize) * 90}deg)`;
+        });
     </script>
 </html>
