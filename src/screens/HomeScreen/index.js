@@ -116,7 +116,7 @@ class HomeScreen extends Component {
                 </div>
 
                 <div className="subContainer wrappedContainer">
-                    <Alert inset color='black' type='success' dense >
+                    <Alert color='black' type='success' dense >
                         <h2>About Me</h2>
                     </Alert>
                     <h3 className="aboutMeBody">
@@ -131,7 +131,7 @@ class HomeScreen extends Component {
                 </div>
 
                 <div className="subContainer wrappedContainer">
-                    <Alert inset color='black' type='success' dense >
+                    <Alert color='black' type='success' dense >
                         <h2>What I Love To Do</h2>
                     </Alert>
                     <div className="whatIDoChipContainer">
@@ -148,7 +148,7 @@ class HomeScreen extends Component {
                 </div>
 
                 <div className="subContainer wrappedContainer projectContainer">
-                    <Alert className="projectTitle" inset color='black' type='success' dense >
+                    <Alert className="projectTitle" color='black' type='success' dense >
                         <h2>My Loved Projects</h2>
                     </Alert>
                     <Carousel
@@ -183,7 +183,7 @@ class HomeScreen extends Component {
                 </div>
             
                 <div className="subContainer wrappedContainer">
-                    <Alert inset color='black' type='success' dense >
+                    <Alert color='black' type='success' dense >
                         <h2>Let's Talk</h2>
                     </Alert>
                     <h3 className="aboutMeBody">
