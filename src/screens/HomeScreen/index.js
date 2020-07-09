@@ -11,6 +11,8 @@ import {
     CardAction,
     Body2,
     CardContent,
+    CardMedia,
+    Button,
 } from 'ui-neumorphism';
 
 // importing components
@@ -119,13 +121,13 @@ class HomeScreen extends Component {
                 title: "Planting",
             }
         ]
-    }
 
-    componentDidMount() {
-        console.log('Mounted');
+        this.blogs = this.props.data.liteBlogs;
     }
 
     render () {
+        const blogs = this.blogs;
+
         return (
             <div className="mainContainer">
                 <div className="subContainer homeLandingSection">
@@ -156,9 +158,9 @@ class HomeScreen extends Component {
                     </Alert>
                     <div className="whatIDoChipContainer">
                         {
-                            this.whatILove.map((d) => {
+                            this.whatILove.map((d, index) => {
                                 return (
-                                    <Chip label color={d.color} className="whatILoveChips">
+                                    <Chip key={index} label color={d.color} className="whatILoveChips">
                                         <H6 style={{color: d.color}}>{d.title}</H6>
                                     </Chip>
                                 );
@@ -169,6 +171,47 @@ class HomeScreen extends Component {
 
                 <div className="subContainer wrappedContainer projectContainer">
                     <Alert className="projectTitle" color='black' type='success' dense >
+                        <h2>Technical Blogs</h2>
+                    </Alert>
+                    <Carousel
+                        height={540}
+                        showArrowsOnHover
+                        cycle
+                        interval={10000}
+                        className="projectCar">
+                            {
+                                blogs.map((d, index) => {
+                                    return (
+                                        <CarouselItem key={index} className="projectCI">
+                                            <Card className="projectCard">
+                                                <CardHeader
+                                                    title={<H6>{d.title}</H6>}
+                                                />
+                                                <CardMedia dark src={d.thumbnail} />
+                                                <CardContent>
+                                                    {
+                                                        d.categories.map((category, index) => {
+                                                            return (
+                                                                <Chip key={index} label className="whatILoveChips">
+                                                                    <h3>{category}</h3>
+                                                                </Chip>
+                                                            );
+                                                        })
+                                                    }
+                                                </CardContent>
+                                                <CardAction className="cardActions">
+                                                    <Button onClick={() => this.props.openBlogScreen(index)}>Read Blog</Button>
+                                                </CardAction>
+                                            </Card>
+                                        </CarouselItem>
+                                    );
+                                })
+                            }
+                    </Carousel>
+                </div>
+                
+                <div className="subContainer wrappedContainer projectContainer">
+                    <Alert className="projectTitle" color='black' type='success' dense >
                         <h2>My Loved Projects</h2>
                     </Alert>
                     <Carousel
@@ -177,9 +220,9 @@ class HomeScreen extends Component {
                         interval={10000}
                         className="projectCar">
                             {
-                                myProjects.map((d) => {
+                                myProjects.map((d, index) => {
                                     return (
-                                        <CarouselItem className="projectCI">
+                                        <CarouselItem  key={index} className="projectCI">
                                             <Card className="projectCard">
                                                 <CardHeader
                                                     title={<H6>{d.title}</H6>}

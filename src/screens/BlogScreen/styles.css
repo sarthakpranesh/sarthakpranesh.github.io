@@ -1,0 +1,100 @@
+.backArrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 4;
+}
+
+.blogContainer {
+    overflow: hidden;
+    z-index: 0;
+}
+
+.blogContent {
+    z-index: 2;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+    word-wrap: break-word;
+    word-break: keep-all;
+    text-align: left;
+    width: 98vw;
+}
+
+.blogContent figure {
+    margin: 40px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogContent figure img {
+    width: 98vw;
+}
+
+
+.blogContent figure figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 10px 2px 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.blogContent h3 {
+    margin: 40px 10px 0px 10px;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.blogContent h4 {
+    margin: 40px 10px 0px 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.blogContent p {
+    margin: 20px 10px 26px 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.blogContent a {
+    margin: 10px;
+    text-decoration: underline;
+    color: black;
+}
+
+.blogContent blockquote {
+    margin: 20px 10px 20px 10px;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 600;
+    color: rgb(0, 0, 0, 0.4);
+}
+
+.blogContent blockquote a {
+    margin: 10px;
+    text-decoration: underline;
+    color: rgb(0, 0, 0, 0.4);
+}
+
+.blogContent ul, .blogContent ol {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 20px 40px;
+}
+
+@media only screen and (min-width: 600px) {
+    .blogContent {
+        width: 600px;
+    }
+
+    .blogContent figure img {
+        width: 600px;
+    }
+}
