@@ -15,6 +15,7 @@ class BlogScreen extends Component {
 
     componentDidMount(){
         document.getElementById('blog-content').innerHTML = this.blog.content;
+        window.scroll(0,0);
     }
 
     render() {
@@ -30,9 +31,7 @@ class BlogScreen extends Component {
                     >
                     <ArrowLeft size={24} />
                 </IconButton>
-                <div className="subContainer blogContainer">
-                    <div className="blogContent" id="blog-content">
-                    </div>
+                <div className="blogContent" id="blog-content">
                 </div>
             </div>
         );

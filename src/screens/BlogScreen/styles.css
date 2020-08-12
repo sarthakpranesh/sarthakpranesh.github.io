@@ -1,13 +1,8 @@
 .backArrow {
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 20px;
     z-index: 4;
-}
-
-.blogContainer {
-    overflow: hidden;
-    z-index: 0;
 }
 
 .blogContent {
@@ -23,7 +18,7 @@
 }
 
 .blogContent figure {
-    margin: 40px 0px 0px 0px;
+    margin: 60px 0px 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
