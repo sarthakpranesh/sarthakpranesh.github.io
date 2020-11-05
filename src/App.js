@@ -1,11 +1,16 @@
 import React, {Component} from 'react';
-import {ProgressCircular} from 'ui-neumorphism';
 import './Styles.css';
 import 'ui-neumorphism/dist/index.css'
 
+// importing configs
+import {firebaseAuth} from './config/firebase';
+
+// importing utils
+import fetchBlogsMedium from './utils/fetchBlogsMedium';
+
 //  importing all screens
-import HomeScreen from './screens/HomeScreen/index.js';
-import BlogScreen from './screens/BlogScreen/index.js';
+import HomeScreen from './screens/HomeScreen/index';
+import BlogScreen from './screens/BlogScreen/index';
 
 class App extends Component {
   constructor(props) {
@@ -17,33 +22,36 @@ class App extends Component {
       loading: true,
       liteBlogs: [],
       blogs: [],
+      user: null,
     }
   }
 
   componentDidMount() {
-    fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@sarthakpranesh08')
-      .then((d) => d.json())
-      .then((data) => {
-          const liteBlogs = data.items.map((blog) => {
-            return {title: blog.title, thumbnail: blog.thumbnail, categories: blog.categories};
-          })
-          this.setState({
-            blogs: data.items,
-            liteBlogs,
-            loading: false,
-          })
-      })
-      .catch((err) => {
+    // Sign in User anonymously
+    if (this.state.user === null) {
+      firebaseAuth.signInAnonymously()
+        .then((user) => {
+          this.setUser(user);
+        })
+        .catch((err) => {
           console.log(err);
-          this.setState({
-            loading: false,
-          })
-      })
+        })
+    }
+
+    fetchBlogsMedium()
+      .then((resp) => this.setState(resp))
+      .catch((errResp) => this.setState(errResp))
   }
 
   openBlogScreen = (index) => {
     const {blogs} = this.state;
     this.setScreen("Blog", {blog: blogs[index]});
+  }
+
+  setUser =  (user) => {
+    this.setState({
+      user,
+    });
   }
 
   setScreen = (screen, data = {}) => {
@@ -55,20 +63,14 @@ class App extends Component {
 
   render() {
     const {screen, data, liteBlogs, loading} = this.state;
-    if (loading) {
-      return (
-        <div className="mainContainer" style={{height: '100vh'}}>
-          <ProgressCircular indeterminate color='var(--primary)' />
-        </div>
-      );
-    }
+
     switch (screen) {
       case "Home": 
-        return <HomeScreen openBlogScreen={this.openBlogScreen} setScreen={this.setScreen} data={{liteBlogs, ...data}} />;
+        return <HomeScreen isLoading={loading} openBlogScreen={this.openBlogScreen} setScreen={this.setScreen} data={{liteBlogs, ...data}} />
       case "Blog":
-        return <BlogScreen setScreen={this.setScreen} data={data} />;
+        return <BlogScreen isLoading={loading} setScreen={this.setScreen} data={data} />
       default:
-        return <HomeScreen />;
+        return <HomeScreen isLoading={loading} openBlogScreen={this.openBlogScreen} setScreen={this.setScreen} data={{liteBlogs, ...data}} />
     }
   }
 }

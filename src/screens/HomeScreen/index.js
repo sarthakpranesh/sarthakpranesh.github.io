@@ -13,6 +13,7 @@ import {
     CardContent,
     CardMedia,
     Button,
+    ProgressCircular,
 } from 'ui-neumorphism';
 
 // importing components
@@ -120,13 +121,11 @@ class HomeScreen extends Component {
                 color: "green",
                 title: "Planting",
             }
-        ]
-
-        this.blogs = this.props.data.liteBlogs;
+        ];
     }
 
     render () {
-        const blogs = this.blogs;
+        const blogs = this.props.data.liteBlogs;
 
         return (
             <div className="mainContainer">
@@ -174,39 +173,46 @@ class HomeScreen extends Component {
                         <h2>Technical Blogs</h2>
                     </Alert>
                     <Carousel
-                        height={540}
-                        showArrowsOnHover
-                        cycle
-                        interval={10000}
-                        className="projectCar">
-                            {
-                                blogs.map((d, index) => {
-                                    return (
-                                        <CarouselItem key={index} className="projectCI">
-                                            <Card className="projectCard">
-                                                <CardHeader
-                                                    title={<H6>{d.title}</H6>}
-                                                />
-                                                <CardMedia dark src={d.thumbnail} />
-                                                <CardContent>
-                                                    {
-                                                        d.categories.map((category, index) => {
-                                                            return (
-                                                                <Chip key={index} label className="whatILoveChips">
-                                                                    <h3>{category}</h3>
-                                                                </Chip>
-                                                            );
-                                                        })
-                                                    }
-                                                </CardContent>
-                                                <CardAction className="cardActions">
-                                                    <Button onClick={() => this.props.openBlogScreen(index)}>Read Blog</Button>
-                                                </CardAction>
-                                            </Card>
-                                        </CarouselItem>
-                                    );
-                                })
-                            }
+                                height={540}
+                                showArrowsOnHover
+                                cycle
+                                interval={10000}
+                                className="projectCar">
+                    {
+                        this.props.isLoading === false ? 
+                        (
+                            blogs.map((d, index) => {
+                                return (
+                                    <CarouselItem key={index} className="projectCI">
+                                        <Card className="projectCard">
+                                            <CardHeader
+                                                title={<H6>{d.title}</H6>}
+                                            />
+                                            <CardMedia dark src={d.thumbnail} />
+                                            <CardContent>
+                                                {
+                                                    d.categories.map((category, index) => {
+                                                        return (
+                                                            <Chip key={index} label className="whatILoveChips">
+                                                                <h3>{category}</h3>
+                                                            </Chip>
+                                                        );
+                                                    })
+                                                }
+                                            </CardContent>
+                                            <CardAction className="cardActions">
+                                                <Button onClick={() => this.props.openBlogScreen(index)}>Read Blog</Button>
+                                            </CardAction>
+                                        </Card>
+                                    </CarouselItem>
+                                );
+                            })
+                        ) : (
+                            <CarouselItem key={1} className="projectCI">
+                                <ProgressCircular light indeterminate size={64} width={8} color='var(--primary)' />
+                            </CarouselItem>
+                        )
+                    }
                     </Carousel>
                 </div>
                 
