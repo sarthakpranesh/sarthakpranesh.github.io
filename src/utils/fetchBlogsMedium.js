@@ -10,7 +10,6 @@ const fetchBlogsMedium = () => {
                 resolve({
                     blogs: data.items,
                     liteBlogs: liteBlogs,
-                    loading: false,
                 })
             })
             .catch((err) => {
@@ -18,7 +17,6 @@ const fetchBlogsMedium = () => {
                 reject({
                     blogs: [],
                     liteBlogs: [],
-                    loading: false,
                 })
             })
     })

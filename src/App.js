@@ -7,6 +7,7 @@ import {firebaseAuth} from './config/firebase';
 
 // importing utils
 import fetchBlogsMedium from './utils/fetchBlogsMedium';
+import fetchProjects from './utils/firebase/fetchProjects';
 
 //  importing all screens
 import HomeScreen from './screens/HomeScreen/index';
@@ -23,6 +24,7 @@ class App extends Component {
       liteBlogs: [],
       blogs: [],
       user: null,
+      projects: [],
     }
   }
 
@@ -38,8 +40,13 @@ class App extends Component {
         })
     }
 
-    fetchBlogsMedium()
-      .then((resp) => this.setState(resp))
+    Promise.all([
+      fetchBlogsMedium(),
+      fetchProjects(),
+    ])
+      .then(([resp1, resp2]) => {
+        this.setState({...resp1, ...resp2, loading: false})
+      })
       .catch((errResp) => this.setState(errResp))
   }
 
@@ -62,11 +69,11 @@ class App extends Component {
   };
 
   render() {
-    const {screen, data, liteBlogs, loading} = this.state;
+    const {screen, data, liteBlogs, loading, projects} = this.state;
 
     switch (screen) {
       case "Home": 
-        return <HomeScreen isLoading={loading} openBlogScreen={this.openBlogScreen} setScreen={this.setScreen} data={{liteBlogs, ...data}} />
+        return <HomeScreen isLoading={loading} openBlogScreen={this.openBlogScreen} setScreen={this.setScreen} data={{liteBlogs, ...data, projects}} />
       case "Blog":
         return <BlogScreen isLoading={loading} setScreen={this.setScreen} data={data} />
       default:
