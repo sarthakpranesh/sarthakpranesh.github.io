@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Sarthak Pranesh</title>
+    <link>http://sarthakpranesh.now.sh/blogs/</link>
+    <description>Recent content in Blogs on Sarthak Pranesh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Nov 2020 11:46:58 +0530</lastBuildDate><atom:link href="http://sarthakpranesh.now.sh/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenMp Part-3: Learning Synchronization</title>
+      <link>http://sarthakpranesh.now.sh/blogs/openmp/3/</link>
+      <pubDate>Sat, 21 Nov 2020 11:46:58 +0530</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/blogs/openmp/3/</guid>
+      <description>Discussion on topic related to Synchronization of parallel threads/processes, need for synchronization and different techniques used for this purpose.</description>
+    </item>
+    
+    <item>
+      <title>OpenMp Part-2: Understanding OpenMP Structure</title>
+      <link>http://sarthakpranesh.now.sh/blogs/openmp/2/</link>
+      <pubDate>Wed, 19 Aug 2020 11:46:58 +0530</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/blogs/openmp/2/</guid>
+      <description>Overview of what OpenMp is and it&amp;rsquo;s core syntax. Discussion on problems related to parallel programming and, introduction to Fork and join model</description>
+    </item>
+    
+    <item>
+      <title>OpenMp Part-1: Introduction to Parallelism</title>
+      <link>http://sarthakpranesh.now.sh/blogs/openmp/1/</link>
+      <pubDate>Sat, 11 Jul 2020 11:46:58 +0530</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/blogs/openmp/1/</guid>
+      <description>Simple Introductory tutorial blogs on Parallel programming and related concepts using OpenMP and C programming language. In this part we discuss need for parallelism, installing OpenMp in Linux and run a simple parallel program</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html><head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
+    
+    <meta name="application-name" content="map[]" />
+    <meta name="theme-color" content="#E4EBF5" />
+    <meta name="description" content="about" />
+    <meta name="keywords" content="map[], Portfolio, Sarthak, Pranesh, Developer, Software Engineer" />
+    <meta name="author" content="map[]" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    
+    
+    
+    <title>Sarthak Pranesh | OpenMp Part-3: Learning Synchronization</title>
+</head><body><div class="navbar-fixed">
+    <nav class="nav">
+        <div class="nav-wrapper">
+            <a href="#" data-target="mobile-device" class="sidenav-trigger nav-hamburger">
+                <i data-feather="menu"></i>
+            </a>
+            <ul class="hide-on-med-and-down">
+                
+                <li><a href="/">
+                
+                Home
+                </a></li>
+                
+                <li><a href="/blogs/">
+                
+                Blogs
+                </a></li>
+                
+                <li><a href="/projects/">
+                
+                Projects
+                </a></li>
+                
+                <li><a href="/tags/">
+                
+                Tags
+                </a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    
+    <ul class="sidenav" id="mobile-device">
+        
+        <li><a href="/">
+        
+        
+        <i data-feather="home"></i> 
+        
+        
+        Home
+        </a></li>
+        
+        <li><a href="/blogs/">
+        
+        
+        <i data-feather="pen-tool"></i> 
+        
+        
+        Blogs
+        </a></li>
+        
+        <li><a href="/projects/">
+        
+        
+        <i data-feather="code"></i> 
+        
+        
+        Projects
+        </a></li>
+        
+        <li><a href="/tags/">
+        
+        
+        <i data-feather="tag"></i> 
+        
+        
+        Tags
+        </a></li>
+        
+    </ul>
+</div>
+          <div id="content" class="container">
+<style>
+    .blogContentBody > ul:not(.browser-default) li {
+        margin-left: 40px;
+        list-style-type: disc !important;
+        font-size: 18px;
+    }
+
+    .blogContentBody > .highlight > pre {
+        padding: 10px;
+        white-space: pre-wrap;        
+        white-space: -moz-pre-wrap;   
+        white-space: -pre-wrap;       
+        white-space: -o-pre-wrap;     
+        word-wrap: break-word;
+    }
+</style>
+<div class="short-container-wrapper">
+    <div class="row">
+        <div class="col l8 offset-l2 s12">
+            <h1>OpenMp Part-3: Learning Synchronization</h1>
+            <style>
+    #info-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #info-wrapper > pre {
+        margin: 0px;
+    }
+
+    #info-wrapper > .chip {
+        margin: auto !important;
+        margin-bottom: 4px !important;
+        margin-left: 0px !important;
+        margin-right: 10px !important;
+    }
+</style>
+<div>
+    
+    
+    <div id="info-wrapper">
+        <time datetime="2020-11-21">Nov 21, 2020</time>
+        <pre> - </pre>
+        
+            
+                
+                <a class="chip" href="http://sarthakpranesh.now.sh/tags/openmp">OpenMp</a>
+            
+                
+                <a class="chip" href="http://sarthakpranesh.now.sh/tags/parallel-programming">Parallel Programming</a>
+            
+                
+                <a class="chip" href="http://sarthakpranesh.now.sh/tags/c">C</a>
+            
+        
+    </div>
+</div>
+            <br><br>
+            <div class="blogContentBody">
+                <h3 id="what-is-synchronization">What is Synchronization?</h3>
+<p>Synchronization is basically a technique which allows us to perform one operation or process at a time. It allows the threads to execute a process one by one rather then all threads executing simultaneously. Most often the process being synchronized are referred to as Critical Sections. A Critical Section is a section that is required to be run synchronously in a multi threaded program for correct results and most often involves reading and writing to a shared value.</p>
+<h3 id="why-do-we-need-synchronization">Why do we need Synchronization?</h3>
+<p>As seen in the previous section, the shared value &ldquo;counter&rdquo; which is being read and written to by all threads, gets it&rsquo;s value overwritten because the threads do not know if some other thread updated the shared value. This is where synchronization comes in. Using synchronization techniques will allow us to make sure that the shared value of counter is read and updated by threads one after the other to make sure it&rsquo;s value is not overwritten.</p>
+<h3 id="synchronization-techniques">Synchronization Techniques</h3>
+<p>Their are many techniques for synchronizing  critical sections in a parallel program. Broadly their are two types of synchronization we can implement, they are:</p>
+<ul>
+<li>Barrier Synchronization: In this technique their is something similar like a checkpoint in a racing game, the only difference is that all cars need to stop at this checkpoint and wait till all other cars reach there. All threads wait at a Barrier until all other threads arrive.</li>
+<li>Mutual Exclusion: It involves the development of a block of code that only one thread at a time can execute.</li>
+</ul>
+<p>OpenMP provides a set of constructs that can be used to provide synchronization. They are mainly of two types:</p>
+<ul>
+<li>High Level: Critical, Atomic, Barrier and Ordered</li>
+<li>Low Level: Flush and Locks</li>
+</ul>
+<p>In this series of articles we&rsquo;ll focus on Critical and Atomic constructs. Lets make our previous counter program work correctly!</p>
+<h3 id="lets-code---syncedcounterhttpsgithubcomsarthakpraneshopenmp_basicsblobmaster03learning_synchronizationsyncedcounterc">Let&rsquo;s Code - <a href="https://github.com/sarthakpranesh/OpenMP_Basics/blob/master/03.Learning_Synchronization/SyncedCounter.c">SyncedCounter</a></h3>
+<p>For this example we mostly borrow the code from the previous example and make few changes to it.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;omp.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span> () {
+    <span style="color:#66d9ef">int</span> counter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+
+    <span style="color:#75715e">#pragma omp parallel 
+</span><span style="color:#75715e"></span>    {
+        <span style="color:#66d9ef">int</span> thread_num <span style="color:#f92672">=</span> omp_get_thread_num();
+        <span style="color:#66d9ef">int</span> num_of_threads <span style="color:#f92672">=</span> omp_get_num_threads();
+        <span style="color:#75715e">#pragma omp critical
+</span><span style="color:#75715e"></span>            counter <span style="color:#f92672">=</span> counter <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+        printf(<span style="color:#e6db74">&#34;Thread ID: %d </span><span style="color:#ae81ff">\t</span><span style="color:#e6db74"> Total number of threads %d </span><span style="color:#ae81ff">\t</span><span style="color:#e6db74"> Counter Value: %d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, thread_num, num_of_threads, counter);
+    }
+}
+</code></pre></div><ul>
+<li><code>#pragma omp critical</code> - this line in the above code uses OpenMP&rsquo;s Critical construct to make sure the following line of code is executed synchronously by threads.</li>
+</ul>
+<p>Surprise! on running the above code you&rsquo;ll see that the maximum value of counter printed out is equal to the number of threads you have provided OpenMP to use. Though the order of execution of threads is still random but we get the correct value for our counter variable. You can verify this by adding a print statement to output the value of counter below the parallel block to check the final value of counter.</p>
+<p>In this program our threads are created and parallel execution starts when we reach <code>#pragma omp parallel</code> statement in the code. Our threads execute the following two lines of code simultaneously. When our threads reach <code>#pragma omp critical</code> statement they understand that the following line of code needs to be executed synchronously. Hence they wait for all threads to reach this statement and then execute the following command one by one. After which the parallel execution of the program continues.</p>
+<p>Next Module we&rsquo;ll verify that parallelizing low compute problems may lead to more execution time.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div><style>
+    #contact-section > a {
+        margin: 20px 10px 0px 0px !important;
+    }
+</style>
+<footer class="page-footer">
+    <div class="row">
+        <div class="col l6 offset-l3 s12" id="contact-section">
+            <h4>Contact Me</h4>
+            <p>
+                I would love to hear from you and have little chit chat about frameworks, languages, tools, projects, ☕️, etc. If you are curious then this website was built using a Hugo theme called Blogfolio, link can be found below.
+            </p>
+            
+            
+                <a class="text-lighten-3" href="https://www.linkedin.com/in/sarthakpranesh/">
+                
+                    
+                    <i data-feather="linkedin"></i> 
+                
+                </a>
+            
+            
+            
+                <a class="text-lighten-3" href="https://www.instagram.com/sarthakpranesh/">
+                
+                    
+                    <i data-feather="instagram"></i> 
+                
+                </a>
+            
+            
+            
+                <a class="text-lighten-3" href="https://twitter.com/SarthakPranesh">
+                
+                    
+                    <i data-feather="twitter"></i> 
+                
+                </a>
+            
+            
+            
+                <a class="text-lighten-3" href="https://www.facebook.com/sarthakpranesh/">
+                
+                    
+                    <i data-feather="facebook"></i> 
+                
+                </a>
+            
+            
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Copyright (c) 2021 Sarthak Pranesh
+            <a class="text-lighten-4 right" href="#!">Hugo Theme</a>
+        </div>
+    </div>
+</footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let elems = document.querySelectorAll('.sidenav');
+    let instances = M.Sidenav.init(elems, {
+      edge: 'left',
+      draggable: true,
+      preventScrolling: true,
+    });
+  });
+</script>
+</body>
+</html>

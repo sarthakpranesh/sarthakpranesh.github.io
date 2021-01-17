@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html><head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
+    
+    <meta name="application-name" content="map[]" />
+    <meta name="theme-color" content="#E4EBF5" />
+    <meta name="description" content="about" />
+    <meta name="keywords" content="map[], Portfolio, Sarthak, Pranesh, Developer, Software Engineer" />
+    <meta name="author" content="map[]" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    
+    
+    
+    <title>Sarthak Pranesh | OpenMp Part-1: Introduction to Parallelism</title>
+</head><body><div class="navbar-fixed">
+    <nav class="nav">
+        <div class="nav-wrapper">
+            <a href="#" data-target="mobile-device" class="sidenav-trigger nav-hamburger">
+                <i data-feather="menu"></i>
+            </a>
+            <ul class="hide-on-med-and-down">
+                
+                <li><a href="/">
+                
+                Home
+                </a></li>
+                
+                <li><a href="/blogs/">
+                
+                Blogs
+                </a></li>
+                
+                <li><a href="/projects/">
+                
+                Projects
+                </a></li>
+                
+                <li><a href="/tags/">
+                
+                Tags
+                </a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    
+    <ul class="sidenav" id="mobile-device">
+        
+        <li><a href="/">
+        
+        
+        <i data-feather="home"></i> 
+        
+        
+        Home
+        </a></li>
+        
+        <li><a href="/blogs/">
+        
+        
+        <i data-feather="pen-tool"></i> 
+        
+        
+        Blogs
+        </a></li>
+        
+        <li><a href="/projects/">
+        
+        
+        <i data-feather="code"></i> 
+        
+        
+        Projects
+        </a></li>
+        
+        <li><a href="/tags/">
+        
+        
+        <i data-feather="tag"></i> 
+        
+        
+        Tags
+        </a></li>
+        
+    </ul>
+</div>
+          <div id="content" class="container">
+<style>
+    .blogContentBody > ul:not(.browser-default) li {
+        margin-left: 40px;
+        list-style-type: disc !important;
+        font-size: 18px;
+    }
+
+    .blogContentBody > .highlight > pre {
+        padding: 10px;
+        white-space: pre-wrap;        
+        white-space: -moz-pre-wrap;   
+        white-space: -pre-wrap;       
+        white-space: -o-pre-wrap;     
+        word-wrap: break-word;
+    }
+</style>
+<div class="short-container-wrapper">
+    <div class="row">
+        <div class="col l8 offset-l2 s12">
+            <h1>OpenMp Part-1: Introduction to Parallelism</h1>
+            <style>
+    #info-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #info-wrapper > pre {
+        margin: 0px;
+    }
+
+    #info-wrapper > .chip {
+        margin: auto !important;
+        margin-bottom: 4px !important;
+        margin-left: 0px !important;
+        margin-right: 10px !important;
+    }
+</style>
+<div>
+    
+    
+    <div id="info-wrapper">
+        <time datetime="2020-07-11">Jul 11, 2020</time>
+        <pre> - </pre>
+        
+            
+                
+                <a class="chip" href="http://sarthakpranesh.now.sh/tags/openmp">OpenMp</a>
+            
+                
+                <a class="chip" href="http://sarthakpranesh.now.sh/tags/parallel-programming">Parallel Programming</a>
+            
+                
+                <a class="chip" href="http://sarthakpranesh.now.sh/tags/c">C</a>
+            
+        
+    </div>
+</div>
+            <br><br>
+            <div class="blogContentBody">
+                <h3 id="what-is-parallelism">What is Parallelism</h3>
+<p>To understand Parallelism or Parallel programing we first need to understand what is concurrency.</p>
+<p>Concurrency is a condition of a system in which multiple tasks are active at the same time. Even on older hardware (computers having single core processors) concurrency can be achieved by switching between active threads. This results in the increase of the total program throughput. Whereas Parallelism is a subset of concurrency which is a condition of a system where multiple tasks are actually active at the same time. Meaning more then one thread is being processed at the same time. This can be achieved only when we have more then one thread available in our CPU. Most modern computer have two threads in each core and have upto 4 cores. That leaves us with a total of 8 threads. Therefore such a system can process 8 threads at the same time. This increases the throughput and reduced the processing time of programs.</p>
+<h3 id="why-parallelism-was-needed">Why Parallelism was needed</h3>
+<p>Parallelism is needed due to hardware limitation that we have reached. CPU clocks cannot be increased because the power consumed by the CPU is very high and there is a Thermal barrier upto which we can keep our CPU units under respectable temperatures. Many computers try out exotic cooling techniques which even involve use of liquid nitrogen. The whole point here is we have reached a limit to which we can increase the CPU clock and keep the power consumed and temperatures low. Though the power consumed can be reduced by adding more cores to the cpu. A simple comparison shows that if a single core single threaded cpu consumes about &ldquo;P&rdquo; power then a similar dual core CPU consumes almost &ldquo;0.6*P&rdquo; of power, reducing power consumption by 40%. But off course our programs need to be utilizing the number of cores and threads made available to them for much greater benefit.</p>
+<p>Learn about this in dept <a href="https://electronics.stackexchange.com/questions/299691/do-multi-core-processors-reduce-power-consumption">here</a> on StackExchange</p>
+<h3 id="openmp">OpenMP</h3>
+<p>OpenMP is a set of APIs for writing multi threaded applications that can utilise all the threads available in a cpu. It is basically a set of compiler derivatives and library runtime for parallel computing programs. It makes writing parallel programing far more easier then most of the other implementation.<!-- raw HTML omitted -->
+So lets not waste time and install OpenMP on our system to get started&hellip;</p>
+<h5 id="installing-openmp">Installing OpenMP</h5>
+<p>Installing OpenMP is very simple and straight forward.
+For linux follow the below steps (don&rsquo;t copy the &ldquo;$&rdquo; symbol, it is just a prompt that&rsquo;ll be displayed in your terminal window)</p>
+<ol>
+<li>
+<p>Make sure you have gcc compiler installed. For doing so run the following in your terminal</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ gcc --version
+</code></pre></div><p>If the above command displays the gcc version installed then proceed to the next step else run the following to install gcc (make sure you enter your password)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt install gcc -y
+</code></pre></div><p>This command will install gcc on your linux machine. You can verify this by running the first command again which will now display your gcc version</p>
+</li>
+<li>
+<p>Now we install OpenMP and configure it to be used by our gcc compiler. We can do this by running the following</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt install libomp-dev
+</code></pre></div></li>
+<li>
+<p>Last but not the least we need to tell OpenMP how many threads it needs to use. You can do so by running the following</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cat &gt;&gt; ~/.bashrc <span style="color:#e6db74">&lt;&lt;EOF
+</span><span style="color:#e6db74">export OMP_NUM_THREADS=4
+</span><span style="color:#e6db74">EOF</span>
+</code></pre></div><p>Here depending on your CPU, you can let OpenMP use more or less number of threads. For example my CPU has 8 threads available so I can choose to use all 8 or anything less then that. Important point to note here is that if your CPU has lower number of threads then make sure you set this to 2. All this command does is add &ldquo;export OMP_NUM_THREADS=4&rdquo; in the end of your user&rsquo;s bashrc file which mostly holds the configuration of your bash terminal and is run each time a terminal is started.</p>
+</li>
+</ol>
+<p>Now you are all set to right your first program in OpenMP</p>
+<h3 id="helloworldchttpsgithubcomsarthakpraneshopenmp_basicsblobmaster01introduction_to_parallelismhelloworldc"><a href="https://github.com/sarthakpranesh/OpenMp_Basics/blob/master/01.Introduction_to_Parallelism/HelloWorld.c">HelloWorld.c</a></h3>
+<p>This will be last section of our first module. Here we will write our classic old and boring Hello World program to print Hello world in our terminal.
+Either copy paste or write the small hello world program as the following</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;omp.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span> (<span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>args[]) {
+    <span style="color:#75715e">#pragma omp parallel
+</span><span style="color:#75715e"></span>    {
+        printf(<span style="color:#e6db74">&#34;Hello World!</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+    }
+    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+}
+</code></pre></div><p>Now to compile this small program that uses OpenMP we run the following command in the terminal (make sure terminal has the same directory open where the file resides)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ gcc -o hello.out -fopenmp yourFileName.c
+</code></pre></div><p>Make sure you replace &ldquo;yourFileName&rdquo; with whatever you had named your file and hit enter. On successful compilation the above command will generate a <code>hello.out</code> file in the same directory. To see the output we just do the following</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./hello.out
+</code></pre></div><p>Hmm, see something unusual. Though in our c program we only call <code>printf</code> once but in the output we have multiple number of <code>Hello World</code> line as an output. More precisely the number is exactly same as the number of threads we gave OpenMP to work with. More details about this in the next module, for now you can assume that the code inside of the curly braces after the line <code>#pragma omp parallel</code> gets copied to the number of threads we gave to OpenMp and each thread runs it once. Hence resulting in multiple &ldquo;Hello World&quot;s in our terminal.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div><style>
+    #contact-section > a {
+        margin: 20px 10px 0px 0px !important;
+    }
+</style>
+<footer class="page-footer">
+    <div class="row">
+        <div class="col l6 offset-l3 s12" id="contact-section">
+            <h4>Contact Me</h4>
+            <p>
+                I would love to hear from you and have little chit chat about frameworks, languages, tools, projects, ☕️, etc. If you are curious then this website was built using a Hugo theme called Blogfolio, link can be found below.
+            </p>
+            
+            
+                <a class="text-lighten-3" href="https://www.linkedin.com/in/sarthakpranesh/">
+                
+                    
+                    <i data-feather="linkedin"></i> 
+                
+                </a>
+            
+            
+            
+                <a class="text-lighten-3" href="https://www.instagram.com/sarthakpranesh/">
+                
+                    
+                    <i data-feather="instagram"></i> 
+                
+                </a>
+            
+            
+            
+                <a class="text-lighten-3" href="https://twitter.com/SarthakPranesh">
+                
+                    
+                    <i data-feather="twitter"></i> 
+                
+                </a>
+            
+            
+            
+                <a class="text-lighten-3" href="https://www.facebook.com/sarthakpranesh/">
+                
+                    
+                    <i data-feather="facebook"></i> 
+                
+                </a>
+            
+            
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Copyright (c) 2021 Sarthak Pranesh
+            <a class="text-lighten-4 right" href="#!">Hugo Theme</a>
+        </div>
+    </div>
+</footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let elems = document.querySelectorAll('.sidenav');
+    let instances = M.Sidenav.init(elems, {
+      edge: 'left',
+      draggable: true,
+      preventScrolling: true,
+    });
+  });
+</script>
+</body>
+</html>

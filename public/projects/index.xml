@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Sarthak Pranesh</title>
+    <link>http://sarthakpranesh.now.sh/projects/</link>
+    <description>Recent content in Projects on Sarthak Pranesh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Oct 2020 11:46:58 +0530</lastBuildDate><atom:link href="http://sarthakpranesh.now.sh/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CpuRoller</title>
+      <link>http://sarthakpranesh.now.sh/projects/cpuroller/</link>
+      <pubDate>Sun, 18 Oct 2020 11:46:58 +0530</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/projects/cpuroller/</guid>
+      <description>Simple Cross platform Desktop application for displaying realtime CPU usage of your Desktop/Laptop. Available for Linux and MacOS. Utilizes React.js frontend and Go lang backend, developed with Wails.</description>
+    </item>
+    
+    <item>
+      <title>Cosmos</title>
+      <link>http://sarthakpranesh.now.sh/projects/cosmos/</link>
+      <pubDate>Sat, 04 Jul 2020 11:46:58 +0530</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/projects/cosmos/</guid>
+      <description>Open Source social media platform built with React Native and Firebase. Uses Google OAuth and Hermes JavaScript engine while providing intuitive design inspired by Instagram and application size of just 9 MB. It provides users the ability to create their own communities based on common interests, affiliations, etc.</description>
+    </item>
+    
+    <item>
+      <title>Covid 19</title>
+      <link>http://sarthakpranesh.now.sh/projects/covid19/</link>
+      <pubDate>Tue, 17 Mar 2020 11:46:58 +0530</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/projects/covid19/</guid>
+      <description>React Native project built with Typescript, that shows statistics, latest news, precautions and helpline numbers related to Covid 19, developed for both IOS and Android.</description>
+    </item>
+    
+  </channel>
+</rss>

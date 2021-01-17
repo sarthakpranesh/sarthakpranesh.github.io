@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Typescript on Sarthak Pranesh</title>
+    <link>http://sarthakpranesh.now.sh/tags/typescript/</link>
+    <description>Recent content in Typescript on Sarthak Pranesh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Mar 2020 11:46:58 +0530</lastBuildDate><atom:link href="http://sarthakpranesh.now.sh/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Covid 19</title>
+      <link>http://sarthakpranesh.now.sh/projects/covid19/</link>
+      <pubDate>Tue, 17 Mar 2020 11:46:58 +0530</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/projects/covid19/</guid>
+      <description>React Native project built with Typescript, that shows statistics, latest news, precautions and helpline numbers related to Covid 19, developed for both IOS and Android.</description>
+    </item>
+    
+  </channel>
+</rss>

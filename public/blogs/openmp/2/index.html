@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html><head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
+    
+    <meta name="application-name" content="map[]" />
+    <meta name="theme-color" content="#E4EBF5" />
+    <meta name="description" content="about" />
+    <meta name="keywords" content="map[], Portfolio, Sarthak, Pranesh, Developer, Software Engineer" />
+    <meta name="author" content="map[]" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    
+    
+    
+    <title>Sarthak Pranesh | OpenMp Part-2: Understanding OpenMP Structure</title>
+</head><body><div class="navbar-fixed">
+    <nav class="nav">
+        <div class="nav-wrapper">
+            <a href="#" data-target="mobile-device" class="sidenav-trigger nav-hamburger">
+                <i data-feather="menu"></i>
+            </a>
+            <ul class="hide-on-med-and-down">
+                
+                <li><a href="/">
+                
+                Home
+                </a></li>
+                
+                <li><a href="/blogs/">
+                
+                Blogs
+                </a></li>
+                
+                <li><a href="/projects/">
+                
+                Projects
+                </a></li>
+                
+                <li><a href="/tags/">
+                
+                Tags
+                </a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    
+    <ul class="sidenav" id="mobile-device">
+        
+        <li><a href="/">
+        
+        
+        <i data-feather="home"></i> 
+        
+        
+        Home
+        </a></li>
+        
+        <li><a href="/blogs/">
+        
+        
+        <i data-feather="pen-tool"></i> 
+        
+        
+        Blogs
+        </a></li>
+        
+        <li><a href="/projects/">
+        
+        
+        <i data-feather="code"></i> 
+        
+        
+        Projects
+        </a></li>
+        
+        <li><a href="/tags/">
+        
+        
+        <i data-feather="tag"></i> 
+        
+        
+        Tags
+        </a></li>
+        
+    </ul>
+</div>
+          <div id="content" class="container">
+<style>
+    .blogContentBody > ul:not(.browser-default) li {
+        margin-left: 40px;
+        list-style-type: disc !important;
+        font-size: 18px;
+    }
+
+    .blogContentBody > .highlight > pre {
+        padding: 10px;
+        white-space: pre-wrap;        
+        white-space: -moz-pre-wrap;   
+        white-space: -pre-wrap;       
+        white-space: -o-pre-wrap;     
+        word-wrap: break-word;
+    }
+</style>
+<div class="short-container-wrapper">
+    <div class="row">
+        <div class="col l8 offset-l2 s12">
+            <h1>OpenMp Part-2: Understanding OpenMP Structure</h1>
+            <style>
+    #info-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #info-wrapper > pre {
+        margin: 0px;
+    }
+
+    #info-wrapper > .chip {
+        margin: auto !important;
+        margin-bottom: 4px !important;
+        margin-left: 0px !important;
+        margin-right: 10px !important;
+    }
+</style>
+<div>
+    
+    
+    <div id="info-wrapper">
+        <time datetime="2020-08-19">Aug 19, 2020</time>
+        <pre> - </pre>
+        
+            
+                
+                <a class="chip" href="http://sarthakpranesh.now.sh/tags/openmp">OpenMp</a>
+            
+                
+                <a class="chip" href="http://sarthakpranesh.now.sh/tags/parallel-programming">Parallel Programming</a>
+            
+                
+                <a class="chip" href="http://sarthakpranesh.now.sh/tags/c">C</a>
+            
+        
+    </div>
+</div>
+            <br><br>
+            <div class="blogContentBody">
+                <h3 id="what-is-openmp">What is OpenMP?</h3>
+<p>OpenMP is an API or Application Programming Interface which supports multi-platform shared-memory multiprocessing programming in C, C++, and Fortran. A shared-memory multiprocessing program refers to a program utilizing more then one thread which access a common memory address for read or write operations. OpenMP is the set of compiler directives and runtime libraries for parallel application programs.</p>
+<h3 id="core-syntax-of-openmp">Core syntax of OpenMP</h3>
+<p>As mentioned before most of the constructs in OpenMP are just compiler directives. So what are compiler directives ?  A directive is a &ldquo;pragma&rdquo; statement which gives information to the compiler about how it should process the following block of code or input. Remember in the last module we used &ldquo;#pragma omp parallel&rdquo; and then started a code block with curly braces which encapsulated the print statement. This &ldquo;#pragma&rdquo; statement is a directive that gave information to the compiler to process the following blog of code in parallel threads using OpenMP</p>
+<p>A general syntax for this directive is as follows:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#pragma omp construct [clause [clause] ... ]
+</span></code></pre></div><p>To use OpenMP we would have to include it&rsquo;s header file in our c program <code>#include &lt;omp.h&gt;</code>. This contains function prototypes and other types required to write parallel programs. Most of the OpenMP constructs such as <code>parallel</code> apply to a <code>structure block</code>. Structure block is a block of code containing one or more then one statements, which has exactly one point of entry at the top and one point of exit at the bottom.</p>
+<h3 id="problems-with-parallel-programing">Problems with Parallel Programing</h3>
+<p>Just using these directives provided by OpenMP in your code won&rsquo;t help you much. Their is a initial amount of time where the developer of a program needs to decide what parts of their program needs and can to be parallelized. Why? Their are many reasons for this but we&rsquo;ll be going through a few of them to understand what we need to do for creating an efficient parallel program.</p>
+<ol>
+<li>
+<p><code>Computation being Parallelized is to small:</code> If the actual computation that needs to be performed is small, for example addition of two numbers then the extra time required to initialize and manage threads will be a overhead for your application. This is because the time required to initialize your parallel code block in your program may end up compensating for the benefits provided by parallelism. This happens when the computation performed by each thread takes shorter time then the initialization time of threads. For example lets say initialization time for a parallel code block is 80ms and the actual computation that needs to be done is just 40ms then making our program parallel would just make our problem compute longer.</p>
+</li>
+<li>
+<p><code>Race condition due to shared memory:</code> OpenMP uses shared address model, therefor threads read/write to a shared memory address space. Unintended sharing of data may result into incorrect and inconsistent results each time you run a program. This happens because threads run in parallel and try to access same memory address simultaneously for read/write operation. For example assume we have 2 threads and a shared address containing value 0. The program needs to add two numbers, 10 and 6 to the value stored in this shared memory address. As soon as both the threads are initialized they try to access the shared value simultaneously. By doing this both of them end up reading the same value from the shared memory which is 0. Now one of these threads adds 0 + 10 and stores it back in the shared memory. Mean while another thread also adds 0 + 6 and stores it back in the shared memory. Here the second thread essentially overrides the changes made by the first thread because of which our final answer stored in the shared memory is 6 and not 16. Such a undesirable condition is called Race condition.</p>
+</li>
+</ol>
+<h3 id="fork-join-model">Fork-Join Model</h3>
+<p>Before going straight into code we need to understand how parallelism takes place. The program starts with a single thread (often called Main thread). The main thread gets Forked into a number of threads that can execute concurrently at the same time. The main thread with the other forked threads are then refereed to as a Team of Threads. All these threads run in Parallel and once their computations are completed they merge/join back into the main thread. A forked thread can be considered as a main thread and be further forked into more threads.</p>
+<p>We create threads in OpenMP by using the <code>parallel</code> construct</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+<span style="color:#75715e">#pragma omp parallel
+</span><span style="color:#75715e"></span>{
+    <span style="color:#66d9ef">int</span> Thread_ID <span style="color:#f92672">=</span> omp_get_thread_num();
+    printf(<span style="color:#e6db74">&#34;Thread ID: %d</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74"> Also value of I: %d&#34;</span>, Thread_ID, i);
+}
+</code></pre></div><p>In the above snippet threads are created when the compiler reads the parallel construct. All variables declared outside the code block of parallel construct are made available to all the threads as they are present in the common heap memory of the program. Any variables declared inside the code block of parallel construct exist in the stack space of each thread and aren&rsquo;t visible to other threads. Hence in the above example, all threads have access to variable i (shared memory), whereas each thread would contain it&rsquo;s own version of Thread_ID which won&rsquo;t be visible to other threads.</p>
+<h3 id="lets-code---counterhttpsgithubcomsarthakpraneshopenmp_basicsblobmaster02understanding_openmp_structurecounterc">Let&rsquo;s Code - <a href="https://github.com/sarthakpranesh/OpenMp_Basics/blob/master/02.Understanding_OpenMP_Structure/Counter.c">Counter</a></h3>
+<p>We&rsquo;ll create a simple program to increment a number</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;omp.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span> () {
+    <span style="color:#66d9ef">int</span> counter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+
+    <span style="color:#75715e">#pragma omp parallel 
+</span><span style="color:#75715e"></span>    {
+        <span style="color:#66d9ef">int</span> thread_num <span style="color:#f92672">=</span> omp_get_thread_num();
+        <span style="color:#66d9ef">int</span> num_of_threads <span style="color:#f92672">=</span> omp_get_num_threads();
+        counter <span style="color:#f92672">=</span> counter <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+        printf(<span style="color:#e6db74">&#34;Thread ID: %d </span><span style="color:#ae81ff">\t</span><span style="color:#e6db74"> Total number of threads %d </span><span style="color:#ae81ff">\t</span><span style="color:#e6db74"> Counter Value: %d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, thread_num, num_of_threads, counter);
+    }
+}
+</code></pre></div><ul>
+<li>omp_get_thread_num() - returns an int value representing the thread id</li>
+<li>omp_get_num_threads() - returns an int value representing the total number of threads created by parallel construct</li>
+</ul>
+<p>On running this program we see that it verifies some of the points discussed in this module. The variable counter exists in the shared memory space and hence is visible to all threads, on running the program multiple times we see execution of threads happen randomly and we can&rsquo;t predict which thread will execute when, we also see multiple threads trying to update the shared memory leading to a racing condition. We can verify this because the number of times we add 1 to variable counter is equal to the number of threads available and hence the max value of counter that we get should be equal to num of threads. But that is not the case because the max value of counter that we get is always less then the number of threads.</p>
+<p>Next Module we&rsquo;ll see how we can control this race condition using synchronization</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div><style>
+    #contact-section > a {
+        margin: 20px 10px 0px 0px !important;
+    }
+</style>
+<footer class="page-footer">
+    <div class="row">
+        <div class="col l6 offset-l3 s12" id="contact-section">
+            <h4>Contact Me</h4>
+            <p>
+                I would love to hear from you and have little chit chat about frameworks, languages, tools, projects, ☕️, etc. If you are curious then this website was built using a Hugo theme called Blogfolio, link can be found below.
+            </p>
+            
+            
+                <a class="text-lighten-3" href="https://www.linkedin.com/in/sarthakpranesh/">
+                
+                    
+                    <i data-feather="linkedin"></i> 
+                
+                </a>
+            
+            
+            
+                <a class="text-lighten-3" href="https://www.instagram.com/sarthakpranesh/">
+                
+                    
+                    <i data-feather="instagram"></i> 
+                
+                </a>
+            
+            
+            
+                <a class="text-lighten-3" href="https://twitter.com/SarthakPranesh">
+                
+                    
+                    <i data-feather="twitter"></i> 
+                
+                </a>
+            
+            
+            
+                <a class="text-lighten-3" href="https://www.facebook.com/sarthakpranesh/">
+                
+                    
+                    <i data-feather="facebook"></i> 
+                
+                </a>
+            
+            
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Copyright (c) 2021 Sarthak Pranesh
+            <a class="text-lighten-4 right" href="#!">Hugo Theme</a>
+        </div>
+    </div>
+</footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let elems = document.querySelectorAll('.sidenav');
+    let instances = M.Sidenav.init(elems, {
+      edge: 'left',
+      draggable: true,
+      preventScrolling: true,
+    });
+  });
+</script>
+</body>
+</html>
