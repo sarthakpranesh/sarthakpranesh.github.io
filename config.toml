@@ -2,6 +2,8 @@ baseURL = "http://sarthakpranesh.now.sh/"
 languageCode = "en-us"
 title = "Sarthak Pranesh"
 theme = "Blogfolio"
+tags = ""
+categories = ""
 
 [params]
   author = "Sarthak Pranesh"
