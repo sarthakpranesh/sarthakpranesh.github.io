@@ -1,7 +1,7 @@
 ---
 title: "Wireless connection to Android Device for app development"
 date: 2021-02-07T21:32:32+05:30
-draft: true
+draft: false
 tags: ['ADB', 'Android', 'React Native']
 summary: "Are you sick off hanging wires from your android devices while you test your apps on them? This blog explains how you can use ADB (Android Debug Bridge) to get rid of those hanging wires while testing and developing your app."
 ---
