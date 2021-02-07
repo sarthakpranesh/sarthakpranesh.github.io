@@ -1,0 +1,3 @@
+[submodule "themes/Blogfolio"]
+    path = themes/Blogfolio
+    url = https://github.com/sarthakpranesh/Blogfolio.git
