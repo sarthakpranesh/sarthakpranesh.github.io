@@ -9,10 +9,21 @@ categories = ""
   author = "Sarthak Pranesh"
   shortAbout = "I'm a Developer"
   about = "Hello 👋, I am a Software Developer, Technical Blogger and Linux Enthusiast 🐧. I love playing with and creating APIs, especially in Nodejs and Golang. I am passionate about creating end user application using React Native, JavaFx and Electron Js. Always interested in distributed computing and learning new technologies."
-  interests = ["React Native", "Nodejs", "Golang", "Firebase", "Expo", "Mongo Atlas", "Python", "Mininet", "HTML5", "C", "C++", "Java", "Electron", "Blogging", "Planting"]
-  blog = "As a developer I love writing blogs about various topic ranging from parallel programming to how can we manage local project development environment variables. Trying to explain everything in as simple terms as possible helps me sharpen my technical skills as well."
-  project = "Developing cool and innovative projects is good way to horn your skills as a developer and I am no exception to that. I have loved creating numerous projects with tools like React-Native, Expo, Wails, etc and contributed to projects like RocketChat, Shoot-I-Smoke, etc."
   contact = "I would love to hear from you and have little chit chat about frameworks, languages, tools, projects, ☕️, etc. If you are curious then this website was built using a Hugo theme called Blogfolio, link can be found below."
+
+  [[params.homeSections]]
+    type = "chip"
+    title = "What I Do"
+    content = ["React Native", "Nodejs", "Golang", "Firebase", "Expo", "Mongo Atlas", "Python", "Mininet", "HTML5", "C", "C++", "Java", "Electron", "Blogging", "Planting"]
+  [[params.homeSections]]
+    type = "para"
+    title = "Blogging Life"
+    content = "As a developer I love writing blogs about various topic ranging from parallel programming to how can we manage local project development environment variables. Trying to explain everything in as simple terms as possible helps me sharpen my technical skills as well."
+  [[params.homeSections]]
+    type = "para"
+    title = "Beloved Projects"
+    content = "Developing cool and innovative projects is good way to horn your skills as a developer and I am no exception to that. I have loved creating numerous projects with tools like React-Native, Expo, Wails, etc and contributed to projects like RocketChat, Shoot-I-Smoke, etc."
+  
   [[params.contacts]]
     name = "github"
     link = "https://github.com/sarthakpranesh"
