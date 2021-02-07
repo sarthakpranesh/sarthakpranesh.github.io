@@ -40,6 +40,8 @@ adb shell ifconfig
 
 ![Result for `adb shell ifconfig`](./2.png)
 
+Here my device's IP address is `192.168.1.128`.
+
 #### tcpip
 We need to restart adb in the TCP mode so that we can connect to our device through our network. For doing so we use the `tcpip` command available in adb. This command takes in one argument which is the port on which adb should listen on. So we restart our adb in TCP mode listening on port `5555`, using the following command:
 ```bash
