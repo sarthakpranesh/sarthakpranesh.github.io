@@ -43,14 +43,15 @@ adb shell ifconfig
 Here my device's IP address is `192.168.1.128`.
 
 #### tcpip
-We need to restart adb in the TCP mode so that we can connect to our device through our network. For doing so we use the `tcpip` command available in adb. This command takes in one argument which is the port on which adb should listen on. So we restart our adb in TCP mode listening on port `5555`, using the following command:
+We need to restart adb in the TCP mode so that we can connect to our device through our network. For doing so we use the `tcpip` command available in adb. This command takes in one argument which is the port on which adb should listen on. So we restart our adb in TCP mode listening on port `5555`, using the following command (for this step, 
+make sure your mobile is connected to your laptop/desktop using a wire):
 ```bash
 adb tcpip 5555
 ```
 
-![Results for `adb tcpip 5555`](./3.png)
+![Results for `adb tcpip 5555`](./5.png)
 
-Now we are ready to connect to our mobile device without wire. If your device is connected to your laptop/desktop, then this is the time to unplug your device and get rid of your wire.
+Now we are ready to connect to our mobile device without wire. If your device is connected to your laptop/desktop, then this is the time to unplug your device and get rid of that wire.
 
 #### connect
 So we have the device's IP address and our adb is running in TCP mode listening on port `5555`. Now all we need is to connect to our mobile device using the `connect` command available in adb. This command takes one argument which is the IP address for the device to connect too along with the port. We can now establish the connection between our laptop/desktop and our mobile device using the following command:

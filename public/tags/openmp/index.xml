@@ -6,7 +6,11 @@
     <description>Recent content in OpenMp on Sarthak Pranesh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2020 11:46:58 +0530</lastBuildDate><atom:link href="http://sarthakpranesh.now.sh/tags/openmp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Nov 2020 11:46:58 +0530</lastBuildDate>
+    
+	<atom:link href="http://sarthakpranesh.now.sh/tags/openmp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>OpenMp Part-3: Learning Synchronization</title>
       <link>http://sarthakpranesh.now.sh/blogs/openmp/3/</link>

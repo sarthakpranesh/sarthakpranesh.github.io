@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>React-Native on Sarthak Pranesh</title>
+    <title>React Native on Sarthak Pranesh</title>
     <link>http://sarthakpranesh.now.sh/tags/react-native/</link>
-    <description>Recent content in React-Native on Sarthak Pranesh</description>
+    <description>Recent content in React Native on Sarthak Pranesh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jul 2020 11:46:58 +0530</lastBuildDate><atom:link href="http://sarthakpranesh.now.sh/tags/react-native/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Feb 2021 21:32:32 +0530</lastBuildDate>
+    
+	<atom:link href="http://sarthakpranesh.now.sh/tags/react-native/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Wireless connection to Android Device for app development</title>
+      <link>http://sarthakpranesh.now.sh/blogs/adb/</link>
+      <pubDate>Sun, 07 Feb 2021 21:32:32 +0530</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/blogs/adb/</guid>
+      <description>Are you sick off hanging wires from your android devices while you test your apps on them? This blog explains how you can use ADB (Android Debug Bridge) to get rid of those hanging wires while testing and developing your app.</description>
+    </item>
+    
     <item>
       <title>Cosmos</title>
       <link>http://sarthakpranesh.now.sh/projects/cosmos/</link>
