@@ -3,7 +3,7 @@ title: "CpuRoller"
 date: 2020-10-18T11:46:58+05:30
 draft: false
 tags: ["Wails", "Golang", "System Monitor"]
-summary: "Simple Cross platform Desktop application for displaying realtime CPU usage of your Desktop/Laptop. Available for Linux and MacOS. Utilizes React.js frontend and Go lang backend, developed with Wails."
+summary: "Simple Cross Platform Desktop application for seeing your CPU and RAM utilization with an intuitive design. Available natively on Windows, Linux and MacOS."
 ---
 
 !["CpuRoller running on linux"](./1.png)
