@@ -178,7 +178,44 @@
 </div>
             <br><br>
             <div class="blogContentBody">
-                
+                <p><img src="./1.png" alt="&ldquo;CpuRoller running on linux&rdquo;"></p>
+<h3 id="about">About</h3>
+<p>Simple Cross Platform Desktop application for seeing your CPU and RAM utilization with an intuitive design. Available natively on Windows, Linux and MacOS.</p>
+<p>This project is open sourced on Github. If you want to learn more about this project or want to contribute to it head over to project&rsquo;s repo <a href="https://github.com/sarthakpranesh/CpuRoller">here</a></p>
+<h3 id="downloads">Downloads</h3>
+<p>You&rsquo;ll need to perform some minor extra steps to run this app on specific platforms</p>
+<h5 id="linux-debianubuntu">Linux (Debian/Ubuntu):</h5>
+<p><a href="https://github.com/sarthakpranesh/CpuRoller/releases/download/v1.1.2/cpuRoller_1.1.2_amd64.deb">Download for Linux</a></p>
+<p>Install using Eddy:</p>
+<ol>
+<li>Just double click the downloaded package, it should automatically open in Eddy</li>
+<li>Follow the installation process in Eddy and you are done</li>
+</ol>
+<p>Install using Terminal:</p>
+<ol>
+<li>Open a terminal and cd where your package was downloaded</li>
+<li>Run the following to use <code>dpkg</code> to install the package on your system:</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo dpkg -i cpuRoller_x.x.x_amd64.deb
+</code></pre></div><h5 id="windows">Windows:</h5>
+<p><a href="https://github.com/sarthakpranesh/CpuRoller/releases/download/v1.1.2/cpuRoller-windows-4.0-amd64.exe">Download for Windows</a></p>
+<p>You don&rsquo;t require to install this app. Directly run the .exe file to start the program. You might get a warning dialog from Windows, if so then click on <code>more info</code> which will display a <code>run anyway</code> option that can be used to start the program.</p>
+<h5 id="macos">MacOS:</h5>
+<p><a href="https://github.com/sarthakpranesh/CpuRoller/releases/download/v1.1.2/cpuRoller.app.zip">Download for MacOS</a></p>
+<p>Extract the .zip file, and right click on the app. Select open from the dialog menu. Give the app required permission to run and your app will start.</p>
+<h3 id="findings">Findings</h3>
+<p>In this section I will be discussing the main issues I faced/facing while developing this project. This will also provide others an insight what they might come across with such cross platform projects.</p>
+<h5 id="windows-mshtml-problem">Window&rsquo;s msHtml problem</h5>
+<p>The project was developed using Wails, which uses msHtml (essentially IE11) on Windows. The problems with msHtml compatibility are very significant and adding to this it does not have developer console. One such example is the way it positions elements when using <code>position: 'absolute';</code> which is quite different from how other engines do it. To center elements with position set to absolute, the only work around was to hard code your element&rsquo;s position like <a href="https://github.com/sarthakpranesh/CpuRoller/blob/master/frontend/src/components/CircularUsage/styles.css#L12">here</a></p>
+<h5 id="linux-packaging">Linux packaging</h5>
+<p>You might be thinking &lsquo;how can this be even a problem?&rsquo;. The thing is, it is more of a very very tedious task then a problem. Their is no such said problem with packaging Linux apps, the issue arises because of the different types, flavours and desktop environments being used in the ever increasing number of Linux distributions (<a href="https://distrowatch.com/dwres.php?resource=family-tree">Linux distribution family tree</a>).</p>
+<p>For packaging on Linux we first have to deal with different types of packaging formats such as <code>.deb</code> and <code>.rpm</code>. Then we have to deal with different desktop environments, if we want our application to properly integrate in the user&rsquo;s desktop, as some of them might require curtain different configurations. Even after this, it is not curtain that our application is bound to run without any issues, so we have test our builds on different distributions. From the above explanation it becomes clear about how packaging for Linux can become a project in itself.</p>
+<p>To ease some of this work load we can employee some scripts (I package for Debian using <a href="https://github.com/sarthakpranesh/CpuRoller/blob/master/debian-build.sh">this</a> script I made). The easiest way to distribute your apps on Linux might be using AppImages, Flatpak or Snaps (Wails v2 might provide packaging to Flatpak, see <a href="https://github.com/wailsapp/wails/issues/559">here</a>). But these approaches do have their disadvantages, a common one being the increased app size.</p>
+<h5 id="data-retrieval-inconsistency">Data Retrieval Inconsistency</h5>
+<p>The project utilizes the <a href="https://github.com/shirou/gopsutil">gopsutil</a> for retrieving the usage information and hardware details about the system. The problem is that the library gives different results on different operating systems specially on Windows. As of now I am handling this manually in the app itself <a href="https://github.com/sarthakpranesh/CpuRoller/blob/master/frontend/src/App.js#L27">here</a>, but I look forward to the future versions of this library to fix these issues.</p>
+<h3 id="concluding">Concluding</h3>
+<p>CpuRoller turned out to be good learning experience for me, as I learned more about managing cross platform applications. It also displays how cross platform development tools such as Wails and others are actually becoming more stable and increasingly consistent on providing compatibility on different platforms.</p>
+
             </div>
         </div>
     </div>
@@ -222,15 +259,6 @@
                             
                                 
                                 <i data-feather="instagram"></i> 
-                            
-                            </a>
-                        
-                    
-                        
-                            <a class="text-lighten-3" href="https://twitter.com/SarthakPranesh">
-                            
-                                
-                                <i data-feather="twitter"></i> 
                             
                             </a>
                         

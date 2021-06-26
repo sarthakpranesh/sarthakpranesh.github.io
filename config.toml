@@ -34,9 +34,6 @@ categories = ""
     name = "instagram"
     link = "https://www.instagram.com/sarthakpranesh/"
   [[params.contacts]]
-    name = "twitter"
-    link = "https://twitter.com/SarthakPranesh"
-  [[params.contacts]]
     name = "facebook"
     link = "https://www.facebook.com/sarthakpranesh/"
 

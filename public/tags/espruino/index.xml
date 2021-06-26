@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Espruino on Sarthak Pranesh</title>
+    <link>http://sarthakpranesh.now.sh/tags/espruino/</link>
+    <description>Recent content in Espruino on Sarthak Pranesh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 Jul 2019 10:58:48 +0000</lastBuildDate><atom:link href="http://sarthakpranesh.now.sh/tags/espruino/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript Loves Internet Of Things</title>
+      <link>http://sarthakpranesh.now.sh/blogs/javascript-loves-internet-of-things/</link>
+      <pubDate>Fri, 05 Jul 2019 10:58:48 +0000</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/blogs/javascript-loves-internet-of-things/</guid>
+      <description>How to use Javascript on Nodemcu using Espruino.</description>
+    </item>
+    
+  </channel>
+</rss>

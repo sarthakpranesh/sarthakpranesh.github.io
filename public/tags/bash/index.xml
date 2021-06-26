@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bash on Sarthak Pranesh</title>
+    <link>http://sarthakpranesh.now.sh/tags/bash/</link>
+    <description>Recent content in Bash on Sarthak Pranesh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Jun 2020 10:08:43 +0000</lastBuildDate><atom:link href="http://sarthakpranesh.now.sh/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Linux Part 2 — Time To Draw Swords</title>
+      <link>http://sarthakpranesh.now.sh/blogs/linux/2/</link>
+      <pubDate>Sat, 27 Jun 2020 10:08:43 +0000</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/blogs/linux/2/</guid>
+      <description>Learn about linux and how to use linux shell to your advantage. Learn about what are packages and package managers. We will also go through some of the commands that will help us manage packages (software) in your Linux system and some other commands that will help you use your system more efficiently</description>
+    </item>
+    
+  </channel>
+</rss>

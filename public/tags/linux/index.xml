@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Sarthak Pranesh</title>
+    <link>http://sarthakpranesh.now.sh/tags/linux/</link>
+    <description>Recent content in Linux on Sarthak Pranesh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Jun 2020 10:08:43 +0000</lastBuildDate><atom:link href="http://sarthakpranesh.now.sh/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Linux Part 2 — Time To Draw Swords</title>
+      <link>http://sarthakpranesh.now.sh/blogs/linux/2/</link>
+      <pubDate>Sat, 27 Jun 2020 10:08:43 +0000</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/blogs/linux/2/</guid>
+      <description>Learn about linux and how to use linux shell to your advantage. Learn about what are packages and package managers. We will also go through some of the commands that will help us manage packages (software) in your Linux system and some other commands that will help you use your system more efficiently</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Linux Part 1 — First Blood</title>
+      <link>http://sarthakpranesh.now.sh/blogs/linux/1/</link>
+      <pubDate>Mon, 11 May 2020 13:22:01 +0000</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/blogs/linux/1/</guid>
+      <description>Learn about linux and how to use linux shell to your advantage. This is for beginners out there who have recently started to have a taste of Linux and want to know more terminal commands and how to use these commands to benefit them in their daily needs, and want to expand there knowledge about Linux further</description>
+    </item>
+    
+  </channel>
+</rss>

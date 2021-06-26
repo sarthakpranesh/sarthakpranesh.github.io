@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html><head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
+    
+    
+    <meta name="application-name" content="Sarthak Pranesh" />
+    <meta name="theme-color" content="#E4EBF5" />
+    <meta name="description" content="Hello 👋, I am a Software Developer, Technical Blogger and Linux Enthusiast 🐧. I love playing with and creating APIs, especially in Nodejs and Golang. I am passionate about creating end user application using React Native, JavaFx and Electron Js. Always interested in distributed computing and learning new technologies." />
+    <meta name="keywords" content="Sarthak Pranesh, Portfolio, Blogs, Projects" />
+    <meta name="author" content="Sarthak Pranesh" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+
+    <link rel="icon" href="/favicon.ico" />
+
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet"> 
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    
+    
+    
+    <title>Sarthak Pranesh | Introduction to Linux Part 2 — Time To Draw Swords</title>
+</head><body><div class="navbar-fixed">
+    <nav class="nav">
+        <div class="nav-wrapper">
+            <a href="#" data-target="mobile-device" class="sidenav-trigger nav-hamburger">
+                <i data-feather="menu"></i>
+            </a>
+            <ul class="hide-on-med-and-down">
+                
+                <li><a href="/">
+                
+                Home
+                </a></li>
+                
+                <li><a href="/blogs/">
+                
+                Blogs
+                </a></li>
+                
+                <li><a href="/projects/">
+                
+                Projects
+                </a></li>
+                
+                <li><a href="/tags/">
+                
+                Tags
+                </a></li>
+                
+            </ul>
+        </div>
+    </nav>
+</div>
+<ul class="sidenav" id="mobile-device">
+    
+    <li><a href="/">
+    
+    
+    <i data-feather="home"></i> 
+    
+    
+    Home
+    </a></li>
+    
+    <li><a href="/blogs/">
+    
+    
+    <i data-feather="pen-tool"></i> 
+    
+    
+    Blogs
+    </a></li>
+    
+    <li><a href="/projects/">
+    
+    
+    <i data-feather="code"></i> 
+    
+    
+    Projects
+    </a></li>
+    
+    <li><a href="/tags/">
+    
+    
+    <i data-feather="tag"></i> 
+    
+    
+    Tags
+    </a></li>
+    
+</ul>
+          <div id="content" class="container">
+<style>
+    .blogContentBody > ul:not(.browser-default) li {
+        margin-left: 40px;
+        margin-top: 20px;
+        list-style-type: disc !important;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .blogContentBody > ol:not(.browser-default) li {
+        margin-top: 20px;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .blogContentBody > * pre {
+        padding: 10px;
+        white-space: pre-wrap;        
+        white-space: -moz-pre-wrap;   
+        white-space: -pre-wrap;       
+        white-space: -o-pre-wrap;     
+        word-wrap: break-word;
+    }
+
+    .blogContentBody > * img {
+        padding: 0;
+        width: 100%;
+    }
+</style>
+<div class="short-container-wrapper">
+    <div class="row">
+        <div class="col l6 offset-l3 s12">
+            <h1>Introduction to Linux Part 2 — Time To Draw Swords</h1>
+            <style>
+    #info-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #info-wrapper > span {
+        margin: 0px 10px;
+    }
+
+    #info-wrapper > .chip {
+        margin: auto !important;
+        margin-bottom: 4px !important;
+        margin-left: 0px !important;
+        margin-right: 10px !important;
+    }
+</style>
+<div>
+    
+    
+    <div id="info-wrapper">
+        
+            <time datetime="2020-06-27">Jun 27, 2020</time>
+        
+        
+            <span> - </span>
+            
+                
+                    
+                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/package">Package</a>
+                
+                    
+                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/linux">Linux</a>
+                
+                    
+                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/ubuntu">Ubuntu</a>
+                
+                    
+                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/bash">Bash</a>
+                
+            
+        
+    </div>
+</div>
+            <br><br>
+            <div class="blogContentBody">
+                <p><img src="https://cdn-images-1.medium.com/max/512/1*SF_FzZQRc4oiwS2lInPYog.png" alt=""></p>
+<p>Icons made: Dave Gandy, Source- <a href="https://www.flaticon.com/authors/dave-gandy">https://www.flaticon.com/authors/dave-gandy</a>&quot;</p>
+<h3 id="introduction-to-linux-part-2time-to-drawswords">Introduction to Linux: Part 2 — Time To Draw Swords</h3>
+<p>In the last part we went through understanding what Linux is and different Linux commands to help you use the system more efficiently. If you have not gone through the first part then here is the link “<a href="https://medium.com/vit-linux-user-group/introduction-to-linux-part-1-first-blood-3cd248b8ede0"><em>Introduction to Linux: Part 1 — First Blood</em></a><em>”</em> , do give it a read.</p>
+<p>In this part we will understand what are packages and package managers. We will also go through some of the commands that will help us manage packages (software) in your Linux system and some other commands that will help you use your system more efficiently. So why wait, lets dig in.</p>
+<h3 id="what-are-packages">What are Packages?</h3>
+<blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Package_format">A package format is a type of archive containing computer programs and additional metadata needed by package managers</a> — from Wikipedia</p>
+</blockquote>
+<p>In simple words, Packages are pieces of software that can be installed on the Linux System. The term <strong>package</strong> refers to a file archive containing all the files that come with a particular application. Just like we have <strong>.exe</strong> executable for Windows based system in the similar manner we have different packing formats in the Linux System. Some of these packaging formats are deb, rpm, snap, etc.</p>
+<h3 id="what-are-package-managers">What are Package Managers?</h3>
+<blockquote>
+<p><a href="https://www.debian.org/doc/manuals/aptitude/pr01s02.en.html">A <em>package manager</em> keeps track of what software is installed on your computer, and allows you to easily install new software, upgrade software to newer versions, or remove software that you previously installed. As the name suggests, package managers deal with <em>packages</em>: collections of files that are bundled together and can be installed and removed as a group</a> — from Debian.org</p>
+</blockquote>
+<p>As the name suggests, Package Manager helps you make sure you are able to install the required pieces of packages that you need on your Linux System. It also helps you to upgrade the packages which are already installed or remove the once which you don’t require. Therefore the Package Managers are an essential component that completes the Linux System.</p>
+<p>Just like we have many different Linux Distributions, similarly we have many different Package Managers that achieve the same goal but with different concepts, packaging formats and techniques. We won’t go in to much dept about these concepts and techniques but will discuss about the Ubuntu package manager in the next section.</p>
+<h3 id="apt-packagemanagers">APT Package Managers</h3>
+<p>APT or Advance Package Tool is the most popular package manager in the world of Debian based distributions such as Ubuntu, Pop OS, etc. It is free software user interface aimed to work with core libraries for installation, removal and management of packages on the Linux system. It is the main package manager in Ubuntu and is developed under ‘The Debian Project’.</p>
+<p>Lets start with some commands that would help you keep your system up-to date and running smoothly with the <strong>apt</strong> commandline interface.</p>
+<h4 id="update-upgrade">Update &amp; Upgrade</h4>
+<p>These two commands are the most essential and basic commands of the APT package manager. The <strong>apt update</strong> command updates the list of packages that can be upgraded in the Linux operating system. Whereas the <strong>apt upgrade</strong> command is responsible for the actual fetching of the newer version of the package and installing them on the system. So lets start with updating our system packages</p>
+<p><img src="https://cdn-images-1.medium.com/max/905/1*XvycL4vq542DtiW2yvH87g.png" alt=""></p>
+<p>The last line tells us about how many packages are their currently on the system that can be upgraded. We can clearly see my system has 19 packages as of now that can be upgraded to newer version.</p>
+<p>For seeing these packages we can simply run <strong>apt list &ndash;upgradable</strong> and it will list all the packages that can be upgraded on the system.</p>
+<p><img src="https://cdn-images-1.medium.com/max/906/1*Efnq99DCr6kicJBMr9FNLA.png" alt=""></p>
+<p>Here we see both the package name and the new version of the package with some other details</p>
+<p>Now as we are well informed about what packages we are going to upgrade and to what versions, we simply run upgrade using <strong>sudo apt upgrade</strong> command. It might give you a prompt in the terminal asking if you want to continue, press ‘<strong>y</strong>’ and hit enter.</p>
+<p><img src="https://cdn-images-1.medium.com/max/910/1*WdvMBvu16_L5MLeTxM6daw.png" alt=""></p>
+<p>… and the system starts fetching the packages over the internet and installs them on the system</p>
+<p>Note: We need to use <strong>sudo</strong> command while we upgrade the packages on the system as we are making modifications to the system which requires admin level privileges.</p>
+<h4 id="autoremove">Autoremove</h4>
+<p>It is used to remove packages that were automatically installed to satisfy<br>
+dependencies for other packages and are now no longer needed. This can be achieved by running <strong>sudo apt autoremove</strong> command**.** Running this command will also ask us if we want to continue, so press ‘**y**’ and hit enter.</p>
+<p><img src="https://cdn-images-1.medium.com/max/906/1*0QOnDu4lko5XkhKuT9LAWg.png" alt=""></p>
+<p>This command essentially helps you get rid of any packages that are just lying around in the system and are of no further use</p>
+<h4 id="search">Search</h4>
+<p>This comes in very handy if you are not sure about a package or software existing in the list of the given packages or not. It uses <strong>regex</strong> to find packages that match the given name. Here we will try to search for the popular game called <strong>SuperTux 2</strong>. We achieve this by running <strong>apt search supertux</strong></p>
+<p><img src="https://cdn-images-1.medium.com/max/905/1*kmYlWzV3Rt0OxAWBY-XiSg.png" alt=""></p>
+<p>We get 4 packages that match the keyword supertux and can be installed. We want to install the first one.</p>
+<h4 id="install">Install</h4>
+<p>As the name suggests it is used to install packages or software in your Linux System right from the terminal. As searched earlier we would like to install the package named <strong>supertux</strong>, this can be done by using the command <strong>sudo apt install supertux</strong></p>
+<p><img src="https://cdn-images-1.medium.com/max/910/1*UF9BzfP5q4LkmFI71EHuEg.png" alt=""></p>
+<p>Here you can clearly see that the install command also downloads and installs any other dependencies required by the supertux package</p>
+<p>Just like the upgrade command the packages are first downloaded and then installed onto the system.</p>
+<p>Note: While we where searching for a package we did not use <strong>sudo</strong> command because we were just retrieving information from the system but not modifying the system in any manner. But while installing, removing and upgrading a package we use <strong>sudo</strong> command as we are modifying our Linux System and doing so requires Admin level privileges.</p>
+<p>After the package is successfully installed you can type <strong>supertux2</strong> in the terminal and enjoy the game :) but make sure you don’t close the terminal or the game will close too ( this is because of a foreground process, more on that in the next part of the series )</p>
+<p><img src="https://cdn-images-1.medium.com/max/1024/1*tQXgR9oXsI98iaek81oEvA.png" alt=""></p>
+<h4 id="remove">Remove</h4>
+<p>I hope you liked the game, don’t worry if you didn’t because now we are going to remove it ( you can choose not too if you really liked it ). To achieve this we use <strong>sudo apt remove supertux</strong></p>
+<p><img src="https://cdn-images-1.medium.com/max/926/1*sCfws1qTqU3JgHV9P_OYeA.png" alt=""></p>
+<p>If you read the output of the command you’ll find out that the command tells some of the packages where automatically installed and that they can be removed using <strong>sudo apt autoremove</strong>, so go head and remove them as they are no longer needed.</p>
+<p>Please be careful about what packages you remove by using the <strong>remove</strong> command because if you removed a package that your system relies on then you’ll end up in trouble. One hard and fast rule that I follow while using my Linux System is to never touch packages that I did not install or I don’t know about. By using the above 6 commands you’ll be able to manage the installation, upgradation and removal of packages efficiently on your Linux System.</p>
+<h3 id="back-to-terminalbasics">Back To Terminal Basics!</h3>
+<p>In the previous blog tutorial we discussed about some basic commands that we can run on the terminal. Here we discuss more such commands that can help us navigate and use our system more efficiently.</p>
+<h4 id="pushd-popd">pushd &amp; popd</h4>
+<p>We discussed how to use <strong>cd</strong> tool in the previous tutorial. Now lets say that we had to just temporally go to a particular directory to find some information and then we have to go back to the previous directory. This can be achieved by using <strong>cd</strong> two times, but in some cases it gets tough to remember what exact directory we were in. For this purpose we use the <strong>pushd</strong> and <strong>popd</strong> tools.</p>
+<p>Lets say we are in our <strong>Home</strong> directory of the logged in user and we want to navigate to <strong>/etc</strong> directory, run some commands and then navigate back to our <strong>Home</strong> directory. For doing this we run <strong>pushd /etc</strong></p>
+<p><img src="https://cdn-images-1.medium.com/max/743/1*uypPssr30aH897-oUlnGwA.png" alt=""></p>
+<p>Here we use the pwd command both before after running pushd command to see where we are in the Linux System</p>
+<p>As we can see that we have successfully navigated to the <strong>/etc</strong> directory, so now we can run whatever commands we wanted to run and gather any information that we need. After we are done, we use the <strong>popd</strong> tool to navigate back to the previous directory.</p>
+<p><img src="https://cdn-images-1.medium.com/max/744/1*mmJyE_VdUASOcWtprdfhYQ.png" alt=""></p>
+<p>Here when we use the popd command we are able to navigate back to the home directory of the user</p>
+<p>Note: We used the word tool instead of command to indicate that both <strong>pushd</strong> and <strong>popd</strong> are builtin command line tools just like <strong>cd.</strong></p>
+<h4 id="which">which</h4>
+<p>Their are times when we aren’t sure about if a particular command exists or not, or we want to locate the command in the file system. For doing so we run the <strong>which</strong> command. Lets say we wanted to find out where is the <strong>ls</strong> command being executed from, then for doing so we can run <strong>which ls</strong> in the terminal and it will output the file path from where the <strong>ls</strong> command is being executed.</p>
+<p><img src="https://cdn-images-1.medium.com/max/747/1*Py6dy17cLgXO1gt5gEkgqA.png" alt=""></p>
+<h4 id="cal">cal</h4>
+<p>Ever wondered what it will be like to see the Calendar on a terminal itself. Yes you can and the <strong>cal</strong> command helps you with that</p>
+<p><img src="https://cdn-images-1.medium.com/max/748/1*RO4T5F4ABKRMbwEb9RgSBg.png" alt=""></p>
+<p>Pretty neat haan</p>
+<h4 id="history">history</h4>
+<p>Their are instances when we want to see what commands we ran in the terminal. This can be helpful in many cases, one being we want to undo something what we did previously but don’t remember exactly what command we ran. For seeing the list of commands that we have run previously we simple type <strong>history</strong> in the terminal and hit enter.</p>
+<p><img src="https://cdn-images-1.medium.com/max/746/1*5dtX-ujOiaw9Wbzbxro7iw.png" alt=""></p>
+<h4 id="whatis">whatis</h4>
+<p>In the previous blog we discussed about the <strong>man</strong> command and its need in the Linux System. But sometimes the output of the <strong>man</strong> command is just too overwhelming or we actually don’t want the whole documentation and only want a short but precise description of the said command. For this purpose we have the <strong>whatis</strong> command that gives us one line description about the command passed to it. For example lets run <strong>whatis cat</strong> to get the one liner description of the cat command.</p>
+<p><img src="https://cdn-images-1.medium.com/max/743/1*f7FyFAR-wjKIb-fFAlT-dA.png" alt=""></p>
+<p>This command is most useful when we want to confirm what a particular command does and by no means is supposed to replace the <strong>man</strong> command which gives us all the documentation we need to learn these commands along with there different options.</p>
+<h4 id="apropos">apropos</h4>
+<p>Lets say we don’t know some commands but we know what we want that command to work on, for example we want to delete a user but we don’t know the exact command to do so. In such a case we want to search all the system commands and their manuals to find the command we can use to modify a user. This is exactly what <strong>apropos</strong> command allows us to do. To find commands that can help us delete a user we simply run <strong>apropos user</strong> in the terminal. It outputs all commands with their short description that can help us with a user.</p>
+<p><img src="https://cdn-images-1.medium.com/max/746/1*7BNJvEVlB2GedRgrikwYpw.png" alt=""></p>
+<p>If we scroll up the list we find the <strong>deluser</strong> command, that we used in the previous tutorial to delete a user.</p>
+<h4 id="nano">nano</h4>
+<p>This is a handy and simple text editor, that lets you edit files in the terminal itself. It is super simple to use, all we have to do is run <strong>nano somefilename</strong> and it will open that file for editing and if the file does not exist it will create the file for us.</p>
+<p>For Example lets run: <strong>nano somefilename.txt</strong> and hit enter, as soon as we do that the command will create the new file if it doesn’t exist and will open a text editor in the whole terminal window. In this window we can write all the content we want to store in the file.</p>
+<p><img src="https://cdn-images-1.medium.com/max/744/1*tc2FYi5nrwH2HUXHoe2WGA.png" alt=""></p>
+<p>Now after we are done typing stuff we want to save it to the file. We do this by pressing and holding the <strong>ctrl</strong> key and then hitting the letter <strong>O</strong> on the keyboard. This will then ask you if you want to write to the file with filename shown as below</p>
+<p><img src="https://cdn-images-1.medium.com/max/742/1*pcb4PjetBzTXdF-sJezB9w.png" alt=""></p>
+<p>Press enter and it will show the number of line it wrote ( basically saved ) to the file.</p>
+<p><img src="https://cdn-images-1.medium.com/max/745/1*bYEYiLlOuj-O-G-P9VsJvw.png" alt=""></p>
+<p>To exit the <strong>nano</strong> text editor we press and hold the <strong>ctrl</strong> key and hit <strong>X</strong> on the keyboard.</p>
+<h4 id="cp">cp</h4>
+<p>As simple as it can be the <strong>cp</strong> command is used to copy one file to another. Lets create a text file named file1.txt and store some text content in this file. By running the following commands in the terminal ( please read the blow screen shot content carefully )</p>
+<p><img src="https://cdn-images-1.medium.com/max/748/1*pIbB5K1e06uzWpUCZ3Xgtw.png" alt=""></p>
+<p>As highlighted above we see that the file named file.txt has been created</p>
+<p>Here we have used the <strong>cat</strong> command to generate and store some text in the file named file.txt by using a concept in Linux called <strong>Redirection</strong> ( hence the “&gt;” symbol ). More about redirection will be discussed later but in simplicity here it is allowing us to use the <strong>cat</strong> command to append new content in the file. If you want to use nano text editor please feel free. As discussed in the previous tutorial, we can simply run <strong>cat file.txt</strong> in the terminal to make sure our text content was successfully stored.</p>
+<p><img src="https://cdn-images-1.medium.com/max/743/1*gTr7q7h7pjy5anbSZ903kw.png" alt=""></p>
+<p>Now finally we can use the <strong>cp</strong> command to copy the content form file.txt to another file named file2.txt and then verify the content of file2.txt using the <strong>cat</strong> command</p>
+<p><img src="https://cdn-images-1.medium.com/max/742/1*lTEPqh6fZ3ZcATxx3l70eg.png" alt=""></p>
+<p>The general syntax of the <strong>cp</strong> command is as follows :</p>
+<p><strong>cp fileToCopy destinationFile</strong></p>
+<h4 id="mv">mv</h4>
+<p>This would be the last command we’ll cover in this blog tutorial. This command is used mostly for two purpose: for moving files and for renaming files. To move one file to another directory we simply run:</p>
+<p><strong>mv sourceFilePath destinationFilePath</strong></p>
+<p>For example we create a file called temp.txt in the <strong>home</strong> directory of our user and then move it to the <strong>Downloads</strong> directory using the <strong>mv</strong> command.</p>
+<p><img src="https://cdn-images-1.medium.com/max/744/1*TXYoXbS8fLYG1ke6iSJuqw.png" alt=""></p>
+<p>Now we can try to rename this file too, lets rename it too somefile.txt. We do so by just running <strong>mv temp.txt somefile.txt</strong></p>
+<p><img src="https://cdn-images-1.medium.com/max/744/1*_8Nn_pS4Z4LGZxY2ZbOYFA.png" alt=""></p>
+<p>As we see above our file was renamed successfully.</p>
+<p>Tip: For a deeper knowledge about the Linux commands discussed in this blog tutorial make sure you read their documentation/manual thoroughly by using <strong>man</strong> command</p>
+<h3 id="summary">Summary</h3>
+<p><strong>Packages</strong> are software that can be installed on the Linux System. There are different <strong>packaging formats like</strong> <strong>deb</strong>, <strong>rpm</strong>, <strong>snap</strong>, etc and similarly there are different <strong>package managers which utilize different packaging formats and techniques</strong>.</p>
+<p>This blog further proves how much easy it is to manage your Linux System, packages and perform simple tasks. We’ll cover more basic commands, techniques such as <strong>Redirection</strong> and other concepts like <strong>Linux File System</strong> in the upcoming blog tutorials so stay tuned. Till then happy learning ;)</p>
+<p><img src="https://medium.com/_/stat?event=post.clientViewed&amp;referrerSource=full_rss&amp;postId=a2e63c2793a" alt=""></p>
+<hr>
+<p><a href="https://medium.com/vit-linux-user-group/introduction-to-linux-part-2-time-to-draw-swords-a2e63c2793a">Introduction to Linux: Part 2 — Time To Draw Swords</a> was originally published in <a href="https://medium.com/vit-linux-user-group">VIT Linux User Group</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div><style>
+    #contact-section > a {
+        margin: 20px 10px 0px 0px !important;
+    }
+</style>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 offset-l3 s12" id="contact-section">
+                
+                    <h4>Contact Me</h4>
+                    <p>
+                        I would love to hear from you and have little chit chat about frameworks, languages, tools, projects, ☕️, etc. If you are curious then this website was built using a Hugo theme called Blogfolio, link can be found below.
+                    </p>
+                    
+                        
+                            <a class="text-lighten-3" href="https://github.com/sarthakpranesh">
+                            
+                                
+                                <i data-feather="github"></i> 
+                            
+                            </a>
+                        
+                    
+                        
+                            <a class="text-lighten-3" href="https://www.linkedin.com/in/sarthakpranesh/">
+                            
+                                
+                                <i data-feather="linkedin"></i> 
+                            
+                            </a>
+                        
+                    
+                        
+                            <a class="text-lighten-3" href="https://www.instagram.com/sarthakpranesh/">
+                            
+                                
+                                <i data-feather="instagram"></i> 
+                            
+                            </a>
+                        
+                    
+                        
+                            <a class="text-lighten-3" href="https://www.facebook.com/sarthakpranesh/">
+                            
+                                
+                                <i data-feather="facebook"></i> 
+                            
+                            </a>
+                        
+                    
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Copyright (c) 2021 Sarthak Pranesh
+            <a class="text-lighten-4 right" href="https://github.com/sarthakpranesh/Blogfolio" target="_blank">Hugo Theme</a>
+        </div>
+    </div>
+</footer>
+      <script type="text/javascript" src="/js/materialize.min.js"></script>
+<script src="/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let elems = document.querySelectorAll('.sidenav');
+    let instances = M.Sidenav.init(elems, {
+      edge: 'left',
+      draggable: true,
+      preventScrolling: true,
+    });
+  });
+</script>
+</body>
+</html>

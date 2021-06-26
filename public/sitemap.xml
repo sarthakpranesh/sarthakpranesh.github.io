@@ -1,129 +1,112 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>http://sarthakpranesh.now.sh/tags/adb/</loc>
     <lastmod>2021-02-07T21:32:32+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://sarthakpranesh.now.sh/tags/android/</loc>
     <lastmod>2021-02-07T21:32:32+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://sarthakpranesh.now.sh/blogs/</loc>
     <lastmod>2021-02-07T21:32:32+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://sarthakpranesh.now.sh/tags/react-native/</loc>
     <lastmod>2021-02-07T21:32:32+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://sarthakpranesh.now.sh/</loc>
     <lastmod>2021-02-07T21:32:32+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://sarthakpranesh.now.sh/tags/</loc>
     <lastmod>2021-02-07T21:32:32+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://sarthakpranesh.now.sh/blogs/adb/</loc>
     <lastmod>2021-02-07T21:32:32+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://sarthakpranesh.now.sh/tags/c/</loc>
     <lastmod>2020-11-21T11:46:58+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://sarthakpranesh.now.sh/tags/openmp/</loc>
     <lastmod>2020-11-21T11:46:58+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://sarthakpranesh.now.sh/blogs/openmp/3/</loc>
     <lastmod>2020-11-21T11:46:58+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://sarthakpranesh.now.sh/tags/parallel-programming/</loc>
     <lastmod>2020-11-21T11:46:58+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://sarthakpranesh.now.sh/projects/cpuroller/</loc>
     <lastmod>2020-10-18T11:46:58+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://sarthakpranesh.now.sh/tags/golang/</loc>
     <lastmod>2020-10-18T11:46:58+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://sarthakpranesh.now.sh/projects/</loc>
     <lastmod>2020-10-18T11:46:58+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://sarthakpranesh.now.sh/tags/system-monitor/</loc>
     <lastmod>2020-10-18T11:46:58+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://sarthakpranesh.now.sh/tags/wails/</loc>
     <lastmod>2020-10-18T11:46:58+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://sarthakpranesh.now.sh/blogs/openmp/2/</loc>
     <lastmod>2020-08-19T11:46:58+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://sarthakpranesh.now.sh/blogs/openmp/1/</loc>
     <lastmod>2020-07-11T11:46:58+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://sarthakpranesh.now.sh/projects/cosmos/</loc>
-    <lastmod>2020-07-04T11:46:58+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://sarthakpranesh.now.sh/tags/bash/</loc>
+    <lastmod>2020-06-27T10:08:43+00:00</lastmod>
+  </url><url>
+    <loc>http://sarthakpranesh.now.sh/blogs/linux/2/</loc>
+    <lastmod>2020-06-27T10:08:43+00:00</lastmod>
+  </url><url>
+    <loc>http://sarthakpranesh.now.sh/tags/linux/</loc>
+    <lastmod>2020-06-27T10:08:43+00:00</lastmod>
+  </url><url>
+    <loc>http://sarthakpranesh.now.sh/tags/package/</loc>
+    <lastmod>2020-06-27T10:08:43+00:00</lastmod>
+  </url><url>
+    <loc>http://sarthakpranesh.now.sh/tags/ubuntu/</loc>
+    <lastmod>2020-06-27T10:08:43+00:00</lastmod>
+  </url><url>
+    <loc>http://sarthakpranesh.now.sh/blogs/linux/1/</loc>
+    <lastmod>2020-05-11T13:22:01+00:00</lastmod>
+  </url><url>
+    <loc>http://sarthakpranesh.now.sh/tags/shell/</loc>
+    <lastmod>2020-05-11T13:22:01+00:00</lastmod>
+  </url><url>
+    <loc>http://sarthakpranesh.now.sh/tags/unix/</loc>
+    <lastmod>2020-05-11T13:22:01+00:00</lastmod>
+  </url><url>
+    <loc>http://sarthakpranesh.now.sh/blogs/introduction-to-node-version-manager/</loc>
+    <lastmod>2020-04-14T10:21:18+00:00</lastmod>
+  </url><url>
     <loc>http://sarthakpranesh.now.sh/tags/javascript/</loc>
-    <lastmod>2020-07-04T11:46:58+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://sarthakpranesh.now.sh/tags/social-media/</loc>
-    <lastmod>2020-07-04T11:46:58+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://sarthakpranesh.now.sh/tags/covid-19/</loc>
-    <lastmod>2020-03-17T11:46:58+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://sarthakpranesh.now.sh/projects/covid19/</loc>
-    <lastmod>2020-03-17T11:46:58+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://sarthakpranesh.now.sh/tags/typescript/</loc>
-    <lastmod>2020-03-17T11:46:58+05:30</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-14T10:21:18+00:00</lastmod>
+  </url><url>
+    <loc>http://sarthakpranesh.now.sh/tags/node/</loc>
+    <lastmod>2020-04-14T10:21:18+00:00</lastmod>
+  </url><url>
+    <loc>http://sarthakpranesh.now.sh/tags/nodejs/</loc>
+    <lastmod>2020-04-14T10:21:18+00:00</lastmod>
+  </url><url>
+    <loc>http://sarthakpranesh.now.sh/tags/npm/</loc>
+    <lastmod>2020-04-14T10:21:18+00:00</lastmod>
+  </url><url>
+    <loc>http://sarthakpranesh.now.sh/tags/espruino/</loc>
+    <lastmod>2019-07-05T10:58:48+00:00</lastmod>
+  </url><url>
+    <loc>http://sarthakpranesh.now.sh/tags/iot/</loc>
+    <lastmod>2019-07-05T10:58:48+00:00</lastmod>
+  </url><url>
+    <loc>http://sarthakpranesh.now.sh/blogs/javascript-loves-internet-of-things/</loc>
+    <lastmod>2019-07-05T10:58:48+00:00</lastmod>
+  </url><url>
+    <loc>http://sarthakpranesh.now.sh/tags/nodemcu/</loc>
+    <lastmod>2019-07-05T10:58:48+00:00</lastmod>
+  </url><url>
     <loc>http://sarthakpranesh.now.sh/categories/</loc>
   </url>
-  
 </urlset>

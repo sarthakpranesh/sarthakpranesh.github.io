@@ -6,11 +6,7 @@
     <description>Recent content on Sarthak Pranesh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Feb 2021 21:32:32 +0530</lastBuildDate>
-    
-	<atom:link href="http://sarthakpranesh.now.sh/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 07 Feb 2021 21:32:32 +0530</lastBuildDate><atom:link href="http://sarthakpranesh.now.sh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wireless connection to Android Device for app development</title>
       <link>http://sarthakpranesh.now.sh/blogs/adb/</link>
@@ -35,7 +31,7 @@
       <pubDate>Sun, 18 Oct 2020 11:46:58 +0530</pubDate>
       
       <guid>http://sarthakpranesh.now.sh/projects/cpuroller/</guid>
-      <description>Simple Cross platform Desktop application for displaying realtime CPU usage of your Desktop/Laptop. Available for Linux and MacOS. Utilizes React.js frontend and Go lang backend, developed with Wails.</description>
+      <description>Simple Cross Platform Desktop application for seeing your CPU and RAM utilization with an intuitive design. Available natively on Windows, Linux and MacOS.</description>
     </item>
     
     <item>
@@ -57,21 +53,39 @@
     </item>
     
     <item>
-      <title>Cosmos</title>
-      <link>http://sarthakpranesh.now.sh/projects/cosmos/</link>
-      <pubDate>Sat, 04 Jul 2020 11:46:58 +0530</pubDate>
+      <title>Introduction to Linux Part 2 — Time To Draw Swords</title>
+      <link>http://sarthakpranesh.now.sh/blogs/linux/2/</link>
+      <pubDate>Sat, 27 Jun 2020 10:08:43 +0000</pubDate>
       
-      <guid>http://sarthakpranesh.now.sh/projects/cosmos/</guid>
-      <description>Open Source social media platform built with React Native and Firebase. Uses Google OAuth and Hermes JavaScript engine while providing intuitive design inspired by Instagram and application size of just 9 MB. It provides users the ability to create their own communities based on common interests, affiliations, etc.</description>
+      <guid>http://sarthakpranesh.now.sh/blogs/linux/2/</guid>
+      <description>Learn about linux and how to use linux shell to your advantage. Learn about what are packages and package managers. We will also go through some of the commands that will help us manage packages (software) in your Linux system and some other commands that will help you use your system more efficiently</description>
     </item>
     
     <item>
-      <title>Covid 19</title>
-      <link>http://sarthakpranesh.now.sh/projects/covid19/</link>
-      <pubDate>Tue, 17 Mar 2020 11:46:58 +0530</pubDate>
+      <title>Introduction to Linux Part 1 — First Blood</title>
+      <link>http://sarthakpranesh.now.sh/blogs/linux/1/</link>
+      <pubDate>Mon, 11 May 2020 13:22:01 +0000</pubDate>
       
-      <guid>http://sarthakpranesh.now.sh/projects/covid19/</guid>
-      <description>React Native project built with Typescript, that shows statistics, latest news, precautions and helpline numbers related to Covid 19, developed for both IOS and Android.</description>
+      <guid>http://sarthakpranesh.now.sh/blogs/linux/1/</guid>
+      <description>Learn about linux and how to use linux shell to your advantage. This is for beginners out there who have recently started to have a taste of Linux and want to know more terminal commands and how to use these commands to benefit them in their daily needs, and want to expand there knowledge about Linux further</description>
+    </item>
+    
+    <item>
+      <title>Introduction To Node Version Manager</title>
+      <link>http://sarthakpranesh.now.sh/blogs/introduction-to-node-version-manager/</link>
+      <pubDate>Tue, 14 Apr 2020 10:21:18 +0000</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/blogs/introduction-to-node-version-manager/</guid>
+      <description>Node developers and enthusiast, ever wondered how will it be to use different versions of Node for your different applications or ever had issues in installing Node on your fresh Linux machines. Well if you had had these issues then here is the easiest way to solve it, that too in style.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Loves Internet Of Things</title>
+      <link>http://sarthakpranesh.now.sh/blogs/javascript-loves-internet-of-things/</link>
+      <pubDate>Fri, 05 Jul 2019 10:58:48 +0000</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/blogs/javascript-loves-internet-of-things/</guid>
+      <description>How to use Javascript on Nodemcu using Espruino.</description>
     </item>
     
   </channel>

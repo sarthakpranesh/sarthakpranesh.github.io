@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html><head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
+    
+    
+    <meta name="application-name" content="Sarthak Pranesh" />
+    <meta name="theme-color" content="#E4EBF5" />
+    <meta name="description" content="Hello 👋, I am a Software Developer, Technical Blogger and Linux Enthusiast 🐧. I love playing with and creating APIs, especially in Nodejs and Golang. I am passionate about creating end user application using React Native, JavaFx and Electron Js. Always interested in distributed computing and learning new technologies." />
+    <meta name="keywords" content="Sarthak Pranesh, Portfolio, Blogs, Projects" />
+    <meta name="author" content="Sarthak Pranesh" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+
+    <link rel="icon" href="/favicon.ico" />
+
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet"> 
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    
+    
+    
+    <title>Sarthak Pranesh | Introduction To Node Version Manager</title>
+</head><body><div class="navbar-fixed">
+    <nav class="nav">
+        <div class="nav-wrapper">
+            <a href="#" data-target="mobile-device" class="sidenav-trigger nav-hamburger">
+                <i data-feather="menu"></i>
+            </a>
+            <ul class="hide-on-med-and-down">
+                
+                <li><a href="/">
+                
+                Home
+                </a></li>
+                
+                <li><a href="/blogs/">
+                
+                Blogs
+                </a></li>
+                
+                <li><a href="/projects/">
+                
+                Projects
+                </a></li>
+                
+                <li><a href="/tags/">
+                
+                Tags
+                </a></li>
+                
+            </ul>
+        </div>
+    </nav>
+</div>
+<ul class="sidenav" id="mobile-device">
+    
+    <li><a href="/">
+    
+    
+    <i data-feather="home"></i> 
+    
+    
+    Home
+    </a></li>
+    
+    <li><a href="/blogs/">
+    
+    
+    <i data-feather="pen-tool"></i> 
+    
+    
+    Blogs
+    </a></li>
+    
+    <li><a href="/projects/">
+    
+    
+    <i data-feather="code"></i> 
+    
+    
+    Projects
+    </a></li>
+    
+    <li><a href="/tags/">
+    
+    
+    <i data-feather="tag"></i> 
+    
+    
+    Tags
+    </a></li>
+    
+</ul>
+          <div id="content" class="container">
+<style>
+    .blogContentBody > ul:not(.browser-default) li {
+        margin-left: 40px;
+        margin-top: 20px;
+        list-style-type: disc !important;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .blogContentBody > ol:not(.browser-default) li {
+        margin-top: 20px;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .blogContentBody > * pre {
+        padding: 10px;
+        white-space: pre-wrap;        
+        white-space: -moz-pre-wrap;   
+        white-space: -pre-wrap;       
+        white-space: -o-pre-wrap;     
+        word-wrap: break-word;
+    }
+
+    .blogContentBody > * img {
+        padding: 0;
+        width: 100%;
+    }
+</style>
+<div class="short-container-wrapper">
+    <div class="row">
+        <div class="col l6 offset-l3 s12">
+            <h1>Introduction To Node Version Manager</h1>
+            <style>
+    #info-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #info-wrapper > span {
+        margin: 0px 10px;
+    }
+
+    #info-wrapper > .chip {
+        margin: auto !important;
+        margin-bottom: 4px !important;
+        margin-left: 0px !important;
+        margin-right: 10px !important;
+    }
+</style>
+<div>
+    
+    
+    <div id="info-wrapper">
+        
+            <time datetime="2020-04-14">Apr 14, 2020</time>
+        
+        
+            <span> - </span>
+            
+                
+                    
+                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/npm">npm</a>
+                
+                    
+                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/javascript">javascript</a>
+                
+                    
+                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/nodejs">nodejs</a>
+                
+                    
+                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/node">node</a>
+                
+            
+        
+    </div>
+</div>
+            <br><br>
+            <div class="blogContentBody">
+                <p><img src="https://cdn-images-1.medium.com/max/600/1*MW6lLdaO0-OG22HUTA2scA.png" alt=""></p>
+<p>Hello Node developers and enthusiast, ever wondered how will it be to use different versions of Node for your different applications or ever had issues in installing Node on your fresh Linux machines. Well if you had had these issues then here is the easiest way to solve it, that too in style.</p>
+<h3 id="what-isnvm">What Is NVM?</h3>
+<p><strong>N</strong>ode <strong>V</strong>ersion <strong>M</strong>anager or NVM is the answer to all of this. It allows the developers to install multiple versions of Node in their machine and at the same time provide them with a very easy seamless switching experience between different versions of Node.</p>
+<p>In this article we will go from installing NVM to utilizing it to its full potential, so why wait lets dig in!</p>
+<h3 id="lets-installnvm">Let’s Install NVM!</h3>
+<p>First we’ll need to make sure we have what it takes to install NVM, right?</p>
+<p>Let’s install the required C++ compilers to make sure that the installation of NVM goes smooth. So make sure you follow the instructions below carefully for your respective machines.</p>
+<ul>
+<li>Mac users run the following command in a terminal, make sure you hit “Install” when the popup appears.</li>
+</ul>
+<p><a href="https://medium.com/media/e6a24e24ecaa8c57a91b0e779cdc5082/href">https://medium.com/media/e6a24e24ecaa8c57a91b0e779cdc5082/href</a></p>
+<ul>
+<li>Ubuntu or Debian users will have to run the following two commands in there terminal, make sure to type in your password correctly.</li>
+</ul>
+<p><a href="https://medium.com/media/91dd02b6bb01ecd4c98cc472091009cf/href">https://medium.com/media/91dd02b6bb01ecd4c98cc472091009cf/href</a></p>
+<p>After you have installed the required tools, it’s time we install NVM.</p>
+<p>Run the command below in a terminal ( Same command for both Ubuntu and Mac users )</p>
+<p><a href="https://medium.com/media/c060ee9b4eb4f68d9f9effba0d6e2980/href">https://medium.com/media/c060ee9b4eb4f68d9f9effba0d6e2980/href</a></p>
+<p><strong>Final step, let’s verify if our installation was successful</strong></p>
+<p>Close the existing terminals and open a new one, and then run the following command.</p>
+<p><a href="https://medium.com/media/3f44eb36cf67c0b542c5f3be5ac0880d/href">https://medium.com/media/3f44eb36cf67c0b542c5f3be5ac0880d/href</a></p>
+<p>If the command worked you’ll see something like the following</p>
+<p><img src="https://cdn-images-1.medium.com/max/538/1*vfYF7nOG3H7dqnlUjFhtPw.png" alt=""></p>
+<p>The command is used to check what version of the nvm is installed</p>
+<p>Now its time to NVM 🥳….</p>
+<h3 id="installing-node">Installing Node</h3>
+<p>Let’s start with listing all the available Node versions, right from the version v0.1.14. To do so run the following NVM command and it will list out all the Node versions with the LTS releases marked.</p>
+<p><a href="https://medium.com/media/21a9603efcdc06fa94b05c1b52fc0548/href">https://medium.com/media/21a9603efcdc06fa94b05c1b52fc0548/href</a></p>
+<p>The result of this command will look similar to the following, you might get more recent releases depending on when you are reading this article.</p>
+<p><img src="https://cdn-images-1.medium.com/max/564/1*I5TXwrg_Ng1FHzObbqQmOA.png" alt=""></p>
+<p>The latest version being v13.2.0 and the LTS being v12.13.1</p>
+<p>Now lets say we wanna try the latest release of Node, hence v13.2.0 ( Your Latest Release maybe different, feel free to try that one ). For doing so run the following command.</p>
+<p><a href="https://medium.com/media/ec8d50cd20f8d9204ae5a086b581f14e/href">https://medium.com/media/ec8d50cd20f8d9204ae5a086b581f14e/href</a></p>
+<p>You can choose to install another version of Node if you wish too. After running the above command we would get something like the following.</p>
+<p><img src="https://cdn-images-1.medium.com/max/804/1*Qtqgz7CdNiOmai_fx3KMkw.png" alt=""></p>
+<p>NVM first downloads the specified version of Node and then sets it up automatically for us. So now lets see what Node version we are using by running the following command.</p>
+<p><a href="https://medium.com/media/720c33975cc963483d3743513ba0da99/href">https://medium.com/media/720c33975cc963483d3743513ba0da99/href</a></p>
+<h3 id="what-about-multiple-node-versions">What About Multiple Node Versions?</h3>
+<p>The same command ( nvm install version ), can be used to install any different version of Node alongside any existing installed versions.</p>
+<p>For example lets install the latest LTS version of Node, which was v12.13.1 ( we got this info from running “nvm ls-remote” remember? ). So for installing Node v12.13.1 we run the following command.</p>
+<p><a href="https://medium.com/media/28dc739007826891bd0e8db2adab2d2d/href">https://medium.com/media/28dc739007826891bd0e8db2adab2d2d/href</a></p>
+<p>On running the above command we get the following results, which is similar to what we got earlier.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*WnzajDKuzLexrvSVoQ5IeQ.png" alt=""></p>
+<p>This confirms the installation of Node v12.13.1</p>
+<p>And now we are using the LTS version of node ( v12.13.1 ).</p>
+<p><strong>But What If I Want To Switch Back To The Version I Installed Earlier?</strong></p>
+<p>No worries NVM got your back. All we need to do is list out the versions of Node installed on our machines and then tell NVM to use one of those installed versions.</p>
+<p>For doing so first we list out installed versions of Node by running the following command.</p>
+<p><a href="https://medium.com/media/3a4437363d683760f02bc63785046db6/href">https://medium.com/media/3a4437363d683760f02bc63785046db6/href</a></p>
+<p>On running the above command we get a list of all installed node versions that are available on our machine. The result looks like the following</p>
+<p><img src="https://cdn-images-1.medium.com/max/692/1*TYiFQl203mrIj_m17E9loQ.png" alt=""></p>
+<p>We can clearly see how I have other versions of Node installed too</p>
+<p>Now for selecting one of the version of Node from the list of all versions installed on our machine, we need to tell NVM which version to use, and we do so literally by using the following command</p>
+<p><a href="https://medium.com/media/e9b84af3c6fbdf98acce815c0a613d99/href">https://medium.com/media/e9b84af3c6fbdf98acce815c0a613d99/href</a></p>
+<p>On running the above command we shall get an output like below</p>
+<p><img src="https://cdn-images-1.medium.com/max/541/1*hniAUgYyZGGYscf92ti5lw.png" alt=""></p>
+<p>To verify if the Node version currently used by our machine is switched or not, we run the following command</p>
+<p><a href="https://medium.com/media/720c33975cc963483d3743513ba0da99/href">https://medium.com/media/720c33975cc963483d3743513ba0da99/href</a></p>
+<p>On running the above command we see that our Node version is no more v12.13.1 ( or whichever LTS version you installed ) but its switched to version v13.2.0 ( or whichever latest version you installed )</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>NVM or Node Version Manager is a great tool for developers wanting to develop applications that involve the use of different Node versions. The ease and seamless way of installing, managing and switching between different Node versions is just remarkable. It can really help save a lot of time. A special thanks to all the NVM developers, you guys helped me save a lot of time.</p>
+<p>NVM YOUR LIFE NODE DEVELOPERS</p>
+<p><img src="https://medium.com/_/stat?event=post.clientViewed&amp;referrerSource=full_rss&amp;postId=7c2e3f49ebe" alt=""></p>
+<hr>
+<p><a href="https://medium.com/vit-linux-user-group/introduction-to-node-version-manager-7c2e3f49ebe">Introduction To Node Version Manager</a> was originally published in <a href="https://medium.com/vit-linux-user-group">VIT Linux User Group</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div><style>
+    #contact-section > a {
+        margin: 20px 10px 0px 0px !important;
+    }
+</style>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 offset-l3 s12" id="contact-section">
+                
+                    <h4>Contact Me</h4>
+                    <p>
+                        I would love to hear from you and have little chit chat about frameworks, languages, tools, projects, ☕️, etc. If you are curious then this website was built using a Hugo theme called Blogfolio, link can be found below.
+                    </p>
+                    
+                        
+                            <a class="text-lighten-3" href="https://github.com/sarthakpranesh">
+                            
+                                
+                                <i data-feather="github"></i> 
+                            
+                            </a>
+                        
+                    
+                        
+                            <a class="text-lighten-3" href="https://www.linkedin.com/in/sarthakpranesh/">
+                            
+                                
+                                <i data-feather="linkedin"></i> 
+                            
+                            </a>
+                        
+                    
+                        
+                            <a class="text-lighten-3" href="https://www.instagram.com/sarthakpranesh/">
+                            
+                                
+                                <i data-feather="instagram"></i> 
+                            
+                            </a>
+                        
+                    
+                        
+                            <a class="text-lighten-3" href="https://www.facebook.com/sarthakpranesh/">
+                            
+                                
+                                <i data-feather="facebook"></i> 
+                            
+                            </a>
+                        
+                    
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Copyright (c) 2021 Sarthak Pranesh
+            <a class="text-lighten-4 right" href="https://github.com/sarthakpranesh/Blogfolio" target="_blank">Hugo Theme</a>
+        </div>
+    </div>
+</footer>
+      <script type="text/javascript" src="/js/materialize.min.js"></script>
+<script src="/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let elems = document.querySelectorAll('.sidenav');
+    let instances = M.Sidenav.init(elems, {
+      edge: 'left',
+      draggable: true,
+      preventScrolling: true,
+    });
+  });
+</script>
+</body>
+</html>

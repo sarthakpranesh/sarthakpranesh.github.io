@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html><head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
+    
+    
+    <meta name="application-name" content="Sarthak Pranesh" />
+    <meta name="theme-color" content="#E4EBF5" />
+    <meta name="description" content="Hello 👋, I am a Software Developer, Technical Blogger and Linux Enthusiast 🐧. I love playing with and creating APIs, especially in Nodejs and Golang. I am passionate about creating end user application using React Native, JavaFx and Electron Js. Always interested in distributed computing and learning new technologies." />
+    <meta name="keywords" content="Sarthak Pranesh, Portfolio, Blogs, Projects" />
+    <meta name="author" content="Sarthak Pranesh" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+
+    <link rel="icon" href="/favicon.ico" />
+
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet"> 
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    
+    
+    
+    <title>Sarthak Pranesh | JavaScript Loves Internet Of Things</title>
+</head><body><div class="navbar-fixed">
+    <nav class="nav">
+        <div class="nav-wrapper">
+            <a href="#" data-target="mobile-device" class="sidenav-trigger nav-hamburger">
+                <i data-feather="menu"></i>
+            </a>
+            <ul class="hide-on-med-and-down">
+                
+                <li><a href="/">
+                
+                Home
+                </a></li>
+                
+                <li><a href="/blogs/">
+                
+                Blogs
+                </a></li>
+                
+                <li><a href="/projects/">
+                
+                Projects
+                </a></li>
+                
+                <li><a href="/tags/">
+                
+                Tags
+                </a></li>
+                
+            </ul>
+        </div>
+    </nav>
+</div>
+<ul class="sidenav" id="mobile-device">
+    
+    <li><a href="/">
+    
+    
+    <i data-feather="home"></i> 
+    
+    
+    Home
+    </a></li>
+    
+    <li><a href="/blogs/">
+    
+    
+    <i data-feather="pen-tool"></i> 
+    
+    
+    Blogs
+    </a></li>
+    
+    <li><a href="/projects/">
+    
+    
+    <i data-feather="code"></i> 
+    
+    
+    Projects
+    </a></li>
+    
+    <li><a href="/tags/">
+    
+    
+    <i data-feather="tag"></i> 
+    
+    
+    Tags
+    </a></li>
+    
+</ul>
+          <div id="content" class="container">
+<style>
+    .blogContentBody > ul:not(.browser-default) li {
+        margin-left: 40px;
+        margin-top: 20px;
+        list-style-type: disc !important;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .blogContentBody > ol:not(.browser-default) li {
+        margin-top: 20px;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .blogContentBody > * pre {
+        padding: 10px;
+        white-space: pre-wrap;        
+        white-space: -moz-pre-wrap;   
+        white-space: -pre-wrap;       
+        white-space: -o-pre-wrap;     
+        word-wrap: break-word;
+    }
+
+    .blogContentBody > * img {
+        padding: 0;
+        width: 100%;
+    }
+</style>
+<div class="short-container-wrapper">
+    <div class="row">
+        <div class="col l6 offset-l3 s12">
+            <h1>JavaScript Loves Internet Of Things</h1>
+            <style>
+    #info-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #info-wrapper > span {
+        margin: 0px 10px;
+    }
+
+    #info-wrapper > .chip {
+        margin: auto !important;
+        margin-bottom: 4px !important;
+        margin-left: 0px !important;
+        margin-right: 10px !important;
+    }
+</style>
+<div>
+    
+    
+    <div id="info-wrapper">
+        
+            <time datetime="2019-07-05">Jul 5, 2019</time>
+        
+        
+            <span> - </span>
+            
+                
+                    
+                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/nodemcu">Nodemcu</a>
+                
+                    
+                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/javascript">Javascript</a>
+                
+                    
+                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/iot">Iot</a>
+                
+                    
+                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/espruino">Espruino</a>
+                
+            
+        
+    </div>
+</div>
+            <br><br>
+            <div class="blogContentBody">
+                <h3 id="javascript-loves-internet-ofthings">JavaScript Loves Internet of Things</h3>
+<h3 id="part-1-introduction-to-thearticle">Part-1: Introduction To The Article</h3>
+<p>In this series, we’ll cover the advantages of using JavaScript on development boards. For this purpose, we will use <a href="http://www.espruino.com/">Espruino</a>, which is an awesome open source firmware available for many development boards (they got their own boards too). Using Espruino has many advantages to it, one being that it is an interpreter, hence, it gives you instant feedback so that you can prototype and fix bugs easily. Espruino is a great tool that has many advantages over traditional C based programming on IoT development boards. Espruino is able to do so because it uses JavaScript for this purpose. So, why is JavaScript so advantageous over the traditional method? Let’s find out.</p>
+<h3 id="what-is-javascript-foriot">What is JavaScript for IoT?</h3>
+<p>JavaScript is a very lightweight compiled programming language. It was developed as a scripting language for Web development but soon started to expand into other spaces such as back-end development with <a href="https://nodejs.org/en/">Node.js</a> or introduction of Apache CouchDB and <a href="https://www.adobe.com/devnet/acrobat/javascript.html">Adobe Acrobat</a>. JavaScript, popularly called JS, soon emerged as a fast pace developing language, which is prototype-based, multi-paradigm, dynamic language, having support for object-oriented programming, imperative and declarative styles.</p>
+<p>Now the language that was just designed for the Web soon emerged everywhere and is still growing. On March 6th 2019, <a href="https://www.tensorflow.org/js">TensorFlow.js</a> 1.0 was introduced to the large community of JS developers. This was the first time such a large Machine learning library was brought to JavaScript.</p>
+<p>The list of what can be achieved with this language goes on and on, but here we’ll concentrate on one aspect of this language that makes it perfect for IoT development.</p>
+<h3 id="so-whats-the-benefit-of-using-javascript-foriot">So What&rsquo;s The Benefit Of Using JavaScript for IoT?</h3>
+<p>This question can be answered in many ways, some are listed below:-</p>
+<ul>
+<li>Event-driven model →JavaScript is an event-driven language that we can take advantage of for IoT development. Event loops present in JS allows the developer to respond to events in real time, handling multiple tasks at once without waiting for any other tasks to get completed.</li>
+<li>Async →This allows our code to be non-blocking so that it does not wait for any response from a function or command and continues to run the rest of the code.</li>
+<li>Bigger developer circle →JS is a very popular, relatively easy language to learn and to get along with, therefore it has a relatively bigger developer circle allowing more exposure and development for the IoT sector too.</li>
+<li>The ability to use Read-Eval-Print-Loop →This is something very unique that interests me a lot. This means that you can simply interact with the development board using something similar to a CLI and there is no need to compile and upload the code as a whole. This really increases the prototyping speed on small scale projects. We’ll see an advantage of this later in the article when we use <a href="https://www.espruino.com/">Espruino</a> on NodeMCU.</li>
+<li>JSON handling- We all know the ability of JavaScript in the world of Web, especially due to JSON. Yes, running JavaScript on the IoT development board also allows the developer to handle and play around with JSON data more easily.</li>
+</ul>
+<p>These were only a few advantages of using JavaScript as the programming language for development boards, as we go further in this article and articles that follow we’ll continuously see some more advantages of using JavaScript for IoT. So let’s see what it takes to run JavaScript on a simple low-end development board.</p>
+<h3 id="what-will-weneed">What Will We Need?</h3>
+<p>We’ll need the following items for this project →</p>
+<ol>
+<li><a href="https://www.amazon.in/gp/product/B07RMHW6QT/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&amp;psc=1">NodeMCU (This is what I‘ll be using)</a> → <strong>NodeMCU</strong> is an open source IoT development board. It has features like WiFi inbuilt and has many I/O pins and only one analog pin. We are using this board as it’s cheap and does really good work for its money when compared to other development boards. This board also supports features like “Deep Sleep” that allows it to save a lot of battery, eg:- if the board requires to take a sensor reading every 5 seconds, it would power up only then, take the reading and go back to sleep.</li>
+</ol>
+<p><img src="https://cdn-images-1.medium.com/max/500/0*mm56KgWmwtesh_kU.jpg" alt=""></p>
+<p>NodeMCU</p>
+<p><a href="https://www.amazon.in/Robo-India-LM35-Temperature-Sensor/dp/B00WO5AFPE">2. Temperature Sensor (Here I am using the LM35)</a></p>
+<h3 id="now-lets-set-up-espruino-on-ournodemcu">Now let’s Set Up Espruino On Our NodeMCU</h3>
+<p>Getting Things Ready →</p>
+<p>The first thing is to properly setup Espruino firmware on the NodeMCU board so that we can go on with the article. For doing this we’ll require a proper Espruino firmware for our NodeMCU development board.</p>
+<p>We’ll require a tool called <em>Esptool</em>. This is a python tool that will help us with setting up Espruino. Make sure you have this python tool up and running, you can refer the below link for guidance on how to install and to know more about this tool → <a href="https://pypi.org/project/estools/">esptools — PyPI</a></p>
+<blockquote>
+<p>I would recommend that you use <a href="https://www.python.org/downloads/">python version above 3</a> in place of python version 2 and use “pip3 install esptool” .</p>
+</blockquote>
+<p>After installing the required tool, make sure your board is connected to your PC via USB cable ( I am assuming that you have already installed the USB drivers required for NodeMCU, if not please follow this link → <a href="https://medium.com/@cilliemalan/installing-nodemcu-drivers-on-windows-d9bffdbad52">Driver Installation NodeMCU</a> ). To get started run the following command in the terminal of any Linux distro or in the Command Prompt on Windows (make sure esptool is installed already).</p>
+<p>*Replace <strong>MySerialPort</strong> with the port your board is connected to.</p>
+<p><a href="https://medium.com/media/ee65e8baa7a007ffea8ab34eb9f98d2d/href">https://medium.com/media/ee65e8baa7a007ffea8ab34eb9f98d2d/href</a></p>
+<p>On running this you’ll get somewhat similar results as below:-</p>
+<p><img src="https://cdn-images-1.medium.com/max/683/1*F2jyBHR74_k5Z03yUtAsbQ.png" alt=""></p>
+<p>Make sure you run the command with the right serial port else you’ll get an error (On Windows the serial port will start with “COM”)</p>
+<p>Here all we are looking for is the “Detected flash size” value. You can clearly see my NodeMCU has an ESP8266 chip containing a 4MB flash size.</p>
+<p>Now what we need is all the right resources so that we can use JavaScript on our NodeMCU. For this purpose, I have bundled all the resources that we are going to need into a Github repo (link below). Please either clone or download this resource from the Github page.</p>
+<p>→ <a href="https://github.com/sarthakpranesh/Espruino-medium-">Github Espruino-resources</a></p>
+<p>After you have downloaded or cloned the files from the link above, the first thing to do is some cleaning on your chip. Yeah, you heard it right, Cleaning. We need to completely remove the older firmware and any other thing stored in the flash memory of our NodeMCU. For doing so we run the following command with <strong>MySerialPort</strong> representing the port your device is connected to.</p>
+<p><a href="https://medium.com/media/bc704504b2005447ee0de5d72e5f7f20/href">https://medium.com/media/bc704504b2005447ee0de5d72e5f7f20/href</a></p>
+<p>This command should return something similar to below.</p>
+<p><img src="https://cdn-images-1.medium.com/max/418/0*pyMWRnr0oremIvLL" alt=""></p>
+<p>The second last line confirms that the cleaning of our chip’s memory was a success.</p>
+<p>Now we are ready to introduce our board to its new best friend “The Espruino”.</p>
+<p>Welcome Espruino →</p>
+<p>Now it’s time we flash the new Espruino firmware to our NodeMCU. Before doing this please find the folder with the name “Espruino-firmware” inside the downloaded resources and make sure you execute the command below from inside of that folder ( hint:- use the cd command to reach that directory )→</p>
+<p><a href="https://medium.com/media/1de5c5f9cd7f33d6b409d530f65616f4/href">https://medium.com/media/1de5c5f9cd7f33d6b409d530f65616f4/href</a></p>
+<p>Note: Remember to change the <strong>MySerialPort</strong> to the port your device is connected to.</p>
+<p>I won’t be going in depth with this command as it involves things related to interfacing with the hardware, flashing the firmware on it and nothing more.</p>
+<p>Now our NodeMCU is ready to utilize the power of JS.</p>
+<h3 id="getting-theide">Getting The IDE</h3>
+<p>Before we get started let’s set up our little environment where we can code JS and interact with our NodeMCU.</p>
+<p>For doing so we need to add a Google app to our Google Chrome browser. If you don’t use Google Chrome I’d like to request you to get it for this purpose. Please add the following app to your browser before you continue.</p>
+<p>→<a href="https://chrome.google.com/webstore/detail/espruino-web-ide/bleoifhkdalbjfbobjackfdifdneehpo">Espruino Web IDE</a></p>
+<p>After the IDE opens up you’ll see a window like this →</p>
+<p><img src="https://cdn-images-1.medium.com/max/965/0*PPxlfaFkLUYMMl3-" alt=""></p>
+<h3 id="setting-up-theide">Setting Up The IDE</h3>
+<p>Now what we want to do is click on the settings icon on the top right-hand side of the IDE window and go to Communications as shown below:-</p>
+<p><img src="https://cdn-images-1.medium.com/max/1022/1*2eMxdEEuEBFbDllXQk0MrA.png" alt=""></p>
+<p>In the Communications menu Change the Baud Rate to 115200. By doing this we tell our IDE what speed/rate it needs to use while it communicates with our NodeMCU.</p>
+<p>Now we are all set to run JS on our NodeMCU. So why wait let’s get started.</p>
+<h3 id="connecting-the-board-to-theide">Connecting The Board To The IDE</h3>
+<p>Click on the yellow connection icon on leftmost top of the screen and select the port on which the device is connected. As soon as the device gets connected, the IDE should look like below (or something similar).</p>
+<p><img src="https://cdn-images-1.medium.com/max/1024/1*sxMqpHfxlSEVv5g5ME8TLw.png" alt=""></p>
+<p>In case of an error, disconnect the NodeMCU from your PC and reconnect it again.</p>
+<p>Most of the development boards have some or the other LED inbuilt. Same is the case with the NodeMCU. For verification, we can turn on the inbuilt led on the NodeMCU board.</p>
+<p>Here we write a simple program to turn on the inbuilt led on NodeMCU.</p>
+<p>Write the following code in the terminal panel of the IDE:-</p>
+<p><a href="https://medium.com/media/edb5a53741f9ec50b5ca0a7f95823c53/href">https://medium.com/media/edb5a53741f9ec50b5ca0a7f95823c53/href</a></p>
+<p>And press Enter. This should return “undefined” in the terminal and the inbuilt led on the board should light up indicating all went well.</p>
+<p><img src="https://cdn-images-1.medium.com/max/618/0*2UylvyLinXPvo_tW" alt=""></p>
+<p>One major advantage of using Espruino here is that it has the ability to take commands directly from the terminal window or REPL. This increases prototyping speed and comes very handy as you don’t need to compile the whole code and upload it as in the case with Arduino.</p>
+<p>Now as we have gained some ground let’s connect the NodeMCU to our personal hotspot.</p>
+<h3 id="connecting-the-board-to-personalhotspot">Connecting The board To Personal HotSpot</h3>
+<p>For doing so load in the following code in the script editor window and hit “Send to Espruino” button.</p>
+<p><a href="https://medium.com/media/44b3853678c46bd2d10a64f36f7ed672/href">https://medium.com/media/44b3853678c46bd2d10a64f36f7ed672/href</a></p>
+<p>In the code replace “YourSSID” with the name of your hotspot (eg:- “Sarthak”) and “YourPassWord” with the password of your hotspot (eg:- “qwertyuiop1234”). Also, make sure that the AP band of your hotspot is set to 2.4 GHz (You can find this in your settings menu under portable hotspot)</p>
+<p><img src="https://cdn-images-1.medium.com/max/1024/1*Je8WPZbtFqI2gSeKuMGxzQ.png" alt=""></p>
+<p>Hit the Send to Espruino button to send the code to the NodeMCU.</p>
+<p>If everything goes well you’ll get the following in the terminal.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1024/1*9zK25FZy8YIO8A9bmGGBZA.png" alt=""></p>
+<p>Now let’s break down the necessary part of the code for a better understanding of what it does →</p>
+<ul>
+<li>var wifi = require(“WiFi”) → if you are not familiar with JavaScript, then this is the simple way of loading libraries that others have written so that you can utilize them in your code.</li>
+<li>wifi.setHostname(“nodeMCU-espruino”) → this will set the device name of your NodeMCU as “nodeMCU-espruino”. This can be anything, you can put your name as well.</li>
+<li>wifi.connect(“YourSSID”, {password: “YourPassWord”}, function(){…}) → this function tells our NodeMCU to connect to the wifi which has a name as “YourSSID” using the password for the wifi as “YourPassWord”. This function takes in a callback function as the third argument. This callback function gets called after the function is executed.</li>
+<li>setTimeout() → this function helps us in running some code after a particular interval of time.</li>
+<li>wifi.getIP() → this function returns the information about our NodeMCU like its IP address and other useful information.</li>
+<li>wifi.save() → saves the information or credentials of the wifi/hotspot locally on the board itself ( WiFi information persists across hard-resets and power cycles after using this command ).</li>
+</ul>
+<p>Now, let us dig deeper into it.</p>
+<h3 id="whats-thingspeak">What’s ThingSpeak?</h3>
+<p><img src="https://cdn-images-1.medium.com/max/875/1*UiedJlB70iImdAMavn3qLw.png" alt=""></p>
+<blockquote>
+<p>According to its developers, “<strong>ThingSpeak</strong> is an open-source Internet of Things (IoT) application and API to store and retrieve data from things using the HTTP protocol over the Internet or via a Local Area Network” — <a href="https://en.wikipedia.org/wiki/ThingSpeak">Wikipedia</a></p>
+</blockquote>
+<p>ThinkSpeak, as mentioned above, is an open-source IoT application on which you can store any sort of sensor data that your development board might receive from any sensor connected to it.</p>
+<p>If you don’t already have an account on ThinkSpeak, please make one. After making an account on ThinkSpeak, when you log in you’ll get the following window →</p>
+<p><img src="https://cdn-images-1.medium.com/max/1024/1*FMoHbZB5DV2rLs63PvjsGA.png" alt=""></p>
+<p>Please click on the “New Channel” button present under the “My Channels” column. When you click on it you’ll get a series of different options and text fields, don’t worry you won’t need to fill in much for now.</p>
+<p>Just make the following changes and press the “Save channel” button at the bottom.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1024/1*e4361DiT8P4dNXKsXDmVZg.png" alt=""></p>
+<p>Important → Please make sure that the checkbox in front of the Field 1 row is selected.</p>
+<p>After you press the “Save channel” button, a new channel will be created on which you can send sensor data from your NodeMCU.</p>
+<p>Now you are all set to use ThinkSpeak with Espruino, so let’s get started.</p>
+<h3 id="sending-artificial-data-to-thinkspeak">Sending Artificial Data To ThinkSpeak</h3>
+<p>Before jumping into sending the real temperature data by using LM35, we’ll try to send artificial data that we’ll generate in the code itself.</p>
+<p>First, in your ThinkSpeak channel click on the “Add Widget” button →</p>
+<p><img src="https://cdn-images-1.medium.com/max/1024/1*LyXVDX8B7rIgJFeXefe5OA.png" alt=""></p>
+<p>After clicking on it you’ll find three options, select the Numeric Display →</p>
+<p><img src="https://cdn-images-1.medium.com/max/1024/1*203Lc8v15XOeHRvDZeTZKw.png" alt=""></p>
+<p>After selecting it, click next, and you’ll get more options regarding your widget. Please make the following changes in the options →</p>
+<p><img src="https://cdn-images-1.medium.com/max/1024/1*SHD5HkFfF9M-VV6WRSDvXA.png" alt=""></p>
+<p>Here “Name” is the name of your widget that will be added to your channel. This widget will get its information from the “Field” option that is set to Field 1. The interval tells the widget about how frequently it needs to update its value. After making these changes hit “Create” and you’ll see your widget added to the channel →</p>
+<p><img src="https://cdn-images-1.medium.com/max/1024/1*MYy4aCAQ5zLEL0kVrsMPTQ.png" alt=""></p>
+<p>There is one more widget that is already added to our channel. We’ll use this widget to plot a graph of the falling and rising temperature. The “Field” option of this widget is already set to “Field 1” by default and we don’t need to change it.</p>
+<p>Moving on towards the JavaScript code.</p>
+<p>You’ll require the code below to generate artificial data and send it to the ThinkSpeak channel. The below code generates temperature data from 0 to 99 and then again starts from one. Each integer created in this range goes to ThingSpeak as the artificial temperature in each 20s.</p>
+<p><a href="https://medium.com/media/8e0425214ae950146a43f9d218fda42f/href">https://medium.com/media/8e0425214ae950146a43f9d218fda42f/href</a></p>
+<p>The starting 15 lines are for connecting the NodeMCU to the personal hotspot you created. Also, notice that we have included one more library called the “http”, this library helps in making web requests, such as a GET request. The following code after that is for generating and sending artificial data to the ThinkSpeak channel. Remember to feed in your WiFi details in this code too. Also, there is one more change that you need to make, that is you need to replace the “YourUpdateFeed” in line 20 with a URL specific to your account.</p>
+<p>To get this URL, go back to your ThingSpeak channel and open the “API keys” page →</p>
+<p><img src="https://cdn-images-1.medium.com/max/1024/1*ZazyEbuZJRny6vUUnOgnUw.png" alt=""></p>
+<p>After you open up this tab you’ll find Keys that are generated for your channel and are private to you, make sure you don’t give these keys to anyone else or your channel data may not remain private.</p>
+<p>Scroll down and find the API requests section on the page and copy the URL in the “Update a channel feed” section as shown below →</p>
+<p><img src="https://cdn-images-1.medium.com/max/1024/1*rNTBMXWbvLQCX4g1_uXtJg.png" alt=""></p>
+<p>Make sure you only copy the URL and not the GET keyword</p>
+<p>Now paste the URL as a String in place of the “YourUpdateFeed” keyword. Your final code should look like below with your own private key in place.</p>
+<p>( Also make sure that you remove the 0 from the end of the string URL or the value 0 will be sent to ThinkSpeak in place of our artificial data )</p>
+<p><img src="https://cdn-images-1.medium.com/max/630/1*V2pWW--_rPadGeCCMo_h-g.png" alt=""></p>
+<p>After everything is set, hit the “Send To Espruino” button and after a few seconds open your ThinkSpeak “Private View” and you’ll see your artificial data has started to come both in the form of a graph as well as the current value. Also in the Web IDE, you’ll see that the count of data stored in ThinkSpeak is printed each time the data is sent to ThinkSpeak.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1024/1*KiqPl1arL-Um9DIYz0TL3g.png" alt=""></p>
+<p>After you have achieved this we are ready to connect our temperature sensor “The LM35” to our NodeMCU.</p>
+<h3 id="adding-lm35-to-thehack">Adding LM35 To The Hack</h3>
+<p><img src="https://cdn-images-1.medium.com/max/500/0*sRF0t3NFMasCEuxw.gif" alt=""></p>
+<p>LM35 is a temperature sensor which can measure temperature in the range of -55°C to 150°C. It is a 3-terminal device that provides an analog voltage proportional to the temperature. Higher the temperature, higher is the output voltage</p>
+<p>Take three jumper wires and connect them to the NodeMCU, in the following fashion →</p>
+<p><img src="https://cdn-images-1.medium.com/max/870/1*DArwpMZwFD8xmPSSrbDJuQ.png" alt=""></p>
+<p>Source:- <a href="https://www.instructables.com/id/Interface-LM35-With-NodeMCU/">https://www.instructables.com/id/Interface-LM35-With-NodeMCU/</a></p>
+<p>A0 pin on the NodeMCU should be connected to the terminal in the middle, connect any 3v3 pin on the NodeMCU to the leftmost terminal keeping the flat side of the LM35 towards you and the rightmost pin of LM35 should be connected to the ground pin on NodeMCU represented by GND or just G. You can use a breadboard for this purpose or just use female-to-female connectors to connect LM35 directly to the NodeMCU.</p>
+<p>After making these connections you have to change the previous code as follows →</p>
+<p><a href="https://medium.com/media/777abb5609667efee12907a11e085ebf/href">https://medium.com/media/777abb5609667efee12907a11e085ebf/href</a></p>
+<p>Notice here we have tweaked the code a bit so that it also prints out the temperature that was sent to the ThinkSpeak channel.</p>
+<p>After you have written this code in your IDE we are ready to send temperature data to our ThinkSpeak channel. Click “Send To Espruino” and make sure you get the temperature data printing on the terminal first. After the data has started coming on the terminal you can go to your ThinkSpeak channel and see the graph of temperature along with the current temperature being showcased.</p>
+<h3 id="wrapping-up">Wrapping Up</h3>
+<p>The article gave us a brief idea of what can be done by running JavaScript on development boards. But of course this is not all, the possibilities of what can be achieved by running a language like JavaScript on development boards are still being explored and the outcomes are extraordinary.</p>
+<p>In our next article “JavaScript loves Internet of things Part-2” we will explore how we can make our own server, configure our NodeMCU to utilize this server and solve even more interesting problems.</p>
+<p>Till Then Stay Tuned!</p>
+<p><img src="https://medium.com/_/stat?event=post.clientViewed&amp;referrerSource=full_rss&amp;postId=260d862871e2" alt=""></p>
+<hr>
+<p><a href="https://medium.com/techloop/javascript-loves-internet-of-things-260d862871e2">JavaScript Loves Internet Of Things</a> was originally published in <a href="https://medium.com/techloop">Techloop</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div><style>
+    #contact-section > a {
+        margin: 20px 10px 0px 0px !important;
+    }
+</style>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 offset-l3 s12" id="contact-section">
+                
+                    <h4>Contact Me</h4>
+                    <p>
+                        I would love to hear from you and have little chit chat about frameworks, languages, tools, projects, ☕️, etc. If you are curious then this website was built using a Hugo theme called Blogfolio, link can be found below.
+                    </p>
+                    
+                        
+                            <a class="text-lighten-3" href="https://github.com/sarthakpranesh">
+                            
+                                
+                                <i data-feather="github"></i> 
+                            
+                            </a>
+                        
+                    
+                        
+                            <a class="text-lighten-3" href="https://www.linkedin.com/in/sarthakpranesh/">
+                            
+                                
+                                <i data-feather="linkedin"></i> 
+                            
+                            </a>
+                        
+                    
+                        
+                            <a class="text-lighten-3" href="https://www.instagram.com/sarthakpranesh/">
+                            
+                                
+                                <i data-feather="instagram"></i> 
+                            
+                            </a>
+                        
+                    
+                        
+                            <a class="text-lighten-3" href="https://www.facebook.com/sarthakpranesh/">
+                            
+                                
+                                <i data-feather="facebook"></i> 
+                            
+                            </a>
+                        
+                    
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Copyright (c) 2021 Sarthak Pranesh
+            <a class="text-lighten-4 right" href="https://github.com/sarthakpranesh/Blogfolio" target="_blank">Hugo Theme</a>
+        </div>
+    </div>
+</footer>
+      <script type="text/javascript" src="/js/materialize.min.js"></script>
+<script src="/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let elems = document.querySelectorAll('.sidenav');
+    let instances = M.Sidenav.init(elems, {
+      edge: 'left',
+      draggable: true,
+      preventScrolling: true,
+    });
+  });
+</script>
+</body>
+</html>

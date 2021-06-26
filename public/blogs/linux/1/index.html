@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html><head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
+    
+    
+    <meta name="application-name" content="Sarthak Pranesh" />
+    <meta name="theme-color" content="#E4EBF5" />
+    <meta name="description" content="Hello 👋, I am a Software Developer, Technical Blogger and Linux Enthusiast 🐧. I love playing with and creating APIs, especially in Nodejs and Golang. I am passionate about creating end user application using React Native, JavaFx and Electron Js. Always interested in distributed computing and learning new technologies." />
+    <meta name="keywords" content="Sarthak Pranesh, Portfolio, Blogs, Projects" />
+    <meta name="author" content="Sarthak Pranesh" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+
+    <link rel="icon" href="/favicon.ico" />
+
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet"> 
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    
+    
+    
+    <title>Sarthak Pranesh | Introduction to Linux Part 1 — First Blood</title>
+</head><body><div class="navbar-fixed">
+    <nav class="nav">
+        <div class="nav-wrapper">
+            <a href="#" data-target="mobile-device" class="sidenav-trigger nav-hamburger">
+                <i data-feather="menu"></i>
+            </a>
+            <ul class="hide-on-med-and-down">
+                
+                <li><a href="/">
+                
+                Home
+                </a></li>
+                
+                <li><a href="/blogs/">
+                
+                Blogs
+                </a></li>
+                
+                <li><a href="/projects/">
+                
+                Projects
+                </a></li>
+                
+                <li><a href="/tags/">
+                
+                Tags
+                </a></li>
+                
+            </ul>
+        </div>
+    </nav>
+</div>
+<ul class="sidenav" id="mobile-device">
+    
+    <li><a href="/">
+    
+    
+    <i data-feather="home"></i> 
+    
+    
+    Home
+    </a></li>
+    
+    <li><a href="/blogs/">
+    
+    
+    <i data-feather="pen-tool"></i> 
+    
+    
+    Blogs
+    </a></li>
+    
+    <li><a href="/projects/">
+    
+    
+    <i data-feather="code"></i> 
+    
+    
+    Projects
+    </a></li>
+    
+    <li><a href="/tags/">
+    
+    
+    <i data-feather="tag"></i> 
+    
+    
+    Tags
+    </a></li>
+    
+</ul>
+          <div id="content" class="container">
+<style>
+    .blogContentBody > ul:not(.browser-default) li {
+        margin-left: 40px;
+        margin-top: 20px;
+        list-style-type: disc !important;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .blogContentBody > ol:not(.browser-default) li {
+        margin-top: 20px;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .blogContentBody > * pre {
+        padding: 10px;
+        white-space: pre-wrap;        
+        white-space: -moz-pre-wrap;   
+        white-space: -pre-wrap;       
+        white-space: -o-pre-wrap;     
+        word-wrap: break-word;
+    }
+
+    .blogContentBody > * img {
+        padding: 0;
+        width: 100%;
+    }
+</style>
+<div class="short-container-wrapper">
+    <div class="row">
+        <div class="col l6 offset-l3 s12">
+            <h1>Introduction to Linux Part 1 — First Blood</h1>
+            <style>
+    #info-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #info-wrapper > span {
+        margin: 0px 10px;
+    }
+
+    #info-wrapper > .chip {
+        margin: auto !important;
+        margin-bottom: 4px !important;
+        margin-left: 0px !important;
+        margin-right: 10px !important;
+    }
+</style>
+<div>
+    
+    
+    <div id="info-wrapper">
+        
+            <time datetime="2020-05-11">May 11, 2020</time>
+        
+        
+            <span> - </span>
+            
+                
+                    
+                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/shell">Shell</a>
+                
+                    
+                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/unix">Unix</a>
+                
+                    
+                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/linux">Linux</a>
+                
+                    
+                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/ubuntu">Ubuntu</a>
+                
+            
+        
+    </div>
+</div>
+            <br><br>
+            <div class="blogContentBody">
+                <p><img src="https://cdn-images-1.medium.com/max/512/1*qiLq64FMDmbzqHAL5gZFYg.png" alt=""></p>
+<p>Icons made: Dave Gandy, Source- <a href="https://www.flaticon.com/authors/dave-gandy">https://www.flaticon.com/authors/dave-gandy</a>&quot;</p>
+<p>It’s almost been two years since I switched to Linux from a Windows environment where I used to game, make bad designs on Adobe XD ( not good at designing things ), and other stuff that a regular Windows user does. Initially it was quite frustrating and my system used to crash a lot mostly because I ran some command I didn’t have complete knowledge about and broke something. But soon I started to learn more and more about how the Linux system actually worked and the crashes started to reduce. Now I can proudly say it’s been 6 months without a crash :’)</p>
+<p>I am making this tutorial series for beginners out there who have recently started to have a taste of Linux and want to know more terminal commands and how to use these commands to benefit them in their daily needs, and want to expand there knowledge about Linux further. So why wait, follow me along :)</p>
+<h3 id="what-is-linux">What is Linux ?</h3>
+<blockquote>
+<p>Linux is the best-known and most-used <a href="https://opensource.com/resources/what-open-source">open source</a> operating system. As an operating system, Linux is software that sits underneath all of the other software on a computer, receiving requests from those programs and relaying these requests to the computer’s hardware.</p>
+</blockquote>
+<blockquote>
+<p>-from <a href="https://opensource.com/resources/linux">opensource.com</a></p>
+</blockquote>
+<p>Linux in the most simple term is a Unix-like operating system. Apart from being an operating system it is also a Kernel. A Kernel is something that handles all communication between the system hardware and the operating system, it has complete control on everything present in the system. The kernel is the core of an operating system and in most cases is the first program that gets loaded when the system initiates boot.</p>
+<p>The kernel provides a secure environment as no application can directly access the hardware — all applications access the hardware through the kernel. This insures that any unwanted process/task is not carried out by any application. It is the duty of the kernel to provide all applications and the operating system with hardware resources, manage process, keep track of system tasks and daemons, etc.</p>
+<p><strong><em>So… is the shell or the terminal you see, the kernel ?</em></strong> <strong>NO, The Kernel is the core of the operating system</strong> which is managing the system you are currently running, where as <strong>The Shell is just an interface which allows you to communicate with the Kernel.</strong></p>
+<h3 id="what-are-distributions">What are Distributions ?</h3>
+<p>A Linux distribution ( also called Flavors ) refers to an operating system that ships with a particular set of software collection, Linux kernel and a package manager. These particular set of software collection and other tweaks made to the operating system defines it’s use case greatly. For example — <a href="https://www.kali.org/">Kali Linux</a> and <a href="https://parrotlinux.org/">Parrot OS</a> are both Debian based operating systems well know for there Ethical hacking tools that come installed out of the box.</p>
+<p>Here is a list of only some distributions ( No Priority )</p>
+<ol>
+<li><a href="https://www.linuxmint.com/">Linux Mint</a> — A Ubuntu ( or Debian based ) based operating system that has a very familiar look and feel to it if you are switching to Linux, from Windows.</li>
+<li><a href="https://ubuntu.com/">Ubuntu</a> — A Debian based operating system known for the flexibility and power it provides to it’s users. The most popular Linux operating system in the Linux community, especially in beginners.</li>
+<li><a href="https://www.centos.org/">Cent OS</a> — A popular and community supported alternative for the Red Hat Enterprise Linux.</li>
+<li><a href="https://manjaro.org/">Manjaro</a> — A Arch Linux based operating system. More popular in experienced Linux users, the project itself focuses on providing a more user friendly operating system.</li>
+</ol>
+<p>The above Linux distributions are great for a start, but I have a personal favorite — <a href="https://pop.system76.com/">Pop OS</a> — a Ubuntu based operating system that provides more hardware support for laptops, better workflow management, easy installation of <a href="https://www.tensorflow.org/">TensorFlow</a> ( one line installation ), and a loads of other feature out of the box. It has been my daily driver for almost a year now.</p>
+<p>Feel free to try out any of the above Linux operating system of your choice. A short note — if you are new to Linux or if this is your first time using a Linux based operating system I would recommend you to install Virtual Box and use Linux there for a while before installing it on your system and using it as your daily driver.</p>
+<h3 id="lets-get-down-to-the-basics"><strong>Lets get down to the basics !</strong></h3>
+<p>There are broadly two ways to perform different tasks/operations on a Linux machine — using Graphical User Interface ( GUI ) or by using the shell. In this tutorial we’ll only cover performing tasks using the shell as GUI based method is quite straight forward to use.</p>
+<h4 id="introduction-toterminal"><strong>Introduction to Terminal</strong></h4>
+<p>The Terminal is just a session that often starts a shell in The Terminal Window. In Ubuntu or other Ubuntu based distribution the most common keyboard shortcut to open the Terminal windows is <strong>Ctrl+Alt+t</strong> . If that doesn’t open the Terminal window for you, then you can search on Google for your distribution specific keyboard shortcut. Other way to open Terminal is to open all applications menu and search for Terminal.</p>
+<p><img src="https://cdn-images-1.medium.com/max/821/1*4-095pfxC8pAHD3pBZonfQ.png" alt=""></p>
+<p>Your Terminal window might not look exactly the same but will have similar features.</p>
+<p>The first thing you see is the username of the user ( in my case ‘sarthakpranesh’ ) followed by a separator @ after which we have the device name or the name of the computer system you are running. This is followed by another separator : which is being followed by ~ and $ signs respectively. Here the ~ sign refers to the <strong>Home</strong> directory of the particular user this means the terminal is current opened in the <strong>Home</strong> directory of the user having username “sarthakpranesh”, whereas the $ symbol means that the terminal session is a regular session and not a root user session ( a root user terminal window would have a # instead ).</p>
+<p>Whats a Home directory ?</p>
+<p>Each user in a Linux based operating system has there own Home directory assigned to them by the operating system. This allows different users to install applications that are specific for them and store information that they don’t want to share with other users on the system.</p>
+<p>What is a Root User ?</p>
+<p>A Root user has special system privileges and admin rights. This user is the default user and has access to all commands and files on the Linux system. It is not advised to perform commands as a Root user unless and until extremely necessary.</p>
+<h4 id="man-command">Man command</h4>
+<p>I believe this to be the most important command of all, it displays the documentation/manual for a command in the terminal itself.</p>
+<p>Try running the following in your terminal to get the documentation for the man command</p>
+<p>man man</p>
+<p>On running the above command you’ll be shown the following in your terminal</p>
+<p><img src="https://cdn-images-1.medium.com/max/820/1*HkqPZdWNJqfcacaJKnvVsQ.png" alt=""></p>
+<p>You can scroll down in the terminal windows and read more about Man command in Linux</p>
+<p>To exit the documentation press q on the keyboard and the documentation will be closed. The man command comes in handy when you aren’t sure about how to use a command or need to look up all the options or functionality it offers.</p>
+<h3 id="ls-command">LS command</h3>
+<p>This command is used to list the current directory contents. For example — let’s say we are in a directory that contains 4 files and folders in total, then on running ls it will list all non hidden files and folders in that directory. Like any other command in Linux, the ls command also has a bunch of options you can use.</p>
+<p>Here is the output if you run ls on your default Home directory ( hence default directory when terminal is opened ). You’ll see some common sub directories listed here like Documents, Downloads, etc.</p>
+<p><img src="https://cdn-images-1.medium.com/max/823/1*Cg7OggcJEaH-mz0jzUmaMA.png" alt=""></p>
+<p>You might see a bit different output depending upon your use of the system. Here you can also see how I have user specific folders and applications installed that won’t be available to other users on my system</p>
+<p>Some common ls command options are as follows</p>
+<ul>
+<li>ls -a — the -a option lists all files and folders present in the current directory, even those which are hidden.</li>
+<li>ls -l — the -l option lists all not hidden files with extra information like file permissions, owner, size, date and time of creation or last modification, etc.</li>
+</ul>
+<p>Try running man ls to see documentation for ls command and give a few options a try.</p>
+<h4 id="cd">CD</h4>
+<p>This is not a command but a very useful tool. The cd tool is baked into your shell and allows you to change your current directory in the terminal window. Also you can not use man cd to get the documentation for the cd tool as it is not a command but a feature baked in your shell itself.</p>
+<p>Remember the Downloads sub directory in your home lets cd into that directory and list all files using ls command.</p>
+<p><img src="https://cdn-images-1.medium.com/max/821/1*Umb2rIqEGJhEwJTqL2E_pA.png" alt=""></p>
+<p>Pay attention to when you run “cd Downloads”, you’ll observe that “~” changes to “~/Downloads” informing us that we are now in the Downloads sub directory. Now if you run “ls” you can see all your files in the Download directory.</p>
+<h4 id="touch-command"><strong>TOUCH command</strong></h4>
+<p>This command can be used to create a empty file in the current directory from the terminal. Let’s say we want to create a text.txt file in our downloads folder. For doing so we run the following command in the terminal window and then later on verify the creation of the file using ls command — touch text.txt</p>
+<p><img src="https://cdn-images-1.medium.com/max/824/1*BxC3AcOeh-tcEi3hTlj3HA.png" alt=""></p>
+<p>We run “touch text.txt” to create the file and then use “ls” to list the files and sub directories to verify the creation of the file.</p>
+<h4 id="mkdir-command">MKDIR command</h4>
+<p>This command is used to create sub directories. Let’s try to make a sub directory called games in our user’s Home directory. Run the following for doing so — mkdir games</p>
+<p><img src="https://cdn-images-1.medium.com/max/832/1*igrryWDJawpvoQ0-13cYdw.png" alt=""></p>
+<h4 id="clear-command"><strong>clear command</strong></h4>
+<p>When you use different commands on the terminal it becomes kind of obvious that after a while you’ll have many outputs on the terminal window and you’ll want a completelly clean screen again. This is where the clear command comes in.</p>
+<p>To get a clean terminal screen back just run the following on your terminal — clear</p>
+<h4 id="pwd-command">PWD command</h4>
+<p>This command is used to print out the name of the current working directory your terminal is present in. Let’s say we still happen to be in our downloads folder then on running pwd in the terminal it will show a absolute path for our current directory which is Downloads sub directory.</p>
+<p><img src="https://cdn-images-1.medium.com/max/826/1*mtRk13HWr77UqNIENLQcNw.png" alt=""></p>
+<p>Make sure you are in your “Downloads” folder or “cd” into it first</p>
+<p>This tool comes in real handy when you need the absolute path to a sub directory.</p>
+<h4 id="who-command">WHO command</h4>
+<p>This command helps you see the users that are currently logged into the system. To see users currently active and logged into the system just run the following in your terminal — who</p>
+<p><img src="https://cdn-images-1.medium.com/max/823/1*WI2cmks5Z5zu2Qg3qTok9A.png" alt=""></p>
+<p>Here you can see my current user’s username “sarthakpranesh” being showed because off course I am logged into the system. Other details are shown as well like the time and date when the user last logged in.</p>
+<p>Another similar command would be whoami which prints out the username of the current user.</p>
+<p><img src="https://cdn-images-1.medium.com/max/823/1*hNitNyOP5kPxh-DS_fBOxA.png" alt=""></p>
+<p>Quite simple right ?</p>
+<h4 id="adduser-command">ADDUSER command</h4>
+<p>As the name suggests, this command helps you add a new user to your system. For doing so you’ll need root permission which you can get access to by running the command with sudo .</p>
+<p>For adding a new user named test to your system run the following</p>
+<p>— sudo adduser test</p>
+<p>On running the above command you’ll be prompted to enter your password, make sure you enter it correctly and press enter ( the password you enter will not be displayed on the screen for obvious security reasons ). After doing so the system will ask you to provide relevant details for the new user, fill in those details and press enter. In the end the command will ask you if the information entered is correct or not, press y and enter if correct or else press n .</p>
+<p><img src="https://cdn-images-1.medium.com/max/824/1*JosEsIdboqIkJWMREf-INA.png" alt=""></p>
+<p>On pressing y the new user will be created, you can now log out and see the new user being displayed in the login screen. When you login as the new user you’ll experience a completely fresh new version of your operating system. This is because the new user does not have your user specific changes that you made in your user account ( hence the new user has a new Home directory for itself ).</p>
+<h4 id="deluser-command">DELUSER command</h4>
+<p>This command can be used to delete any user from your system. Also requires root level permissions/privileges, for which we will use the sudo command.</p>
+<p>Let’s delete the user that we made earlier. In the terminal run the following command, enter your password and press enter</p>
+<p>— sudo deluser test</p>
+<p><img src="https://cdn-images-1.medium.com/max/826/1*KKGArJMOK6iFQlharU9ilg.png" alt=""></p>
+<p>We see here the terminal says removing user ‘test’ and goes on to remove the user. Also, look how the terminal does not ask for password this time! When you enter password once in the terminal it remains till 15mins and you don’t have to re-enter till timeout</p>
+<p><strong>Please be careful when you deal with users, you don’t want to delete a important user ( or yourself from the system ).</strong></p>
+<h4 id="find-command">FIND command</h4>
+<p>Something to showoff huh</p>
+<p>This command lets you search for files in your system in the terminal itself. For achieving this we simply do file filename.extension . This command also takes in regular expressions as filename.</p>
+<p>Lets test this command by creating a file called text1234.txt in Home directory and then running the find command like below</p>
+<p><img src="https://cdn-images-1.medium.com/max/826/1*4-Hz_XtPBuMxch-ckJs1sQ.png" alt=""></p>
+<p>Here we use the touch command to create the file, use ls to verify it’s created or not and then use find command to find the file ( Here asterisk is used as regular expression, so text* means any file that is starting by the name text)</p>
+<h4 id="rm-command">RM command</h4>
+<p>Last command we’ll cover in this tutorial, this command is used to help delete unwanted files or directories from the system. Let’s delete both the text.txt and text1234.txt that we created earlier in the tutorial. For doing so we run the following command — rm text.txt text1234.txt</p>
+<p>You can use ls command to verify the deletion of the files.</p>
+<p><img src="https://cdn-images-1.medium.com/max/827/1*TK0mMj0erhWq_uJttAKOfQ.png" alt=""></p>
+<p><strong>Please be super careful while running the</strong> <strong>rm command, this command is very powerful and can delete your whole Linux setup as well.</strong></p>
+<h3 id="summary">Summary</h3>
+<p>Linux is a Unix like operating system and a kernel. The shell provides the user a way to communicate to the kernel. There are a lot of commands that can be performed using the terminal of a Linux based system. Use the man command to find out more about these commands and try out different options and sets of options.</p>
+<p>As we can see Linux is pretty simple and fun to use, you just need to know commands that will allow you to use it to its full potential. We’ll cover more commands and technical concepts like Linux File System, File permissions, Package managers, etc in the coming parts of this tutorial. Till then happy learning :)</p>
+<p><img src="https://medium.com/_/stat?event=post.clientViewed&amp;referrerSource=full_rss&amp;postId=3cd248b8ede0" alt=""></p>
+<hr>
+<p><a href="https://medium.com/vit-linux-user-group/introduction-to-linux-part-1-first-blood-3cd248b8ede0">Introduction to Linux: Part 1 — First Blood</a> was originally published in <a href="https://medium.com/vit-linux-user-group">VIT Linux User Group</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div><style>
+    #contact-section > a {
+        margin: 20px 10px 0px 0px !important;
+    }
+</style>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 offset-l3 s12" id="contact-section">
+                
+                    <h4>Contact Me</h4>
+                    <p>
+                        I would love to hear from you and have little chit chat about frameworks, languages, tools, projects, ☕️, etc. If you are curious then this website was built using a Hugo theme called Blogfolio, link can be found below.
+                    </p>
+                    
+                        
+                            <a class="text-lighten-3" href="https://github.com/sarthakpranesh">
+                            
+                                
+                                <i data-feather="github"></i> 
+                            
+                            </a>
+                        
+                    
+                        
+                            <a class="text-lighten-3" href="https://www.linkedin.com/in/sarthakpranesh/">
+                            
+                                
+                                <i data-feather="linkedin"></i> 
+                            
+                            </a>
+                        
+                    
+                        
+                            <a class="text-lighten-3" href="https://www.instagram.com/sarthakpranesh/">
+                            
+                                
+                                <i data-feather="instagram"></i> 
+                            
+                            </a>
+                        
+                    
+                        
+                            <a class="text-lighten-3" href="https://www.facebook.com/sarthakpranesh/">
+                            
+                                
+                                <i data-feather="facebook"></i> 
+                            
+                            </a>
+                        
+                    
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Copyright (c) 2021 Sarthak Pranesh
+            <a class="text-lighten-4 right" href="https://github.com/sarthakpranesh/Blogfolio" target="_blank">Hugo Theme</a>
+        </div>
+    </div>
+</footer>
+      <script type="text/javascript" src="/js/materialize.min.js"></script>
+<script src="/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let elems = document.querySelectorAll('.sidenav');
+    let instances = M.Sidenav.init(elems, {
+      edge: 'left',
+      draggable: true,
+      preventScrolling: true,
+    });
+  });
+</script>
+</body>
+</html>

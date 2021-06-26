@@ -6,11 +6,7 @@
     <description>Recent content in Blogs on Sarthak Pranesh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Feb 2021 21:32:32 +0530</lastBuildDate>
-    
-	<atom:link href="http://sarthakpranesh.now.sh/blogs/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 07 Feb 2021 21:32:32 +0530</lastBuildDate><atom:link href="http://sarthakpranesh.now.sh/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wireless connection to Android Device for app development</title>
       <link>http://sarthakpranesh.now.sh/blogs/adb/</link>
@@ -45,6 +41,42 @@
       
       <guid>http://sarthakpranesh.now.sh/blogs/openmp/1/</guid>
       <description>Simple Introductory tutorial blogs on Parallel programming and related concepts using OpenMP and C programming language. In this part we discuss need for parallelism, installing OpenMp in Linux and run a simple parallel program</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Linux Part 2 — Time To Draw Swords</title>
+      <link>http://sarthakpranesh.now.sh/blogs/linux/2/</link>
+      <pubDate>Sat, 27 Jun 2020 10:08:43 +0000</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/blogs/linux/2/</guid>
+      <description>Learn about linux and how to use linux shell to your advantage. Learn about what are packages and package managers. We will also go through some of the commands that will help us manage packages (software) in your Linux system and some other commands that will help you use your system more efficiently</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Linux Part 1 — First Blood</title>
+      <link>http://sarthakpranesh.now.sh/blogs/linux/1/</link>
+      <pubDate>Mon, 11 May 2020 13:22:01 +0000</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/blogs/linux/1/</guid>
+      <description>Learn about linux and how to use linux shell to your advantage. This is for beginners out there who have recently started to have a taste of Linux and want to know more terminal commands and how to use these commands to benefit them in their daily needs, and want to expand there knowledge about Linux further</description>
+    </item>
+    
+    <item>
+      <title>Introduction To Node Version Manager</title>
+      <link>http://sarthakpranesh.now.sh/blogs/introduction-to-node-version-manager/</link>
+      <pubDate>Tue, 14 Apr 2020 10:21:18 +0000</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/blogs/introduction-to-node-version-manager/</guid>
+      <description>Node developers and enthusiast, ever wondered how will it be to use different versions of Node for your different applications or ever had issues in installing Node on your fresh Linux machines. Well if you had had these issues then here is the easiest way to solve it, that too in style.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Loves Internet Of Things</title>
+      <link>http://sarthakpranesh.now.sh/blogs/javascript-loves-internet-of-things/</link>
+      <pubDate>Fri, 05 Jul 2019 10:58:48 +0000</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/blogs/javascript-loves-internet-of-things/</guid>
+      <description>How to use Javascript on Nodemcu using Espruino.</description>
     </item>
     
   </channel>

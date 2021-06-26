@@ -6,11 +6,7 @@
     <description>Recent content in Tags on Sarthak Pranesh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Feb 2021 21:32:32 +0530</lastBuildDate>
-    
-	<atom:link href="http://sarthakpranesh.now.sh/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 07 Feb 2021 21:32:32 +0530</lastBuildDate><atom:link href="http://sarthakpranesh.now.sh/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ADB</title>
       <link>http://sarthakpranesh.now.sh/tags/adb/</link>
@@ -93,38 +89,119 @@
     </item>
     
     <item>
-      <title>Javascript</title>
+      <title>Bash</title>
+      <link>http://sarthakpranesh.now.sh/tags/bash/</link>
+      <pubDate>Sat, 27 Jun 2020 10:08:43 +0000</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>http://sarthakpranesh.now.sh/tags/linux/</link>
+      <pubDate>Sat, 27 Jun 2020 10:08:43 +0000</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Package</title>
+      <link>http://sarthakpranesh.now.sh/tags/package/</link>
+      <pubDate>Sat, 27 Jun 2020 10:08:43 +0000</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/tags/package/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>http://sarthakpranesh.now.sh/tags/ubuntu/</link>
+      <pubDate>Sat, 27 Jun 2020 10:08:43 +0000</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shell</title>
+      <link>http://sarthakpranesh.now.sh/tags/shell/</link>
+      <pubDate>Mon, 11 May 2020 13:22:01 +0000</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unix</title>
+      <link>http://sarthakpranesh.now.sh/tags/unix/</link>
+      <pubDate>Mon, 11 May 2020 13:22:01 +0000</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/tags/unix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
       <link>http://sarthakpranesh.now.sh/tags/javascript/</link>
-      <pubDate>Sat, 04 Jul 2020 11:46:58 +0530</pubDate>
+      <pubDate>Tue, 14 Apr 2020 10:21:18 +0000</pubDate>
       
       <guid>http://sarthakpranesh.now.sh/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Social Media</title>
-      <link>http://sarthakpranesh.now.sh/tags/social-media/</link>
-      <pubDate>Sat, 04 Jul 2020 11:46:58 +0530</pubDate>
+      <title>node</title>
+      <link>http://sarthakpranesh.now.sh/tags/node/</link>
+      <pubDate>Tue, 14 Apr 2020 10:21:18 +0000</pubDate>
       
-      <guid>http://sarthakpranesh.now.sh/tags/social-media/</guid>
+      <guid>http://sarthakpranesh.now.sh/tags/node/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Covid 19</title>
-      <link>http://sarthakpranesh.now.sh/tags/covid-19/</link>
-      <pubDate>Tue, 17 Mar 2020 11:46:58 +0530</pubDate>
+      <title>nodejs</title>
+      <link>http://sarthakpranesh.now.sh/tags/nodejs/</link>
+      <pubDate>Tue, 14 Apr 2020 10:21:18 +0000</pubDate>
       
-      <guid>http://sarthakpranesh.now.sh/tags/covid-19/</guid>
+      <guid>http://sarthakpranesh.now.sh/tags/nodejs/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Typescript</title>
-      <link>http://sarthakpranesh.now.sh/tags/typescript/</link>
-      <pubDate>Tue, 17 Mar 2020 11:46:58 +0530</pubDate>
+      <title>npm</title>
+      <link>http://sarthakpranesh.now.sh/tags/npm/</link>
+      <pubDate>Tue, 14 Apr 2020 10:21:18 +0000</pubDate>
       
-      <guid>http://sarthakpranesh.now.sh/tags/typescript/</guid>
+      <guid>http://sarthakpranesh.now.sh/tags/npm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Espruino</title>
+      <link>http://sarthakpranesh.now.sh/tags/espruino/</link>
+      <pubDate>Fri, 05 Jul 2019 10:58:48 +0000</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/tags/espruino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iot</title>
+      <link>http://sarthakpranesh.now.sh/tags/iot/</link>
+      <pubDate>Fri, 05 Jul 2019 10:58:48 +0000</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/tags/iot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nodemcu</title>
+      <link>http://sarthakpranesh.now.sh/tags/nodemcu/</link>
+      <pubDate>Fri, 05 Jul 2019 10:58:48 +0000</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/tags/nodemcu/</guid>
       <description></description>
     </item>
     
