@@ -26,7 +26,7 @@
     
     
     
-    <title>Sarthak Pranesh | React Native</title>
+    <title>Sarthak Pranesh | Covid 19</title>
 </head><body><div class="navbar-fixed">
     <nav class="nav">
         <div class="nav-wrapper">
@@ -100,28 +100,39 @@
 </ul>
           <div id="content" class="container">
 <style>
-    #main-container {
-        height: 40vh;
-        justify-content: flex-end;
-        align-items: center;
+    .blogContentBody > ul:not(.browser-default) li {
+        margin-left: 40px;
+        margin-top: 20px;
+        list-style-type: disc !important;
+        font-size: 18px;
+        text-align: justify;
+    }
 
-        margin-bottom: 0px;
+    .blogContentBody > ol:not(.browser-default) li {
+        margin-top: 20px;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .blogContentBody > * pre {
+        padding: 10px;
+        white-space: pre-wrap;        
+        white-space: -moz-pre-wrap;   
+        white-space: -pre-wrap;       
+        white-space: -o-pre-wrap;     
+        word-wrap: break-word;
+    }
+
+    .blogContentBody > * img {
+        padding: 0;
+        width: 100%;
     }
 </style>
-
-<div class="container-wrapper" id="main-container">
-    <h1>React Native</h1>
-</div>
-
 <div class="short-container-wrapper">
-    
-    
-    
-        <div class="row">
-            <div class="col l6 offset-l3 s12">
-                <h4><a class="title" href="/projects/covid19/covid19/">Covid 19</a></h4>
-                <div>
-                    <style>
+    <div class="row">
+        <div class="col l6 offset-l3 s12">
+            <h1>Covid 19</h1>
+            <style>
     #info-wrapper {
         display: flex;
         flex-direction: row;
@@ -171,69 +182,42 @@
         
     </div>
 </div>
-                </div>
-                <p>
-                    React Native project built with Typescript, that shows statistics for your country&rsquo;s Corona cases, developed to run on Android, iOS, and Web with a single codebase
-                </p>
+            <br><br>
+            <div class="blogContentBody">
+                <p><img src="/projects/Covid19/1.png" alt="Covid 19 Project"></p>
+<p>I created this project last year (2020) in March and have been maintaining it since then. When I started the project I was very new to React Native and didn&rsquo;t know much about it and needed a project through which I can experiment and learn more practical skills about the framework. It sure has helped me learn a lot about React Native.</p>
+<h3 id="whats-the-project">What&rsquo;s the project</h3>
+<p>The project has a simple goal to help people understand the severity of Covid 19 and it&rsquo;s spread in there part of the world and to act as an experimental playground for me to try out new things. Right now the project shows stats for the world and the country you reside in (if you don&rsquo;t give location permission, it defaults to India) and is available on Android, iOS and the Web using the same codebase with about 96% code sharing between the platforms.</p>
+<h3 id="try-it-out">Try it Out</h3>
+<p>For the dev enthusiast the project is open sourced on Github and can be found <a href="https://github.com/sarthakpranesh/Covid19">here</a>.</p>
+<p>For the once who just want to try it out, the project is hosted as a website <a href="https://covid19rn.vercel.app/">here</a> and is also available as an APK <a href="https://github.com/sarthakpranesh/Covid19/releases/download/v3.2.0/Covid19-universal-release.apk">here</a>, for running the app on iOS you&rsquo;ll have to clone the project and start it on a Mac.</p>
+<h3 id="what-did-i-learn">What did I learn?</h3>
+<p>I have learned many things through this project, I&rsquo;ll give some gists about them here and will right a detailed article on some later.</p>
+<h5 id="animations">Animations</h5>
+<p>Projects like these are great to learn basics of animations and try them out. I have used two libraries namely <code>react-native-reanimated</code> and <code>moti</code> in the project and learned a bit about them using the project.</p>
+<h5 id="state-management">State Management</h5>
+<p>I have used <code>redux</code> for state management along with <code>async-storage</code> for persistence of data. So in the event if the user loses their network connectivity the app will still display the last state of data stored on the mobile. Doing this also helps the app start faster, as we can implement <code>Optimistic UI</code> and don&rsquo;t have to wait for the API response.</p>
+<h5 id="cross-compatibility">Cross Compatibility</h5>
+<p>Not many know that many big companies use React Native for making their apps and website from single code base. Some names would be <code>Twitter</code>, <code>Uber</code>, <code>Flipkart</code>, etc and more can be found <a href="https://necolas.github.io/react-native-web/">here</a> on the official website of <code>react-native-web</code>.</p>
+<p>Though there are many optimization you can make for your <code>web</code> builds using <code>react-native-web</code> but I haven&rsquo;t looked into those yet. Here is a light house report for the website without any build optimizations</p>
+<p><img src="/projects/Covid19/lighthouse.png" alt="Lighthouse report"></p>
+<p>Yup I know, it&rsquo;s not great but it can surely be bettered using your own domain and server, along with optimizations for web builds like bundle/code splitting.</p>
+<h5 id="app-performance">App performance</h5>
+<p>This is related to the performance of the app generally on native platforms such as Android. I have had many comment on React Native being &ldquo;slow&rdquo;, well they aren&rsquo;t completely wrong in saying that as it focuses on easy of development out of the box with decent enough performance and not solely on performance optimization. Having said that, they do provide many developer configuration and documentation both for Android and iOS to enhance performance of the final builds by a great extent and leave it to the developers to opt in. There are a number of things we can do to achieve better performance on React Native apps, some are as follows:</p>
+<ul>
+<li>Using <a href="https://hermesengine.dev/">Hermes engine</a></li>
+<li>Bundle Splitting</li>
+<li>Architecture specific builds</li>
+<li>Proguard on Android</li>
+<li>Be careful about app re-renders</li>
+<li>Logs are good for development, but unnecessary on production so remove them, etc</li>
+</ul>
+<h3 id="conclusion">Conclusion</h3>
+<p>I have had a blast creating and maintaining this project, it really has been fun to work with React Native and understand what it has to offer. I look forward to creating more awesome projects with it in the future.</p>
+
             </div>
         </div>
-    
-        <div class="row">
-            <div class="col l6 offset-l3 s12">
-                <h4><a class="title" href="/blogs/adb/">Wireless connection to Android Device for app development</a></h4>
-                <div>
-                    <style>
-    #info-wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    #info-wrapper > span {
-        margin: 0px 10px;
-    }
-
-    #info-wrapper > .chip {
-        margin: auto !important;
-        margin-bottom: 4px !important;
-        margin-left: 0px !important;
-        margin-right: 10px !important;
-    }
-</style>
-<div>
-    
-    
-    <div id="info-wrapper">
-        
-            <time datetime="2021-02-07">Feb 7, 2021</time>
-        
-        
-            <span> - </span>
-            
-                
-                    
-                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/adb">ADB</a>
-                
-                    
-                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/android">Android</a>
-                
-                    
-                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/react-native">React Native</a>
-                
-            
-        
     </div>
-</div>
-                </div>
-                <p>
-                    Are you sick off hanging wires from your android devices while you test your apps on them? This blog explains how you can use ADB (Android Debug Bridge) to get rid of those hanging wires while testing and developing your app.
-                </p>
-            </div>
-        </div>
-    
-    
 </div>
 
         </div><style>

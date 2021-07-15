@@ -6,7 +6,16 @@
     <description>Recent content on Sarthak Pranesh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Feb 2021 21:32:32 +0530</lastBuildDate><atom:link href="http://sarthakpranesh.now.sh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jul 2021 10:05:58 +0530</lastBuildDate><atom:link href="http://sarthakpranesh.now.sh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Covid 19</title>
+      <link>http://sarthakpranesh.now.sh/projects/covid19/covid19/</link>
+      <pubDate>Thu, 15 Jul 2021 10:05:58 +0530</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/projects/covid19/covid19/</guid>
+      <description>React Native project built with Typescript, that shows statistics for your country&amp;rsquo;s Corona cases, developed to run on Android, iOS, and Web with a single codebase</description>
+    </item>
+    
     <item>
       <title>Wireless connection to Android Device for app development</title>
       <link>http://sarthakpranesh.now.sh/blogs/adb/</link>
