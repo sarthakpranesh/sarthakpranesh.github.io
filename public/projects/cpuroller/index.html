@@ -21,8 +21,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet"> 
     <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-
+    
     
     
     
@@ -56,6 +57,7 @@
                 </a></li>
                 
             </ul>
+            <span id="theme-toggler" class="small material-icons nav-theme-toggler">dark_mode</span>
         </div>
     </nav>
 </div>
@@ -208,7 +210,7 @@
 <h5 id="windows-mshtml-problem">Window&rsquo;s msHtml problem</h5>
 <p>The project was developed using Wails, which uses msHtml (essentially IE11) on Windows. The problems with msHtml compatibility are very significant and adding to this it does not have developer console. One such example is the way it positions elements when using <code>position: 'absolute';</code> which is quite different from how other engines do it. To center elements with position set to absolute, the only work around was to hard code your element&rsquo;s position like <a href="https://github.com/sarthakpranesh/CpuRoller/blob/master/frontend/src/components/CircularUsage/styles.css#L12">here</a></p>
 <h5 id="linux-packaging">Linux packaging</h5>
-<p>You might be thinking &lsquo;how can this be even a problem?&rsquo;. The thing is, it is more of a very very tedious task then a problem. Their is no such said problem with packaging Linux apps, the issue arises because of the different types, flavours and desktop environments being used in the ever increasing number of Linux distributions (<a href="https://distrowatch.com/dwres.php?resource=family-tree">Linux distribution family tree</a>).</p>
+<p>You might be thinking &lsquo;how can this be even a problem?'. The thing is, it is more of a very very tedious task then a problem. Their is no such said problem with packaging Linux apps, the issue arises because of the different types, flavours and desktop environments being used in the ever increasing number of Linux distributions (<a href="https://distrowatch.com/dwres.php?resource=family-tree">Linux distribution family tree</a>).</p>
 <p>For packaging on Linux we first have to deal with different types of packaging formats such as <code>.deb</code> and <code>.rpm</code>. Then we have to deal with different desktop environments, if we want our application to properly integrate in the user&rsquo;s desktop, as some of them might require curtain different configurations. Even after this, it is not curtain that our application is bound to run without any issues, so we have test our builds on different distributions. From the above explanation it becomes clear about how packaging for Linux can become a project in itself.</p>
 <p>To ease some of this work load we can employee some scripts (I package for Debian using <a href="https://github.com/sarthakpranesh/CpuRoller/blob/master/debian-build.sh">this</a> script I made). The easiest way to distribute your apps on Linux might be using AppImages, Flatpak or Snaps (Wails v2 might provide packaging to Flatpak, see <a href="https://github.com/wailsapp/wails/issues/559">here</a>). But these approaches do have their disadvantages, a common one being the increased app size.</p>
 <h5 id="data-retrieval-inconsistency">Data Retrieval Inconsistency</h5>
@@ -298,5 +300,6 @@
     });
   });
 </script>
+<script src="/js/theme.js"></script>
 </body>
 </html>
