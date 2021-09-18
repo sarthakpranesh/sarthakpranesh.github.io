@@ -6,10 +6,19 @@
     <description>Recent content on Sarthak Pranesh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Jul 2021 10:05:58 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 18 Sep 2021 17:36:57 +0530</lastBuildDate>
     
 	<atom:link href="http://sarthakpranesh.now.sh/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Golang Basics - Syllabus</title>
+      <link>http://sarthakpranesh.now.sh/blogs/golangbasics/1/</link>
+      <pubDate>Sat, 18 Sep 2021 17:36:57 +0530</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/blogs/golangbasics/1/</guid>
+      <description>Revisiting my GoLang basics, covering almost all topics, and documenting them here as a blog series for others to learn GoLang</description>
+    </item>
     
     <item>
       <title>Covid 19</title>

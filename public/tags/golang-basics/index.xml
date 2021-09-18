@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GoLang on Sarthak Pranesh</title>
-    <link>http://sarthakpranesh.now.sh/tags/golang/</link>
-    <description>Recent content in GoLang on Sarthak Pranesh</description>
+    <title>GoLang Basics on Sarthak Pranesh</title>
+    <link>http://sarthakpranesh.now.sh/tags/golang-basics/</link>
+    <description>Recent content in GoLang Basics on Sarthak Pranesh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 18 Sep 2021 17:36:57 +0530</lastBuildDate>
     
-	<atom:link href="http://sarthakpranesh.now.sh/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://sarthakpranesh.now.sh/tags/golang-basics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>http://sarthakpranesh.now.sh/blogs/golangbasics/1/</guid>
       <description>Revisiting my GoLang basics, covering almost all topics, and documenting them here as a blog series for others to learn GoLang</description>
-    </item>
-    
-    <item>
-      <title>CpuRoller</title>
-      <link>http://sarthakpranesh.now.sh/projects/cpuroller/</link>
-      <pubDate>Sun, 18 Oct 2020 11:46:58 +0530</pubDate>
-      
-      <guid>http://sarthakpranesh.now.sh/projects/cpuroller/</guid>
-      <description>Simple Cross Platform Desktop application for seeing your CPU and RAM utilization with an intuitive design. Available natively on Windows, Linux and MacOS.</description>
     </item>
     
   </channel>
