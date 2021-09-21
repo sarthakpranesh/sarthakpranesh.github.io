@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Sarthak Pranesh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Sep 2021 17:36:57 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 20 Sep 2021 09:50:05 +0530</lastBuildDate>
     
 	<atom:link href="http://sarthakpranesh.now.sh/blogs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Golang Basics: Feeling Go</title>
+      <link>http://sarthakpranesh.now.sh/blogs/golangbasics/2/</link>
+      <pubDate>Mon, 20 Sep 2021 09:50:05 +0530</pubDate>
+      
+      <guid>http://sarthakpranesh.now.sh/blogs/golangbasics/2/</guid>
+      <description>First blog in the &lt;code&gt;Golang Basics&lt;/code&gt; series, covering concepts of Variables, Values and Types in Golang</description>
+    </item>
     
     <item>
       <title>Golang Basics - Syllabus</title>

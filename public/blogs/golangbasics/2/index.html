@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html><head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
+    
+    
+    <meta name="application-name" content="Sarthak Pranesh" />
+    <meta name="theme-color" content="#E4EBF5" />
+    <meta name="description" content="Hello 👋, I am a Software Developer, Technical Blogger and Linux Enthusiast 🐧. I love playing with and creating APIs, especially in Nodejs and Golang. I am passionate about creating end user application using React Native, JavaFx and Electron Js. Always interested in distributed computing and learning new technologies." />
+    <meta name="keywords" content="Sarthak Pranesh, Portfolio, Blogs, Projects" />
+    <meta name="author" content="Sarthak Pranesh" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+
+    <link rel="icon" href="/favicon.ico" />
+
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet"> 
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+    
+    
+    
+    <title>Sarthak Pranesh | Golang Basics: Feeling Go</title>
+</head><body><div class="navbar-fixed">
+    <nav class="nav">
+        <div class="nav-wrapper">
+            <a href="#" data-target="mobile-device" class="sidenav-trigger nav-hamburger">
+                <i data-feather="menu"></i>
+            </a>
+            <ul class="hide-on-med-and-down">
+                
+                <li><a href="/">
+                
+                Home
+                </a></li>
+                
+                <li><a href="/blogs/">
+                
+                Blogs
+                </a></li>
+                
+                <li><a href="/projects/">
+                
+                Projects
+                </a></li>
+                
+                <li><a href="/tags/">
+                
+                Tags
+                </a></li>
+                
+            </ul>
+            <span id="theme-toggler" class="small material-icons nav-theme-toggler">dark_mode</span>
+        </div>
+    </nav>
+</div>
+<ul class="sidenav" id="mobile-device">
+    
+    <li><a href="/">
+    
+    
+    <i data-feather="home"></i> 
+    
+    
+    Home
+    </a></li>
+    
+    <li><a href="/blogs/">
+    
+    
+    <i data-feather="pen-tool"></i> 
+    
+    
+    Blogs
+    </a></li>
+    
+    <li><a href="/projects/">
+    
+    
+    <i data-feather="code"></i> 
+    
+    
+    Projects
+    </a></li>
+    
+    <li><a href="/tags/">
+    
+    
+    <i data-feather="tag"></i> 
+    
+    
+    Tags
+    </a></li>
+    
+</ul>
+          <div id="content" class="container">
+<style>
+    .blogContentBody > ul:not(.browser-default) li {
+        margin-left: 40px;
+        margin-top: 20px;
+        list-style-type: disc !important;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .blogContentBody > ol:not(.browser-default) li {
+        margin-top: 20px;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .blogContentBody > * pre {
+        padding: 10px;
+        white-space: pre-wrap;        
+        white-space: -moz-pre-wrap;   
+        white-space: -pre-wrap;       
+        white-space: -o-pre-wrap;     
+        word-wrap: break-word;
+    }
+
+    .blogContentBody > * img {
+        padding: 0;
+        width: 100%;
+    }
+</style>
+<div class="short-container-wrapper">
+    <div class="row">
+        <div class="col l6 offset-l3 s12">
+            <h1>Golang Basics: Feeling Go</h1>
+            <style>
+    #info-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #info-wrapper > span {
+        margin: 0px 10px;
+    }
+
+    #info-wrapper > .chip {
+        margin: auto !important;
+        margin-bottom: 4px !important;
+        margin-left: 0px !important;
+        margin-right: 10px !important;
+    }
+</style>
+<div>
+    
+    
+    <div id="info-wrapper">
+        
+            <time datetime="2021-09-20">Sep 20, 2021</time>
+        
+        
+            <span> - </span>
+            
+                
+                    
+                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/golang-basics">Golang Basics</a>
+                
+                    
+                    <a class="chip" href="http://sarthakpranesh.now.sh/tags/golang">Golang</a>
+                
+            
+        
+    </div>
+</div>
+            <br><br>
+            <div class="blogContentBody">
+                <p>Hello fellow gophers, in this blog we&rsquo;ll be going through an introduction of what Golang is, along with simple but most important things that make up programs in Go. We will be covering everything <code>Variables</code> and <code>Types</code>.</p>
+<h3 id="why-even-should-you">Why even should you?</h3>
+<p>Golang is considered to be one of he best statically typed, compiled programming language designed and heavily used at Google. It is built to take full advantage of parallel computing in modern computers, provides efficient compilation and execution, and many other awesome features.</p>
+<p>Ain&rsquo;t that enough? Check out these awesome projects built with Go</p>
+<ul>
+<li><a href="https://github.com/docker/engine">Docker</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes">Kubernetes</a></li>
+<li><a href="https://github.com/orgs/coreos/repositories?language=go">Fedora CoreOS</a></li>
+<li><a href="https://github.com/gohugoio/hugo">Hugo</a></li>
+<li>Terraform, and many others</li>
+</ul>
+<h3 id="intro">Intro</h3>
+<p>We won&rsquo;t be installing Golang on our local systems, instead we&rsquo;ll use this awesome web service <a href="https://play.golang.org/">Golang Playground</a> that runs on <code>golang.org</code>'s servers. This way, we won&rsquo;t have to deal with installation process and issues for learning Golang basics. I would love if you code along with this blog, there is also a playground link at the bottom for the code used in this blog.</p>
+<h3 id="variables-var-war">Variables: var war;</h3>
+<p>Variables are the base of any program you write, they help us store useful values and let us work efficiently. There are many ways to declare variables in Golang, we&rsquo;ll start with variable declaration using the <code>var</code> keyword.</p>
+<p>Code snippet:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// Variable declaration with &#34;var&#34; keyword
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">name</span> <span style="color:#66d9ef">string</span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">age</span> <span style="color:#66d9ef">int</span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">height</span> <span style="color:#66d9ef">float64</span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">name2</span> <span style="color:#66d9ef">string</span> = <span style="color:#e6db74">&#34;Person&#34;</span>
+<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Variables: name=%v, age=%v, height=%v, name2=%v \n&#34;</span>, <span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>, <span style="color:#a6e22e">height</span>, <span style="color:#a6e22e">name2</span>) <span style="color:#75715e">// don&#39;t worry we&#39;ll cover use of fmt later in the series
+</span></code></pre></div><p>Output:</p>
+<pre><code>Variables: name=, age=0, height=0, name2=Person 
+</code></pre><p>Note: the semicolon <code>;</code> symbol at the end of the statement is optional, as seen in the last line.</p>
+<p>The <code>var</code> keyword allows us to create variables that have values which can be changed later on (value reassignment), but the variable cannot be declared again. When any variable is declared without a value, it takes up the default value of the type that was assigned to it. For our example name took the value of &quot;&rdquo; (an empty string), age took the value of 0, height took the value of 0.</p>
+<p>Another keyword used for variables declaration is the <code>const</code> keyword. As the name suggests, once a variable is assigned some value using <code>const</code> it can not be reassigned to a different value.</p>
+<p>Code snippet:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">year</span> <span style="color:#66d9ef">int</span> = <span style="color:#ae81ff">2021</span>;
+<span style="color:#a6e22e">year</span> = <span style="color:#ae81ff">2022</span>; <span style="color:#75715e">// Will cause an error
+</span></code></pre></div><p>Output:</p>
+<pre><code>./prog.go:26:7: cannot assign to year (declared const)
+</code></pre><p>Pretty simple aye! Last but not the least, the <code>Short Variable Declaration</code> using the <code>:=</code> symbol. Variables declared using <code>:=</code> behave mostly the same as variables declared with <code>var</code> keyword, with only one major difference that in some cases they can be re-declared.</p>
+<p>Code snippet:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// Syntax: variableName := variableValue
+</span><span style="color:#75715e">// Variable declaration using the Short hand
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">war</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">true</span>
+<span style="color:#a6e22e">country</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;India&#34;</span>
+<span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">3</span>
+<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Short variable declaration: war=%v, country=%v, i=%v \n&#34;</span>, <span style="color:#a6e22e">war</span>, <span style="color:#a6e22e">country</span>, <span style="color:#a6e22e">i</span>)
+</code></pre></div><p>Output:</p>
+<pre><code>Short variable declaration: war=true, country=India, i=3 
+</code></pre><p><a href="https://golang.org/ref/spec#Variable_declarations">language specification ref</a></p>
+<h3 id="types">Types</h3>
+<p>We use types in Go to declare our variables with <code>var</code> and <code>const</code> and we saw this in the pervious section. So what are these types anyway? Everything in Go is a <code>type</code>, from a functions to strings, from int to float. Here are a few types from language specs:</p>
+<ol>
+<li>Boolean types</li>
+<li>Numeric types</li>
+<li>String types</li>
+<li>Array types</li>
+<li>Slice types</li>
+<li>Struct types, etc</li>
+</ol>
+<p>For memory efficient programming we have smaller bit sized types in <code>Numeric types</code> like int8 which has a range from -128 to 127. Some different type declarations:</p>
+<p>Code snippet:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// Types
+</span><span style="color:#75715e">// Boolean
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">isGo</span> <span style="color:#66d9ef">bool</span> = <span style="color:#66d9ef">true</span>
+<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Boolean: isGo={val:%v, type:%T}\n&#34;</span>, <span style="color:#a6e22e">isGo</span>, <span style="color:#a6e22e">isGo</span>)
+<span style="color:#75715e">// Numeric
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">j</span> <span style="color:#66d9ef">int8</span> = <span style="color:#ae81ff">32</span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">k</span> <span style="color:#66d9ef">uint</span> = <span style="color:#ae81ff">12</span> <span style="color:#75715e">// unsigned int, means only positive values allowed, range 0 to 255
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">temperature</span> <span style="color:#66d9ef">float32</span> = <span style="color:#ae81ff">43.8</span>
+<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Numeric: j={val:%v, type:%T}\nk={val:%v, type:%T}\ntemperature={val:%v, type:%T}\n&#34;</span>, <span style="color:#a6e22e">j</span>, <span style="color:#a6e22e">j</span>, <span style="color:#a6e22e">k</span>, <span style="color:#a6e22e">k</span>, <span style="color:#a6e22e">temperature</span>, <span style="color:#a6e22e">temperature</span>)
+<span style="color:#75715e">// Strings
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">text</span> <span style="color:#66d9ef">string</span> = <span style="color:#e6db74">&#34;Hello gophers&#34;</span> <span style="color:#75715e">// strings are immutable, once created cannot be changed
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;String: text={val:%v, type:%T}\n&#34;</span>, <span style="color:#a6e22e">text</span>, <span style="color:#a6e22e">text</span>)
+</code></pre></div><p>Output:</p>
+<pre><code>Boolean: isGo={val:true, type:bool}
+Numeric: j={val:32, type:int8}
+k={val:12, type:uint}
+temperature={val:43.8, type:float32}
+String: text={val:Hello gophers, type:string}
+</code></pre><p>We&rsquo;ll have a look on other types as we move along the blog series. We can also declare our own types using the using the <code>type</code> variable</p>
+<p>Code snippet:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// custom type
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">msg</span> <span style="color:#66d9ef">string</span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">m</span> <span style="color:#a6e22e">msg</span> = <span style="color:#e6db74">&#34;Yo Yo Golang&#34;</span>
+<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;String: msg={val:%v, type:%T}\n&#34;</span>, <span style="color:#a6e22e">m</span>, <span style="color:#a6e22e">m</span>)
+</code></pre></div><p>Output:</p>
+<pre><code>String: msg={val:Yo Yo Golang, type:main.msg}
+</code></pre><p>Below is the link to the section on types in the official documentation, it will provide great knowledge on types in Go as it covers everything in great detail.</p>
+<p><a href="https://golang.org/ref/spec#Types">language specification ref</a></p>
+<h3 id="only-conversion-no-casting">Only Conversion, no Casting</h3>
+<p>Unlike other programming languages such as C and Java, Go does not provide type casting and only has explicit type conversions. For example if we want to convert an int value to float we can do so using the <code>float64()</code></p>
+<p>Code snippet:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// Type convertion
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">t</span> <span style="color:#66d9ef">int64</span> = <span style="color:#ae81ff">12345</span>
+<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;int: t={val:%v, type:%T}\n&#34;</span>, <span style="color:#a6e22e">t</span>, <span style="color:#a6e22e">t</span>)
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">tf</span> <span style="color:#66d9ef">float64</span> = float64(<span style="color:#a6e22e">t</span>)
+<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Casted float: msg={val:%v, type:%T}\n&#34;</span>, <span style="color:#a6e22e">tf</span>, <span style="color:#a6e22e">tf</span>)
+</code></pre></div><p>Output:</p>
+<pre><code>int: t={val:12345, type:int64}
+Casted float: msg={val:12345, type:float64}
+</code></pre><p>This is how we can change the type in our program.</p>
+<p><a href="https://golang.org/ref/spec#Conversions">language specification ref</a></p>
+<h3 id="concluding">Concluding</h3>
+<p>Go is beautiful, efficient, and powerful. It allows us to declare variables using <code>var</code> and <code>const</code> keywords. It provides us with various types keeping in mind memory efficiency. There is no type casting and only type conversion in GoLang.</p>
+<p>I hope you liked this short blog, for a detailed understanding and hands on experience check out the <code>Resource</code> section below and read the language specification references added after each section. This marks the end of the first blog of the series <a href="/blogs/golangbasics/1/">GoLang Basics</a>.</p>
+<h3 id="resource">Resource</h3>
+<p>The sample code is available through the Golang Playground and Github Gist links below</p>
+<ul>
+<li><a href="">Tweet for discussion</a></li>
+<li><a href="https://play.golang.org/p/ytproS5E8iW">Golang Playground Code</a></li>
+<li><a href="https://gist.github.com/sarthakpranesh/4b8078c50b034364318cbfdcbe50467d">Github Gist Code</a></li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div><style>
+    #contact-section > a {
+        margin: 20px 10px 0px 0px !important;
+    }
+</style>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 offset-l3 s12" id="contact-section">
+                
+                    <h4>Contact Me</h4>
+                    <p>
+                        I would love to hear from you and have little chit chat about frameworks, languages, tools, projects, ☕️, etc. If you are curious then this website was built using a Hugo theme called Blogfolio, link can be found below.
+                    </p>
+                    
+                        
+                            <a class="text-lighten-3" href="https://github.com/sarthakpranesh">
+                            
+                                
+                                <i data-feather="github"></i> 
+                            
+                            </a>
+                        
+                    
+                        
+                            <a class="text-lighten-3" href="https://www.linkedin.com/in/sarthakpranesh/">
+                            
+                                
+                                <i data-feather="linkedin"></i> 
+                            
+                            </a>
+                        
+                    
+                        
+                            <a class="text-lighten-3" href="https://twitter.com/SarthakPranesh">
+                            
+                                
+                                <i data-feather="twitter"></i> 
+                            
+                            </a>
+                        
+                    
+                        
+                            <a class="text-lighten-3" href="https://www.instagram.com/sarthakpranesh/">
+                            
+                                
+                                <i data-feather="instagram"></i> 
+                            
+                            </a>
+                        
+                    
+                        
+                            <a class="text-lighten-3" href="https://www.facebook.com/sarthakpranesh/">
+                            
+                                
+                                <i data-feather="facebook"></i> 
+                            
+                            </a>
+                        
+                    
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Copyright (c) 2021 Sarthak Pranesh
+            <a class="text-lighten-4 right" href="https://github.com/sarthakpranesh/Blogfolio" target="_blank">Hugo Theme</a>
+        </div>
+    </div>
+</footer>
+      <script type="text/javascript" src="/js/materialize.min.js"></script>
+<script src="/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let elems = document.querySelectorAll('.sidenav');
+    let instances = M.Sidenav.init(elems, {
+      edge: 'left',
+      draggable: true,
+      preventScrolling: true,
+    });
+  });
+</script>
+<script src="/js/theme.js"></script>
+</body>
+</html>
