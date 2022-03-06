@@ -2,7 +2,7 @@
 title: "Golang: text/template package"
 date: 2022-03-06 1:35:00
 draft: false
-tags: ["GoLang", "text/Template", "package"]
+tags: ["GoLang", "text/template", "package"]
 summary: "Simple know how on how to do templating using the text/template package in Golang. Covering concepts from parsing to template functions."
 ---
 
