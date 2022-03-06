@@ -6,29 +6,7 @@
     <description>Recent content in Blogs on Sarthak Pranesh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Sep 2021 09:50:05 +0530</lastBuildDate>
-    
-	<atom:link href="http://sarthakpranesh.now.sh/blogs/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Golang Basics: Feeling Go</title>
-      <link>http://sarthakpranesh.now.sh/blogs/golangbasics/2/</link>
-      <pubDate>Mon, 20 Sep 2021 09:50:05 +0530</pubDate>
-      
-      <guid>http://sarthakpranesh.now.sh/blogs/golangbasics/2/</guid>
-      <description>First blog in the &lt;code&gt;Golang Basics&lt;/code&gt; series, covering concepts of Variables, Values and Types in Golang</description>
-    </item>
-    
-    <item>
-      <title>Golang Basics - Syllabus</title>
-      <link>http://sarthakpranesh.now.sh/blogs/golangbasics/1/</link>
-      <pubDate>Sat, 18 Sep 2021 17:36:57 +0530</pubDate>
-      
-      <guid>http://sarthakpranesh.now.sh/blogs/golangbasics/1/</guid>
-      <description>Revisiting my GoLang basics, covering almost all topics, and documenting them here as a blog series for others to learn GoLang</description>
-    </item>
-    
+    <lastBuildDate>Sun, 07 Feb 2021 21:32:32 +0530</lastBuildDate><atom:link href="http://sarthakpranesh.now.sh/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wireless connection to Android Device for app development</title>
       <link>http://sarthakpranesh.now.sh/blogs/adb/</link>
