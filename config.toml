@@ -49,7 +49,7 @@ categories = ""
   [[menu.main]]
     name = "Blogs"
     pre = "pen-tool"
-    url = "/blogs/"
+    url = "https://medium.com/@sarthakpranesh"
     weight = 2
   [[menu.main]]
     name = "Projects"
